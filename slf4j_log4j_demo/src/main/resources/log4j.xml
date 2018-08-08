@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="error">
+    <Properties>
+        <Property name="fileName">front.log</Property>
+    </Properties>
+    <appenders>
+        <!--控制台-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </appenders>
+
+    <loggers>
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </loggers>
+</configuration>
+<!--
+注解:
+#1  <configuration>,log4j推荐的五种输出级别:FATAL ,ERROR ,WARN ,INFO ,DEBUG
+#2  <properties>
+#3  <appenders>
+        <Console>
+#4  <loggers>
+    logger的作用：
+        1.[name属性]:指定你定义Logger对象时候的name
+        2. additivity : children-logger是否使用 rootLogger的配置,
+           additivity在log4j默认为true。这解释了为什么有些时候，一个日志信息在屏幕上会有多次输出。
+        3.还可以指定level(输出级别)、appender-ref(指定哪个append)
+
+
+-->
+
+
+
