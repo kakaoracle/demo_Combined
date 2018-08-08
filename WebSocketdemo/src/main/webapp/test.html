@@ -1,0 +1,35 @@
+<!DOCTYPE html >
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" content="text/html">
+    <title>Title</title>
+    <script>
+        var     ws;
+        function hello() {
+            ws = new WebSocket("ws://localhost:8080/hello");
+            console.log(">enter hello()");
+            ws.onopen = function (ev) {
+                console.log(ev);
+            };
+            ws.onmessage = function (ev) {
+                console.log(ev.data);
+                var dv = document.getElementById("dv");
+                dv.innerHTML += ev.data;
+            };
+        }
+        function Subsend(){
+            var msg = document.getElementById("msg").value;
+            console.log(msg);
+            ws.send(msg);
+        }
+
+
+    </script>
+</head>
+<body>
+<div id="dv"></div>
+<input type="button" value="socket连接" onclick="hello()"></br>
+<input type="text" id="msg"><br>
+<input type="button" onclick="Subsend()" value="发送">
+</body>
+</html>
