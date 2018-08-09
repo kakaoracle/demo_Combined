@@ -17,20 +17,31 @@
         </Root>
     </loggers>
 </configuration>
-<!--
-注解:
-#1  <configuration>,log4j推荐的五种输出级别:FATAL ,ERROR ,WARN ,INFO ,DEBUG
-#2  <properties>
-#3  <appenders>
-        <Console>
-#4  <loggers>
-    logger的作用：
-        1.[name属性]:指定你定义Logger对象时候的name
-        2. additivity : children-logger是否使用 rootLogger的配置,
-           additivity在log4j默认为true。这解释了为什么有些时候，一个日志信息在屏幕上会有多次输出。
-        3.还可以指定level(输出级别)、appender-ref(指定哪个append)
-
-
+<!--说明
+*1  log4j2.xml配置文件的目录
+        优先级:.classpath下的名为log4j2-test.json或者log4j2-test.jsn文件
+                    .classpath下名为log4j2-test.xml文件
+                    .classpath下名为log4j2.json或者log4j2.jsn文件
+                    .classpath下名为log4j2.xml文件
+*2  节点解析
+        <Configuration>中的status用来指定log4j本身的打印日志的级别
+                <Appenders>节点,常见有三种:Console,RollingFile,File
+                                    Console:定义输出到控制台
+                                    File:输出到指定位置
+                                     RollingFile:超过指定大小自动删除旧的创建新的文件
+                <Loggers>节点,常见的两种:Root和Logger
+                                    Root节点来指定根日志,没有指定logger话,就会使用这个日志进行输出
+                                    Logger节点用来为不同的class指定不同的日志级别
+*3  日志level:
+        8个级别,设置后会打印设置级别及以上的级别:
+        All:
+        Trace:
+        Debug:
+        Info:
+        Warn:
+        Error:
+        Fetal:让程序退出的日志
+        OFF:最高级,不打印任何日志
 -->
 
 
