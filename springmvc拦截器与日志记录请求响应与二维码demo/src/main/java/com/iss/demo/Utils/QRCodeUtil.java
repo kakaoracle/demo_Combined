@@ -44,7 +44,7 @@ public class QRCodeUtil {
         BufferedImage image =  MatrixToImageWriter.toBufferedImage(bitMatrix);
         ImageIO.write(image,"png",out);
         byte[] bytes = out.toByteArray();
-        // 2、将字节数组转为二进制
+        // 2、将二进制数组转换成为字节
         BASE64Encoder encoder = new BASE64Encoder();
         String str = encoder.encodeBuffer(bytes).trim();
         System.out.println("---图片对应的str:  "+str);
