@@ -5,3 +5,6 @@
 	而用了json转换后变成了"{"id":1,"name":"ming"}"
     当然如果用了RestController之后,返回javabean也会自动变成第二种进行传输		
 #### springmvc默认的javabean转json用的是jackjson
+#### springmvc中返回javabean的时候,在浏览器会显示为json字符串格式,但是返回json格式的string,在浏览器会显示text格式,虽然内容一致,但是第一眼显示方式不同,原因是二者默认的produres不同.
+@RequestMapping(value = "/upload",produces="application/json;charset=UTF-8")
+@RequestMapping(value = "/upload",produces="text/html;charset=UTF-8")
