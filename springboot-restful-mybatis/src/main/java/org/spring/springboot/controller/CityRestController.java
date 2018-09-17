@@ -10,13 +10,14 @@ import java.util.List;
 
 /**
  *restful的增删改查由请求报文中的请求方式决定,分别是put,delete,post,get
+ put与post都是需要用requestbody的,因为新增与修改往往都需要很多的参数
  */
 @RestController
 public class CityRestController {
 
     @Autowired
     private CityService cityService;
-
+    //注意一般请求参数一个的话,就直接用@pathVariable,如果有多个的话,可以继续使用@requestParam
     @RequestMapping(value = "/api/city/{id}", method = RequestMethod.GET)
     public City findOneCity(@PathVariable("id") Long id) {
         return cityService.findCityById(id);
