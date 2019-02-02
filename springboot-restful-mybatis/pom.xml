@@ -49,6 +49,12 @@
             <version>${mysql-connector}</version>
         </dependency>
 
+        <!-- log4j,具体可以看log4jdemo-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
         <!-- Junit -->
         <dependency>
             <groupId>junit</groupId>
