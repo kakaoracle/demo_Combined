@@ -33,7 +33,7 @@
 		<property name="realm" ref="myRealm"></property>
 	</bean>
 	
-	<bean id="myRealm" class="com.itheima.demo.MyRealm"> </bean>
+	<bean id="myRealm" class="com.iss.demo.MyRealm"> </bean>
 
 
 </beans>
