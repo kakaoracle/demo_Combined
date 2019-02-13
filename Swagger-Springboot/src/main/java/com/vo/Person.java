@@ -7,7 +7,7 @@ import io.swagger.annotations.ApiModelProperty;
 public class Person {
     @ApiModelProperty(value = "姓名",required = false)
     private String name;
-    @ApiModelProperty(value = "性别",required = true)
+    @ApiModelProperty(value = "性别",required = true)//required为true代表是必填字段
     private String sex;
     public String getName() {
         return name;

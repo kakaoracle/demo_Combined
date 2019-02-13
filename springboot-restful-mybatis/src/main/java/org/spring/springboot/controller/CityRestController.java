@@ -1,9 +1,8 @@
 package org.spring.springboot.controller;
 
-import org.spring.springboot.domain.City;
+import org.spring.springboot.entity.City;
 import org.spring.springboot.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,33 +12,36 @@ import java.util.List;
  put与post都是需要用requestbody的,因为新增与修改往往都需要很多的参数
  */
 @RestController
+@RequestMapping("/city")
 public class CityRestController {
 
     @Autowired
     private CityService cityService;
-    //注意一般请求参数一个的话,就直接用@pathVariable,如果有多个的话,可以继续使用@requestParam
-    @RequestMapping(value = "/api/city/{id}", method = RequestMethod.GET)
+    //pathVariable:接收路径参数
+    //requestParam:接收拼接参数
+    //requestBody:接收实体类
+    @GetMapping(value = "/findOneCity/{id}")
     public City findOneCity(@PathVariable("id") Long id) {
-        return cityService.findCityById(id);
+        return cityService.findById(id);
     }
 
-    @RequestMapping(value = "/api/city", method = RequestMethod.GET)
+    @GetMapping(value = "/findAllCity")
     public List<City> findAllCity() {
         return cityService.findAllCity();
     }
 
-    @RequestMapping(value = "/api/city", method = RequestMethod.POST)
+    @PostMapping(value = "/createCity")
     public void createCity(@RequestBody City city) {
         cityService.saveCity(city);
     }
 
-    @RequestMapping(value = "/api/city", method = RequestMethod.PUT)
-    public void modifyCity(@RequestBody City city) {
+    @PutMapping(value = "/updateCity")
+    public void updateCity(@RequestBody City city) {
         cityService.updateCity(city);
     }
 
-    @RequestMapping(value = "/api/city/{id}", method = RequestMethod.DELETE)
-    public void modifyCity(@PathVariable("id") Long id) {
+    @DeleteMapping(value = "/deleteCity/{id}")
+    public void deleteCity(@PathVariable("id") Long id) {
         cityService.deleteCity(id);
     }
 }
