@@ -1,15 +1,14 @@
 package org.spring.springboot;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Spring Boot 应用启动类
  */
 @SpringBootApplication
-// mapper 接口类扫描包配置
-@MapperScan("org.spring.springboot.dao")
+@EnableSwagger2
 public class Application {
 
     public static void main(String[] args) {
