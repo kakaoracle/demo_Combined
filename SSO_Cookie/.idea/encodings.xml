@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/../Freemarker&amp;Springbootdemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sso-cross-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sso-same-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sso-same-father" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springmvc拦截器与日志记录请求响应与二维码demo" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
