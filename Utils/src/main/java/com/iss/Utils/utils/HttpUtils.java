@@ -1,6 +1,7 @@
-package com.iss.Utils.utils;
+package com.iss.util;
 
-import com.iss.Utils.constants.CommonConstant;
+import com.iss.constants.CommonConstant;
+import com.iss.controller.LoginController;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -13,6 +14,9 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -29,6 +33,8 @@ import java.util.Map;
  * @create: 2019-02-23 23:00
  **/
 public class HttpUtils {
+    public static final Logger log = LoggerFactory.getLogger(LoginController.class);
+
     public static HttpServletRequest getHttpServletRequest() {
         return ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
     }
@@ -39,11 +45,12 @@ public class HttpUtils {
      * @param param
      * @return
      */
-    public static String doGet(String url, Map<String, String> param) {
+    public static MsgResult doGet(String url, Map<String, String> param) {
+        log.info("***HttpUtils-url:"+url+",param:"+param);
         // 创建Httpclient对象
         CloseableHttpClient httpclient = HttpClients.createDefault();
-        String resultString = "";
         CloseableHttpResponse response = null;
+        String resultString = "";
         try {
             // 创建uri
             URIBuilder builder = new URIBuilder(url);
@@ -56,7 +63,7 @@ public class HttpUtils {
             // 创建http GET请求
             HttpGet httpGet = new HttpGet(uri);
             //設置httpGet的头部參數信息,防止误认为爬虫
-            httpGet.setHeader("Accept", "Accept text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+            //httpGet.setHeader("Accept", "Accept text/html,application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
             httpGet.setHeader("Accept-Charset", "GB2312,utf-8;q=0.7,*;q=0.7");
             httpGet.setHeader("Accept-Encoding", "gzip, deflate");
             httpGet.setHeader("Accept-Language", "zh-cn,zh;q=0.5");
@@ -67,9 +74,10 @@ public class HttpUtils {
             httpGet.addHeader("User-Agent","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36name, value");
             // 执行请求
             response = httpclient.execute(httpGet);
-            // 判断返回状态是否为200
-            if (response.getStatusLine().getStatusCode() == CommonConstant.HTTPSTATUS_OK) {
-                resultString = EntityUtils.toString(response.getEntity(), "UTF-8");
+            log.info("***httpClient工具类的请求结果:"+response.toString());
+            log.info("***Closehttp的status:"+response.getStatusLine().getStatusCode());
+            if (response.getStatusLine().getStatusCode() == CommonConstant.HTTP_CODE_OK){
+                return  MsgResult.ok();
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -83,10 +91,10 @@ public class HttpUtils {
                 e.printStackTrace();
             }
         }
-        return resultString;
+        return MsgResult.build(CommonConstant.HTTP_Code_NO_CONTENT,CommonConstant.HTTP_STATUS_NO_CONTENT);
     }
 
-    public static String doGet(String url) {
+    public static MsgResult doGet(String url) {
         return doGet(url, null);
     }
 
@@ -96,11 +104,10 @@ public class HttpUtils {
      * @param param
      * @return
      */
-    public static String doPost(String url, Map<String, String> param) {
+    public static MsgResult doPost(String url, Map<String, String> param) {
         // 创建Httpclient对象
         CloseableHttpClient httpClient = HttpClients.createDefault();
         CloseableHttpResponse response = null;
-        String resultString = "";
         try {
             // 创建Http Post请求
             HttpPost httpPost = new HttpPost(url);
@@ -116,7 +123,9 @@ public class HttpUtils {
             }
             // 执行http请求
             response = httpClient.execute(httpPost);
-            resultString = EntityUtils.toString(response.getEntity(), "utf-8");
+            if (response.getStatusLine().getStatusCode() == CommonConstant.HTTP_CODE_OK){
+                return MsgResult.ok();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -126,10 +135,11 @@ public class HttpUtils {
                 e.printStackTrace();
             }
         }
-        return resultString;
+        return MsgResult.build(CommonConstant.HTTP_Code_NO_CONTENT,CommonConstant.HTTP_STATUS_NO_CONTENT);
+
     }
 
-    public static String doPost(String url) {
+    public static MsgResult doPost(String url) {
         return doPost(url, null);
     }
 
@@ -139,7 +149,7 @@ public class HttpUtils {
      * @param json
      * @return
      */
-    public static String doPostJson(String url, String json) {
+    public static MsgResult doPostJson(String url, String json) {
         // 创建Httpclient对象
         CloseableHttpClient httpClient = HttpClients.createDefault();
         CloseableHttpResponse response = null;
@@ -152,7 +162,9 @@ public class HttpUtils {
             httpPost.setEntity(entity);
             // 执行http请求
             response = httpClient.execute(httpPost);
-            resultString = EntityUtils.toString(response.getEntity(), "utf-8");
+            if (response.getStatusLine().getStatusCode() == CommonConstant.HTTP_CODE_OK){
+                return MsgResult.ok();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -162,7 +174,6 @@ public class HttpUtils {
                 e.printStackTrace();
             }
         }
-
-        return resultString;
+        return MsgResult.build(CommonConstant.HTTP_Code_NO_CONTENT,CommonConstant.HTTP_STATUS_NO_CONTENT);
     }
 }

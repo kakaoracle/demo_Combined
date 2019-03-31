@@ -1,4 +1,6 @@
-package org.spring.springboot.utils;
+package com.iss.util;
+
+import com.iss.constants.CommonConstant;
 
 /**
  * @description: 响应
@@ -26,8 +28,8 @@ public class MsgResult {
     }
 
     public MsgResult(Object data) {
-        this.code = 000;
-        this.message = "上传成功";
+        this.code = CommonConstant.HTTP_CODE_OK;
+        this.message = CommonConstant.HTTP_STATUS_OK;
         this.data = data;
     }
 
@@ -69,5 +71,14 @@ public class MsgResult {
 
     public void setData(Object data) {
         this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "MsgResult{" +
+                "code=" + code +
+                ", message='" + message + '\'' +
+                ", data=" + data +
+                '}';
     }
 }
