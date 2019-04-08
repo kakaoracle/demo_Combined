@@ -1,15 +1,17 @@
-package com.iss.springbootdemo.aopDemo.config;
+package aopDemo.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * @description:
- * @author: cWX597167
+ * @author: Dezhao Chen
  * @create: 2019-04-07 08:52
  **/
 @Configuration
-@ComponentScan("com")
+@ComponentScan("aopDemo")
+@EnableAspectJAutoProxy
 public class Appconfig {
     
 }

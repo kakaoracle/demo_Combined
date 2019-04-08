@@ -1,4 +1,4 @@
-package com.iss.springbootdemo.aopDemo.dao;
+package aopDemo.dao;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
@@ -8,11 +8,12 @@ import org.springframework.stereotype.Repository;
  * @author: cWX597167
  * @create: 2019-04-07 08:54
  **/
-@Component
+@Component("dao")
 @Repository
-public class IndexDaoImpl implements IndexDao {
-    @Override
+public class IndexDaoImpl {
+    //@Override
     public void query() {
         System.out.println("dao---query");
     }
+    
 }
