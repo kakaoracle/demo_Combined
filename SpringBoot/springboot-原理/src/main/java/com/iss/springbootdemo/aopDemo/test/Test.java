@@ -15,6 +15,6 @@ public class Test {
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(Appconfig.class);
         IndexDaoImpl dao = (IndexDaoImpl) annotationConfigApplicationContext.getBean(IndexDao.class);
         //测试能否输出"dao---query"
-        dao.query();
+        dao.query();//----->能够正确输出
     }
 }
