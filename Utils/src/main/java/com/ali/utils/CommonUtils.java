@@ -1,9 +1,9 @@
-package com.iss.Utils.utils;
+package com.ali.utils;
 
 /**
  * @description: 常用工具类
  * ESCAPE
- * @author: cWX597167
+ * @author:
  * @create: 2019-02-23 19:11
  **/
 public class CommonUtils {

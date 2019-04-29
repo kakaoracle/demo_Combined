@@ -1,10 +1,11 @@
-package com.iss.util;
+package com.ali.utils;
 
-import com.iss.constants.CommonConstant;
+
+import com.ali.constant.CommonConstant;
 
 /**
  * @description: 响应
- * @author: cWX597167
+ * @author: kakaoracle
  * @create: 2019-02-23 22:57
  **/
 public class MsgResult {

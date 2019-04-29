@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * @description:
- * @author: cWX597167
+ * @author: kakaoracle
  * @create: 2019-04-07 08:54
  **/
 @Component("dao")

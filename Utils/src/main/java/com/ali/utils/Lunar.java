@@ -1,4 +1,4 @@
-package com.iss.Utils.utils;
+package com.ali.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * @description: 农历转换工具
- * @author: cWX597167
+ * @author: kakaoracle
  * @create: 2019-02-23 23:04
  **/
 public class Lunar {

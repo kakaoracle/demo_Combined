@@ -1,4 +1,4 @@
-package org.spring.springboot.constant;
+package com.ali.constant;
 
 /**
  * @description: 常用的常量

@@ -1,4 +1,4 @@
-package org.spring.springboot.utils;
+package com.ali.utils;
 
 
 import org.apache.commons.lang3.StringUtils;
@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * @description: 日期与字符串相关的转换
- * @author: cWX597167
+ * @author: kakaoracle
  * @create: 2019-02-23 23:01
  **/
 public class DateUtils {

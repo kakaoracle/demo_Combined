@@ -1,7 +1,6 @@
-package com.iss.util;
+package com.ali.utils;
 
-import com.iss.constants.CommonConstant;
-import com.iss.controller.LoginController;
+import com.ali.constant.CommonConstant;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -13,10 +12,9 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.util.EntityUtils;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -29,11 +27,11 @@ import java.util.Map;
 
 /**
  * @description: Http请求工具
- * @author: cWX597167
+ * @author: kakaoracle
  * @create: 2019-02-23 23:00
  **/
 public class HttpUtils {
-    public static final Logger log = LoggerFactory.getLogger(LoginController.class);
+    public static final Logger log = LoggerFactory.getLogger(HttpUtils.class);
 
     public static HttpServletRequest getHttpServletRequest() {
         return ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();

@@ -49,4 +49,5 @@
     再下面有一个getProxyClassLoader()将代理对象动态加载到这里面
 6. 看源码技巧:
     看spring一个实现时,可以打断点,然后对这个方法参数赋值比如beanName.equals("dao")
-       
+   
+7. 不用启动    

@@ -1,10 +1,10 @@
-package com.iss.Utils.utils;
+package com.ali.utils;
 
 import java.util.concurrent.CountDownLatch;
 
 /**
  * @description: 多线程工具类
- * @author: cWX597167
+ * @author: kakaoracle
  * @create: 2019-03-31 17:25
  **/
 public class ThreadUtils {
