@@ -1,21 +1,22 @@
 # eleme
-
 > 高仿饿了么
+## 第3章:
+- weback  核心编译工具  
+## 第4章,项目实战-准备工作
+src目录下的所有图片相关信息是课程中自带的  
 
-## Build Setup
+## 第5章,页面骨架开发
 
-``` bash
-# install dependencies
-npm install
+## 第6章,header组件开发    
 
-# serve with hot reload at localhost:8080
-npm run dev
+## 第7章,goods列表页开发
 
-# build for production with minification
-npm run build
+## 第8章,food详情页实现
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+## 第9章,ratings评价列表页实现
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 第10章,seller商家详情页实现
+
+## 第11章,项目编译打包
+
+## 第12章 总结
