@@ -4,7 +4,9 @@
 - weback  核心编译工具  
 ## 第4章,项目实战-准备工作
 src目录下的所有图片相关信息是课程中自带的  
-
+- 图片分为2x,3x这主要是进行分辨率区分
+- 制作图标字体,https://icomoon.io/app/#/select
+- src目录下建立common和components两个目录,
 ## 第5章,页面骨架开发
 
 ## 第6章,header组件开发    
