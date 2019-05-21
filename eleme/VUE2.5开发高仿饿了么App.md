@@ -105,15 +105,41 @@ main.js中:
 
 >>JavaScript中:
 
-1,引入路由组件:  
-    import goods from './components/goods/goods.vue';
-2,定义路由   
-    let app = Vue.extend(App);
-3,创建router实例,然后传routes配置  
-    let router = new VueRouter();
-4,创建和挂载根实例  
+1,main.js中创建vue实例
+```js
+import App from './App';
+import Vue from 'vue';
+import router from './router';
+new Vue({
+  el: '#app',
+  router,
+  components: { App },
+  template: '<App/>'
+})
+//其中import中的vue,router,app皆不可少
+```
+2,index.js中创建router实例
+```js
+import Vue from 'vue'
+import Router from 'vue-router'
+import goods from '../components/goods/goods.vue'
+
+Vue.use(Router);
+
+export default new Router({
+  routes: [
+    {
+      path: '/goods',
+      name: 'goods',
+      component: goods
+    }
+  ]
+})
+//当然,在实例化router的时候,要显示声明一下用到这个router
+```
   
 
+### 备注
 
 ### 问题:
 1. 问题报错:  
@@ -130,10 +156,12 @@ npm install stylus-loader --save-dev;等等
 ```script
 npm install stylus -g
 ```
+3. vue.map是1.0的方法,不兼容vue2.0,即vue2.0中挂载vue实例时不能用map方法
 
 
 3. 等分时的flex是什么?
 
+4. import Vue from 'vue',此vue是什么?位置在哪?
 
 ## 第6章,header组件开发    
 

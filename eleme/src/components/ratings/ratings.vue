@@ -6,7 +6,7 @@
 
   };
 </script>
-<style lang="stylus" rel="sylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus">
 
 
 </style>
