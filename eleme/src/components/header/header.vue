@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        I am header!
+        header area
     </div>
 </template>
 
