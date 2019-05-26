@@ -291,3 +291,29 @@ new Vue({
   import header from '.....'
   export {component v-header:header}
 插件的使用 export new Router(.....)
+
+### export/export default/import的区别
+1. 每一个vue文件都是一个类,且变量与方法都是静态
+2. export可以有多个返回值,export只能有一个返回值
+比如export:
+```js
+//demo1.js
+export const str = 'hello world'
+export function f(a){
+    return a+1
+}
+对应的引入方式：
+//demo2.js
+import { str, f } from 'demo1'//str和f是自定义名
+```
+比如 export default:
+```js
+//demo1.js
+export default {
+    a: 'hello',
+    b: 'world'      
+}
+对应的引入方式：
+//demo2.js
+import obj from 'demo1'//obj是自定义名
+```
