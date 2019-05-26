@@ -26,6 +26,7 @@ export default {
         props: {
             seller: {
                 type: Object
+                //test
             }
         }
 }
