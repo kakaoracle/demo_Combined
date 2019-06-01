@@ -14,7 +14,7 @@
                 </div>
                 <div v-if="seller.supports" class="support">
                     <span class="icon"></span>
-                    <span class="text">{{seller.support[0].description}}</span>
+                    <span class="text">{{seller.supports[0].description}}</span>
                 </div>
             </div>
         <div class="bullentin-wrapper"> </div>
@@ -26,13 +26,20 @@ export default {
         props: {
             seller: {
                 type: Object
-                //test
             }
         }
-}
+};
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-    
+  .header
+    color: #fff
+    background : #000
+    .content-wrapper
+      padding: 24px 12px 18px 24px
+      .avatar
+        display: inline-block
+      .content
+        display: inline-block
 </style>
 

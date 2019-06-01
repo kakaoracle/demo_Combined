@@ -1,20 +1,21 @@
 # eleme
 > 高仿饿了么
 ## 第3章:
-- weback  核心编译工具  
+- weback  核心编译工具
 ## 第4章,项目实战-准备工作
-src目录下的所有图片相关信息是课程中自带的  
+src目录下的所有图片相关信息是课程中自带的
 - 图片分为2x,3x这主要是进行分辨率区分
 - 制作图标字体,https://icomoon.io/app/#/select,将本地的svg文件全部上传自动生成对应图标,选中后点击自动生成,然后设置preferences的
 名字,之后下载
 - src目录下建立common(公共资源)和components(组件相关资源)两个目录,components下面新建header目录,common下面有三个目录,fonts,js,stylus
 - 模拟后台数据:data.json,分为seller,goods,ratings三个部分的数据,最新版的vue的框架下的build目录下没有dev-server.js文件.但是可以在webpack-dev-conf.js文件中修改步骤:
-```
+
 在模拟后台数据的时候直接在webpack-dev-conf.js文件中修改
 
 第一步，在const portfinder = require(‘portfinder’)后添加
 
 //第一步
+```js
 const express = require('express')
 const app = express()//请求server
 var appData = require('../data.json')//加载本地数据文件
@@ -23,6 +24,7 @@ var goods = appData.goods
 var ratings = appData.ratings
 var apiRoutes = express.Router()
 app.use('/api', apiRoutes)//通过路由请求数据
+
 第二步：找到devServer,在里面加上before（）方法
 
 devServer: {
@@ -94,7 +96,7 @@ before(app) {
 1. vue-router介绍:https://router.vuejs.org/
 2. 任何组件安装后都会在node_modules下存在,比如router对应的vue-router,路由跳转后不是整个页面的跳转,只是所在div的展示内容的切换
 3. 代码中引用:
-main.js中:  
+main.js中:
     import VueRouter from "vue-router";//vue-router是因为node_modules下的vuerouter下的package.json中的name就是vue-router
     Vue.use(VueRouter);
 3. 使用步骤:
@@ -145,7 +147,7 @@ export default new Router({
       border-bottom : 1px solid rgba(7,17,27,0.1)
 ```
 //但是这种1像素在iphone由于dpi就可能变成两倍或者三倍
-要改成 
+要改成
 border-bottom : 1px solid rgba(7,17,27,0.1)
 position relative
 2. 为了其他地方也可以实现,于是抽出common目录->stylus->mixin.styl中定义一个函数:
@@ -158,10 +160,11 @@ border-1px($color)
 styl目录新建index.styl:
 @import "./mixin"
 @import "./icon"
-@import "./base"  
-然后main.js引入index.styl:import './common/stylus/index.styl';  
+@import "./base"
+然后main.js引入index.styl:import './common/stylus/index.styl';
 4. 用处就是在app.vue中的
 <div class="tab border-1px">
+
 5. 因此步骤就是两个,一是写一个下边框,二是在base.styl中判断dpi,如果是1.5倍屏幕Y方向就缩放为0.7,为2就变成0.5,这样就达到什么样的屏幕都是一像素
 
 ### 备注
@@ -176,17 +179,17 @@ vue默认实现了被点击时自动生成class属性为router-link-exact-active
 
 
 ### 问题:
-1. 问题报错:  
->>!!vue-style-loader!css-loader?{"sourceMap":true}!../../../node_modules/vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-12835cef","scoped":false,"hasInlineConfig":false}!stylus-loader?{"sourceMap":true}!../../../node_modules/vue-loader/lib/selector?type=styles&index=0!./header.vue in ./src/components/header/header.vue  
+1. 问题报错:
+>>!!vue-style-loader!css-loader?{"sourceMap":true}!../../../node_modules/vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-12835cef","scoped":false,"hasInlineConfig":false}!stylus-loader?{"sourceMap":true}!../../../node_modules/vue-loader/lib/selector?type=styles&index=0!./header.vue in ./src/components/header/header.vue
 
-解决方法:  
+解决方法:
 npm install sass-loader --save;
 npm install node-sass --save;
-如果还不行,那就再安装其他没有安装的模块,比如:  
+如果还不行,那就再安装其他没有安装的模块,比如:
 npm install stylus-loader --save-dev;等等
 2. stylus是什么?
-是CSS预处理框架.与SASS/LESS类似,近似于用脚本的方式写css代码,默认用stly作为扩展名,SASS需要依赖ruby运行,但是stylus不用  
-全局安装命令是:  
+是CSS预处理框架.与SASS/LESS类似,近似于用脚本的方式写css代码,默认用stly作为扩展名,SASS需要依赖ruby运行,但是stylus不用
+全局安装命令是:
 ```script
 npm install stylus -g
 ```
@@ -200,13 +203,13 @@ vue是插件,webpack包管理一个基本的文件目录,所谓vue,其实就是�
 5. ::-webkit是什么?
 chrome与safari的私有前缀
 
-## 第6章,header组件开发    
+## 第6章,header组件开发
 ### VUE-resource应用
 vue-resource类似于前端的httpclient,或者说是ajax
 安装步骤见备注
 在script标签中写函数:
-```js
 //状态码单独定义一下
+```js
 const ERR_OK = 0;
 export default {
   data(){
@@ -228,8 +231,37 @@ export default {
     'v-header': header
   }
 ```
+
+
 ### 外部组件
 - v-bind:seller可以省略 为:seller
+在app.vue中return相当于是export一个seller对象,然后header需要用入参来接收,在script中:
+```html
+export default {
+        props: {
+            seller: {
+                type: Object
+            }
+        }
+};
+```
+然后用到其中的数据:
+```html
+<div class="avatar">
+  <img width="64" height="64" :src="seller.avatar">
+</div>//注意这时候,src要用冒号:
+```
+在接收seller中时,如果需要获取数组里面的值,需要v-if判断其值为空,而其他类型则不用:
+```html
+<div v-if="seller.supports" class="support">
+    <span class="icon"></span>
+    <span class="text">{{seller.supports[0].description}}</span>
+</div>
+```
+
+
+
+
 
 ###
 ###
@@ -238,7 +270,7 @@ export default {
 ###
 ### 备注
 1. 安装插件:
-比如安装插件vue-resource  
+比如安装插件vue-resource
 方法一:在package.json中的dependencies.json中注明:"vue-resource":"1.15.1"(具体版本号自己到github上查)
 方法二:直接npm install vue-resource@1.15.1,安装成功的标志有二,一是dependencies.json中会自动出现一行"vue-resource":"1.15.1",二是在node_modules中出现对应的插件目录.当然,也可以不指定版本号,直接npm install vue-resource,这时就默认安装最新版
 2. 使用插件:
@@ -311,7 +343,7 @@ import { str, f } from 'demo1'//str和f是自定义名
 //demo1.js
 export default {
     a: 'hello',
-    b: 'world'      
+    b: 'world'
 }
 对应的引入方式：
 //demo2.js

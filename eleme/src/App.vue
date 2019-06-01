@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-header v-bind:seller="seller"></v-header>
+    <v-header :seller="seller"></v-header>
     <div class="tab border-1px">
       <div class="tab-item">
         <router-link to="/goods">商品</router-link>
@@ -10,7 +10,6 @@
       </div>
       <div class="tab-item">
         <router-link to="/seller">商家</router-link>
-        <!-- test -->
       </div>
     </div>
     <div class="content">
@@ -37,13 +36,12 @@ export default {
         response = response.body;
         if(response.errno=== ERR_OK){
             this.seller = response.data;
-            console.log(this.seller);
+            console.log("=====this.seller"+this.seller);
         }
     });
   },
   components:{
     'v-header': header
-
   }
 }
 
