@@ -107,8 +107,8 @@ public class CodeGenerator {
             StrategyConfig strategy = new StrategyConfig();
             strategy.setNaming(NamingStrategy.underline_to_camel);
             strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-            //strategy.setSuperEntityClass("com.abc.mybatis.demo");
-            //strategy.setSuperControllerClass("com.abc.mybatis.demo");//可以设置controller继承的类
+            //strategy.setSuperEntityClass("com.abc.mybatis.config");
+            //strategy.setSuperControllerClass("com.abc.mybatis.config");//可以设置controller继承的类
             strategy.setEntityLombokModel(true);
             strategy.setRestControllerStyle(true);
             strategy.setInclude(scanner("表名,多个英文逗号分割").split(","));//表名,多个英文逗号分割
