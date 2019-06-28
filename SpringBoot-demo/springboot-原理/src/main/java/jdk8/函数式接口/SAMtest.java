@@ -10,8 +10,9 @@ import java.util.stream.Stream;
 
 public class SAMtest {
     public static void main(String[] args) {
-        GreetingService greetingService = message -> System.out.println("Hello"+message);
+        GreetingService greetingService = message -> System.out.println("Hello" + message);
     }
+
     List<Dish> menu = Arrays.asList(
             new Dish("pork", false, 800, Dish.Type.MEAT),
             new Dish("beef", false, 700, Dish.Type.MEAT),
@@ -21,22 +22,22 @@ public class SAMtest {
             new Dish("season fruit", true, 120, Dish.Type.OTHER),
             new Dish("pizza", true, 550, Dish.Type.OTHER),
             new Dish("prawns", false, 300, Dish.Type.FISH),
-            new Dish("salmon", false, 450, Dish.Type.FISH) );
+            new Dish("salmon", false, 450, Dish.Type.FISH));
 
     @Test
-    public void test01(){
-        if (menu.stream().anyMatch(dish -> dish.isVegetarian())){
+    public void test01() {
+        if (menu.stream().anyMatch(dish -> dish.isVegetarian())) {
             System.out.println("The menu is someWhat");
         }
         boolean isHealthy = menu.stream()
-                                .allMatch(d -> d.getCalories() < 100);
+                .allMatch(d -> d.getCalories() < 100);
         System.out.println(isHealthy);
         Optional<Dish> dish = menu.stream()
-                                    .filter(d -> d.isVegetarian())
-                                    .findAny();
-       int count = menu.stream()
-                        .map(d -> 1)
-                        .reduce(0,(a,b) -> a + b);
+                .filter(d -> d.isVegetarian())
+                .findAny();
+        int count = menu.stream()
+                .map(d -> 1)
+                .reduce(0, (a, b) -> a + b);
         System.out.println(count);
 
         List<String> collect = menu.stream()
@@ -45,8 +46,9 @@ public class SAMtest {
         System.out.println(collect);
 
     }
+
     @Test
-    public void test2(){
+    public void test2() {
 
     }
 }

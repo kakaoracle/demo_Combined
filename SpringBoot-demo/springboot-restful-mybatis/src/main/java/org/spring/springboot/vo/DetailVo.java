@@ -12,9 +12,9 @@ import lombok.Data;
 @Data
 @ApiModel("详情类")
 public class DetailVo {
-    @ApiModelProperty(value = "商品名称",required = true)
+    @ApiModelProperty(value = "商品名称", required = true)
     private String productName;
-    @ApiModelProperty(value = "商品价格",required = true)
+    @ApiModelProperty(value = "商品价格", required = true)
     private String productPrice;
     @ApiModelProperty("创建人姓名")
     private String creator;

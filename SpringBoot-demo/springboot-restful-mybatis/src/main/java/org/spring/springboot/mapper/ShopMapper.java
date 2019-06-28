@@ -16,6 +16,7 @@ import java.util.List;
 public interface ShopMapper {
     //新增订单表,此处的返回值int不是主键值,而是插入的行数,>0则表示插入成功
     int createOrder(OrderEntity orderEntity);
+
     //新增详情表
     int createDetail(@Param("detailEntityList") List<DetailEntity> detailEntityList);
 

@@ -15,5 +15,5 @@ public class IndexDaoImpl {
     public void query() {
         System.out.println("dao---query");
     }
-    
+
 }

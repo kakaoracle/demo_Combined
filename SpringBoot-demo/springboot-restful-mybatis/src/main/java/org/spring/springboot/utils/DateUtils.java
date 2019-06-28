@@ -15,30 +15,33 @@ import java.util.Date;
 public class DateUtils {
     /**
      * String转换成Date
+     *
      * @param dateString
      * @return
      */
-    public static Date parseStringToDate(String dateString){
-        SimpleDateFormat sdf =   new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    public static Date parseStringToDate(String dateString) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date();
-        if (!StringUtils.isBlank(dateString)){
+        if (!StringUtils.isBlank(dateString)) {
             try {
-                date = sdf.parse( dateString );
+                date = sdf.parse(dateString);
             } catch (ParseException e) {
                 e.printStackTrace();
-            }finally {
+            } finally {
                 return date;
             }
-        }else {
+        } else {
             return null;
         }
     }
+
     /**
      * String转换成Date,可自定义字符串格式
+     *
      * @param dateString
      * @return
      */
-    public static  Date parseStringToDate(String dateString,String formatString) {
+    public static Date parseStringToDate(String dateString, String formatString) {
         SimpleDateFormat sdf = new SimpleDateFormat(formatString);
         Date date = new Date();
         if (!StringUtils.isBlank(dateString)) {
@@ -57,15 +60,16 @@ public class DateUtils {
 
     /**
      * Date转换为String
+     *
      * @param date
      * @return
      */
-    public static String parseDateToString(Date date){
+    public static String parseDateToString(Date date) {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        if (null != date){
+        if (null != date) {
             String str = format.format(date);
             return str;
-        }else {
+        } else {
             return null;
         }
 
@@ -73,16 +77,17 @@ public class DateUtils {
 
     /**
      * Date转换为String,可自定义形式
+     *
      * @param date
      * @param formatString
      * @return
      */
-    public static String parseDateToString(Date date,String formatString){
+    public static String parseDateToString(Date date, String formatString) {
         SimpleDateFormat format = new SimpleDateFormat(formatString);
-        if (null != date){
+        if (null != date) {
             String str = format.format(date);
             return str;
-        }else {
+        } else {
             return null;
         }
 

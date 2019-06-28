@@ -16,7 +16,7 @@ import java.util.List;
 @Data
 @ApiModel("订单vo")
 public class OrderVo {
-    @ApiModelProperty(value = "创建时间",required = true)
+    @ApiModelProperty(value = "创建时间", required = true)
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date createDate;
     @ApiModelProperty("创建人账号")

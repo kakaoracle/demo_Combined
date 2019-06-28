@@ -10,7 +10,7 @@ import org.junit.Test;
 public class TemTest {
 
     @Test
-    public void testLog(){
+    public void testLog() {
         String is_null = null;
 
         try {
@@ -18,7 +18,7 @@ public class TemTest {
         } catch (Exception e) {
             e.printStackTrace();
             //printStackTrace没有返回值,因此打印日志时两句还是都存在的好
-            log.info("出错信息:"+e);
+            log.info("出错信息:" + e);
         }
     }
 }

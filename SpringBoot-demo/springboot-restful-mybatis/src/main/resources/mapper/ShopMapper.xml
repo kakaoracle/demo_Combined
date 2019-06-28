@@ -49,17 +49,17 @@
         </trim>
         VALUES
         <foreach collection="detailEntityList" item="item" index="index" separator=",">
-        (
-        #{item.orderId},
-        #{item.detailCode},
-        now(),
-        #{item.productName},
-        #{item.productPrice},
-        #{item.creator},
-        #{item.createdBy},
-        #{item.lastUpdatedBy},
-        #{item.lastUpdater}
-        )
+            (
+            #{item.orderId},
+            #{item.detailCode},
+            now(),
+            #{item.productName},
+            #{item.productPrice},
+            #{item.creator},
+            #{item.createdBy},
+            #{item.lastUpdatedBy},
+            #{item.lastUpdater}
+            )
         </foreach>
     </insert>
 
@@ -91,7 +91,8 @@
     </select>
 
 
-    <select id="getDetailsByOrderId" resultType="org.spring.springboot.entity.DetailEntity" parameterType="java.lang.Long">
+    <select id="getDetailsByOrderId" resultType="org.spring.springboot.entity.DetailEntity"
+            parameterType="java.lang.Long">
 		select
 		ID as id,
 		ORDER_ID as orderId,

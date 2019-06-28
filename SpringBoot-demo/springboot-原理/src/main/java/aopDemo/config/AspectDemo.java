@@ -10,15 +10,17 @@ import org.springframework.stereotype.Component;
 @Aspect//这个是aspectjar包单独做出来的注解
 public class AspectDemo {
     @Pointcut("execution(* aopDemo.dao.*.*(..))")//对某一包下所有的方法进行切面
-    public void pointCut(){
+    public void pointCut() {
 
     }
+
     @Before("pointCut()")//通知要和连接点关联起来
-    public void before(){
+    public void before() {
         System.out.println("**前置通知");
     }
+
     @After("pointCut()")
-    public void after(){
+    public void after() {
         System.out.println("**后置通知");
     }
 }
