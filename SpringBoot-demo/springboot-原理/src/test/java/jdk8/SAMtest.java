@@ -1,12 +1,13 @@
-package jdk8.函数式接口;
+package jdk8;
 
+import com.abc.jdk8.Dish;
+import com.abc.jdk8.GreetingService;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class SAMtest {
     public static void main(String[] args) {

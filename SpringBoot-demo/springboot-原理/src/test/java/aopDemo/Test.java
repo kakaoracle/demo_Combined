@@ -1,8 +1,7 @@
-package aopDemo.test;
+package aopDemo;
 
-import aopDemo.config.Appconfig;
-import aopDemo.dao.IndexDaoImpl;
-import aopDemo.dao.IndexDao;
+import com.abc.aopDemo.config.Appconfig;
+import com.abc.aopDemo.dao.IndexDaoImpl;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

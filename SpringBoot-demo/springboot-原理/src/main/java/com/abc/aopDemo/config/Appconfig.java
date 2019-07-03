@@ -1,4 +1,4 @@
-package aopDemo.config;
+package com.abc.aopDemo.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * @create: 2019-04-07 08:52
  **/
 @Configuration
-@ComponentScan("aopDemo")
+@ComponentScan("com.abc.aopDemo")
 @EnableAspectJAutoProxy
 public class Appconfig {
 

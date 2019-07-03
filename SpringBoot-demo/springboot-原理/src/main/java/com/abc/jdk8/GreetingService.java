@@ -1,4 +1,4 @@
-package jdk8.函数式接口;
+package com.abc.jdk8;
 
 @FunctionalInterface
 public interface GreetingService {
