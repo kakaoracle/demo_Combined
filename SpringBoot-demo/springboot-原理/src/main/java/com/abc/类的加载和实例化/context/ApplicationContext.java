@@ -46,56 +46,8 @@ public class ApplicationContext {
         this.loadConfigFile(configLocation,parseType);
         //实例化BeanDefinition
         this.instanceBeanDefinitions();
-        //基于注解的依赖注入
-
-        //实现依赖注入
-        this.injectObject();
     }
 
-    private void injectObject() {
-        for (BeanDefinition beanDefinition : beanDefinitions){
-            Object bean = instanceBeans.get(beanDefinition.getId());
-            if (bean != null){
-                try {
-                    BeanInfo beanInfo = Introspector.getBeanInfo(bean.getClass());
-                    //通过beanInfo来获取属性的描述器,再获取某个属性的getset方法再反射
-                    PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
-
-                    for (PropertyDefinition propertyDefinition : beanDefinition.getPropertyDefinitions()){
-                        for (PropertyDescriptor propertyDescriptor : propertyDescriptors){
-                            //用记定义的bean属性和java内省后的bean属性名称相同时
-                            if (StringUtils.equals(propertyDescriptor.getName(),propertyDefinition.getName())){
-                                //获取setter方法
-                                Method setter = propertyDescriptor.getWriteMethod();
-                                if (setter != null){
-                                    Object value = null;
-                                    if (StringUtils.isNotEmpty(propertyDefinition.getRef())){
-                                        //根据bean的名称在instanceBeans中获取指定的对象值
-                                        value = instanceBeans.get(propertyDefinition.getRef());
-                                    }else {
-                                        value = ConvertUtils.convert(propertyDefinition.getValue(),propertyDescriptor.getPropertyType());
-                                    }
-                                    //保证setter方法可以访问私有
-                                    setter.setAccessible(true);
-                                    try {
-                                        setter.invoke(bean,value);
-                                    } catch (Exception e) {
-                                        LOG.error("invoke setter.invoke failed",e);
-                                    }
-
-                                }
-                                break;
-                            }
-                        }
-                    }
-
-
-                } catch (IntrospectionException e) {
-                    LOG.error("invoke getBean failed",e);
-                }
-            }
-        }
-    }
 
 
     private void instanceBeanDefinitions(){

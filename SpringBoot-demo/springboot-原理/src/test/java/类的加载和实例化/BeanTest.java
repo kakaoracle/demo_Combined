@@ -21,6 +21,7 @@ public class BeanTest {
         xmlDemoDao.greet();
     }
 
+
     @Test
     public void testClassLoader(){
         //用getResource是为了避免硬编码(直接写磁盘位置)
@@ -37,6 +38,5 @@ public class BeanTest {
         System.out.println(resource3);
         System.out.println(BeanTest.class.getResource("/"));
     }
-
 
 }

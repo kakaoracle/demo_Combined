@@ -1,11 +1,10 @@
-package com.abc.类的加载和实例化.util;
+package com.abc.依赖注入_含注解与非注解.util;
 
-import com.abc.类的加载和实例化.FileURLUtil;
-import com.abc.类的加载和实例化.model.BeanDefinition;
+import com.abc.依赖注入_含注解与非注解.FileURLUtil;
+import com.abc.依赖注入_含注解与非注解.model.BeanDefinition;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.gson.Gson;
-import jdk.nashorn.internal.runtime.regexp.joni.constants.EncloseType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
