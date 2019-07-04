@@ -1,9 +1,9 @@
-package com.abc.类的加载和实例化;
+package com.abc.类的加载和实例化.util;
 
+import com.abc.类的加载和实例化.FileURLUtil;
 import com.abc.类的加载和实例化.constant.Constants;
 import com.abc.类的加载和实例化.model.BeanDefinition;
 import com.abc.类的加载和实例化.model.PropertyDefinition;
-import com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition;
 import com.google.common.collect.Lists;
 import org.dom4j.Document;
 import org.dom4j.Element;
@@ -16,12 +16,13 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @description: xml文件解析
+ * @description: xml文件解析工具类
  * @author: DeZhao Chen
  * @create: 2019-07-03 11:08
  **/
-public class XmlReadUtil {
-    private static final Logger LOG = LoggerFactory.getLogger(XmlReadUtil.class);
+public class XmlReaderUtil {
+    private static final Logger LOG = LoggerFactory.getLogger(XmlReaderUtil.class);
+
     public static List<BeanDefinition> readXml(String fileName){
         List<BeanDefinition> beanDefinitions = Lists.newArrayList();
         List<PropertyDefinition> propertyDefinitions =Lists.newArrayList();
@@ -31,6 +32,7 @@ public class XmlReadUtil {
         try{
             //获取要读取的配置文件的路径
             URL xmlPath = FileURLUtil.getFileURL(fileName);
+            LOG.info("+++++ config file real path: "+xmlPath);
             //读取文件内容
             document = saxReader.read(xmlPath);
             //获取xml中的根元素

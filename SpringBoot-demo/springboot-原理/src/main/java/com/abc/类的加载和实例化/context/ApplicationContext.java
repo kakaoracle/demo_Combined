@@ -18,13 +18,11 @@ import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator;
 
 /**
  * @description: spring容器
@@ -35,6 +33,7 @@ public class ApplicationContext {
     private static final Logger LOG = LoggerFactory.getLogger(ApplicationContext.class);
 
     private List<BeanDefinition> beanDefinitions = Lists.newArrayList();
+    //根据bean标签中的id与路径名,实例化一个类,用hashMap装起来
     private HashMap<Object, Object> instanceBeans = Maps.newHashMap();
 
 
@@ -43,7 +42,7 @@ public class ApplicationContext {
     }
 
     public ApplicationContext(String configLocation, ParseType parseType){
-        //加载xml并转换为BeanDefinition
+        //加载配置文件并转换为BeanDefinition
         this.loadConfigFile(configLocation,parseType);
         //实例化BeanDefinition
         this.instanceBeanDefinitions();
@@ -122,6 +121,7 @@ public class ApplicationContext {
         Preconditions.checkArgument(StringUtils.isNotEmpty(configLocation),
                 "configLocation must be not null");
         Parser parser = ParserFactory.getParser(parseType);
+        LOG.info("+++++parsered beanDefinitions: "+parser.parse(configLocation));
         this.beanDefinitions = parser.parse(configLocation);
     }
 

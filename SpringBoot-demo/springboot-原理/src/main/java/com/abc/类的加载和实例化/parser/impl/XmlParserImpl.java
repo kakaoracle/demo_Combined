@@ -1,6 +1,6 @@
 package com.abc.类的加载和实例化.parser.impl;
 
-import com.abc.类的加载和实例化.XmlReadUtil;
+import com.abc.类的加载和实例化.util.XmlReaderUtil;
 import com.abc.类的加载和实例化.model.BeanDefinition;
 import com.abc.类的加载和实例化.parser.Parser;
 
@@ -14,6 +14,6 @@ import java.util.List;
 public class XmlParserImpl implements Parser {
     @Override
     public List<BeanDefinition> parse(String fileName) {
-        return XmlReadUtil.readXml(fileName);
+        return XmlReaderUtil.readXml(fileName);
     }
 }

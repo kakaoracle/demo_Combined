@@ -3,7 +3,7 @@ package com.abc.类的加载和实例化.model;
 import java.util.List;
 
 /**
- * @description: bean定义
+ * @description: 用来存储描述bean的所有属性信息,比如id,propertyDefinition
  * @author: DeZhao Chen
  * @create: 2019-07-03 11:50
  **/
@@ -45,5 +45,14 @@ public class BeanDefinition {
 
     public void setPropertyDefinitions(List<PropertyDefinition> propertyDefinitions) {
         this.propertyDefinitions = propertyDefinitions;
+    }
+
+    @Override
+    public String toString() {
+        return "BeanDefinition{" +
+                "id='" + id + '\'' +
+                ", className='" + className + '\'' +
+                ", propertyDefinitions=" + propertyDefinitions +
+                '}';
     }
 }
