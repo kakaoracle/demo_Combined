@@ -1,7 +1,7 @@
-package aopDemo;
+package 切面编程;
 
-import com.abc.aopDemo.config.Appconfig;
-import com.abc.aopDemo.dao.IndexDaoImpl;
+import com.abc.切面编程.config.Appconfig;
+import com.abc.切面编程.dao.IndexDaoImpl;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

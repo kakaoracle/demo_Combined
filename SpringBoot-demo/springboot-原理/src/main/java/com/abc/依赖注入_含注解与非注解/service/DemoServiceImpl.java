@@ -16,7 +16,6 @@ public class DemoServiceImpl implements DemoService {
         return demoDao;
     }
 
-
     public void setDemoDao(DemoDao demoDao) {
         System.out.println("+++++ setDemoDao: " + demoDao.toString());
         this.demoDao = demoDao;

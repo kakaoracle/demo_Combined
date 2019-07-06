@@ -68,12 +68,13 @@ public class ApplicationContext {
                                 //获取setter方法
                                 Method setter = propertyDescriptor.getWriteMethod();
                                 if (setter != null){
-                                    Object value = new Object();
+                                    Object value = null;
                                     //如果属性是一个变量,那就获取值,如果属性是一个bean,那就实例化该bean
                                     if (StringUtils.isNotEmpty(propertyDefinition.getRef())){
                                         //根据bean的名称在instanceBeans中获取指定的对象值
                                         LOG.info("+++++ definition.Ref: "+ propertyDefinition.getRef());
                                         value = instanceBeans.get(propertyDefinition.getRef());
+                                        LOG.info("+++++ value:"+value.getClass().getResource(""));
                                     }else {
                                         value = ConvertUtils.convert(propertyDefinition.getValue(),propertyDescriptor.getPropertyType());
                                     }

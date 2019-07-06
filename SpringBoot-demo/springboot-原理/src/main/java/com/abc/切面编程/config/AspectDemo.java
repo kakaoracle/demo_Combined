@@ -1,4 +1,4 @@
-package com.abc.aopDemo.config;
+package com.abc.切面编程.config;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect//这个是aspectjar包单独做出来的注解
 public class AspectDemo {
-    @Pointcut("execution(* com.abc.aopDemo.dao.*.*(..))")//对某一包下所有的方法进行切面
+    @Pointcut("execution(* com.abc.切面编程.dao.*.*(..))")//对某一包下所有的方法进行切面
     public void pointCut() {
 
     }

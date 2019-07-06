@@ -10,6 +10,7 @@
 ## 其他说明
 1. 内省,Introspector,是一个方法,用来获取一个类的所有描述信息,包括属性和方法,
 PropertyDescriptor用来操作一个类的所有信息
+2. 一般的nullPointer都是因为invoke出错
 
 
 
