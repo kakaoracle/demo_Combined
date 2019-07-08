@@ -1,10 +1,10 @@
 <beans>
-    <bean id="demoService" class="com.abc.依赖注入_含注解与非注解.service.DemoServiceImpl">
+    <bean id="demoService" class="com.abc.依赖注入_非注解.service.DemoServiceImpl">
         <property name="demoDao" ref="demoDao"></property>
         <property name="lightColor" value="blue"></property>
     </bean>
 
-    <bean id="demoDao" class="com.abc.依赖注入_含注解与非注解.dao.impl.DemoDaoImpl">
+    <bean id="demoDao" class="com.abc.依赖注入_非注解.dao.impl.DemoDaoImpl">
     </bean>
 
 </beans>
