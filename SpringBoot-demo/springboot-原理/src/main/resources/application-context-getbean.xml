@@ -1,4 +1,0 @@
-<beans>
-    <bean id="demoDao" class="com.abc.类的加载和实例化.dao.impl.DemoDaoImpl">
-    </bean>
-</beans>

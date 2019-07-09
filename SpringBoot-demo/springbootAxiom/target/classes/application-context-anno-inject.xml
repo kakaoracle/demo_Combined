@@ -1,0 +1,6 @@
+<beans>
+    <bean id="demoService" class="com.abc.injectAnno.service.DemoServiceImpl">
+    </bean>
+    <bean id="demoDao" class="com.abc.injectAnno.dao.impl.DemoDaoImpl">
+    </bean>
+</beans>

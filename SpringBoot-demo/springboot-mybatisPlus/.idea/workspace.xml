@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="337d4d66-181d-4743-ab59-61f7a49dd032" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/parser/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/parser/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/resources/application-context-anno-inject.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/resources/application-context-getbean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/resources/application-context-inject.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootAxiom/src/test/java/inject_anno/AnnoInjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_spring_context_5_0_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_spring_context_5_0_8_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/READ.md" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/READ.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/springbootdemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/SpringBootAxiom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/SpringBootAxiom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/jdk8/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/jdk8/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/jdk8/GreetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/jdk8/GreetingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/FileURLUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/FileURLUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/resources/ddl/pub.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/annotation/CDZAutowired.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/annotation/CDZAutowired.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/constant/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/constant/ParseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/constant/ParseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/context/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/context/ApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/dao/DemoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/dao/DemoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/dao/impl/DemoDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/dao/impl/DemoDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/model/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/model/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/model/PropertyDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/model/PropertyDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/parser/factory/ParserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/parser/factory/ParserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/parser/impl/JsonParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/parser/impl/JsonParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/parser/impl/XmlParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/parser/impl/XmlParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/service/DemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/service/DemoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/service/DemoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/service/DemoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/util/JsonReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/util/JsonReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/util/XmlReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/util/XmlReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/FileURLUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/FileURLUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/constant/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/constant/ParseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/constant/ParseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/context/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/context/ApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/dao/DemoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/dao/DemoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/dao/impl/DemoDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/dao/impl/DemoDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/model/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/model/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/model/PropertyDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/model/PropertyDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/parser/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/parser/factory/ParserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/parser/factory/ParserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/parser/impl/JsonParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/parser/impl/JsonParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/parser/impl/XmlParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/parser/impl/XmlParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/service/DemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/service/DemoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/service/DemoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/service/DemoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/util/JsonReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/util/JsonReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/util/XmlReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/util/XmlReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/切面编程/config/Appconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/切面编程/config/Appconfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/切面编程/config/AspectDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/切面编程/config/AspectDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/切面编程/dao/IndexDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/切面编程/dao/IndexDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/切面编程/dao/IndexDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/切面编程/dao/IndexDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/反射/PersonImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/反射/PersonImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/反射/PersonInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/反射/PersonInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/反射/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/反射/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/FileURLUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/FileURLUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/constant/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/constant/ParseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/constant/ParseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/context/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/context/ApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/dao/DemoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/dao/DemoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/dao/impl/DemoDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/dao/impl/DemoDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/model/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/model/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/model/PropertyDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/model/PropertyDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/parser/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/parser/factory/ParserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/parser/factory/ParserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/parser/impl/JsonParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/parser/impl/JsonParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/parser/impl/XmlParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/parser/impl/XmlParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/util/JsonReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/util/JsonReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/util/XmlReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/util/XmlReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/resources/application-context-getbean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/resources/application-context-inject.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/test/java/jdk8/SAMtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/test/java/jdk8/SAMtest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/test/java/依赖注入_非注解/InjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/test/java/inject_withoutAnno/InjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/test/java/切面编程/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/test/java/切面编程/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/test/java/反射/reflectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/test/java/反射/reflectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/src/test/java/类的加载和实例化/BeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootAxiom/src/test/java/loadAndInstanceBean/BeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/target/classes/META-INF/springbootdemo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/target/classes/application-context-getbean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/target/classes/application-context-inject.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-原理/target/test-classes/META-INF/springbootdemo.kotlin_module" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../springboot-原理/target/" />
+    <ignored path="$USER_HOME$/Desktop/fairy-master/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>user</find>
+      <find>iuS</find>
+      <find>demo</find>
+      <find>mybatisa</find>
+      <find>instanceBeanDefinitions</find>
+      <find>fairy</find>
+      <find>JackieAutowired</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/XmlReadUtil.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/util/XmlReadUtil.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/resources/application-context-getbean.xml" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/util/XmlReaderUtil.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/model/BeanDefinition.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/util/JsonReaderUtil.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/service/DemoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/README.md" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/test/java/类的加载和实例化/BeanTest.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/test/java/依赖注入/BeanTest.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入/service/DemoService.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入/service/DemoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入/README.md" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/类的加载和实例化/context/ApplicationContext.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/test/java/依赖注入/InjectTest.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_含注解与非注解/util/XmlReaderUtil.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_含注解与非注解/context/ApplicationContext.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_含注解与非注解/README.md" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/切面编程/config/AspectDemo.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/反射/PersonInterface.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/反射/PersonImpl.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/反射/reflectTest.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/reflect/reflectTest.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_含注解与非注解/service/DemoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/reflect/PersonImpl.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/test/java/反射/reflectTest.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_含注解与非注解/dao/impl/DemoDaoImpl.java" />
+        <option value="$USER_HOME$/Desktop/fairy-master/src/test/java/com/jackie/fairy/FairyTest.java" />
+        <option value="$USER_HOME$/Desktop/fairy-master/src/main/java/com/jackie/fairy/bean/impl/FairyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/inject/context/ApplicationContext.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/resources/application-context-inject.xml" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/context/ApplicationContext.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/反射/README.md" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/parser/factory/ParserFactory.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/context/ApplicationContext.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/test/java/依赖注入_非注解/InjectTest.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_非注解/service/DemoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/dao/impl/DemoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/annotation/CDZAutowired.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/README.md" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/依赖注入_注解/service/DemoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/test/java/依赖注入_自定义注解/AnnoInjectTest.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/injectAnno/annotation/CDZAutowired.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/inject/service/DemoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/loadAndInstanceBean/model/BeanDefinition.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/inject/FileURLUtil.java" />
+        <option value="$PROJECT_DIR$/../springboot-原理/src/main/java/com/abc/inject/util/XmlReaderUtil.java" />
+        <option value="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/util/XmlReaderUtil.java" />
+        <option value="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/FileURLUtil.java" />
+        <option value="$PROJECT_DIR$/../springbootAxiom/src/test/java/loadAndInstanceBean/BeanTest.java" />
+        <option value="$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\repository" />
+        <option name="mavenHome" value="C:/Software/maven" />
+        <option name="userSettingsFile" value="C:\Software\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="disabledProfiles">
+      <list>
+        <option value="jdk18" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fairy" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="241" />
+    <option name="width" value="1943" />
+    <option name="height" value="690" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/fairy-master" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\githubrepository\demo_Combined\SpringBoot-demo\springboot-mybatisPlus\src\main\resources\db" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.abc.反射" />
+      <recent name="依赖注入" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\githubrepository\demo_Combined\SpringBoot-demo\springboot-原理\src\main\java\com\abc\依赖注入_注解" />
+      <recent name="D:\githubrepository\demo_Combined\SpringBoot-demo\springboot-原理\src\main\java\com\abc" />
+      <recent name="D:\githubrepository\demo_Combined\SpringBoot-demo\springboot-原理\src\main\resources" />
+      <recent name="D:\githubrepository\demo_Combined\SpringBoot-demo\springboot-原理\src\main\java\com\abc\依赖注入" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootAxiom">
+    <configuration name="AnnoInjectTest.testAnnoInject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springbootAxiom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inject_anno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inject_anno" />
+      <option name="MAIN_CLASS_NAME" value="inject_anno.AnnoInjectTest" />
+      <option name="METHOD_NAME" value="testAnnoInject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeanTest.testClassLoader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springbootAxiom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="loadAndInstanceBean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="loadAndInstanceBean" />
+      <option name="MAIN_CLASS_NAME" value="loadAndInstanceBean.BeanTest" />
+      <option name="METHOD_NAME" value="testClassLoader" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FairyTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fairy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jackie.fairy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jackie.fairy" />
+      <option name="MAIN_CLASS_NAME" value="com.jackie.fairy.FairyTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InjectTest.testInject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springbootAxiom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inject_withoutAnno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inject_withoutAnno" />
+      <option name="MAIN_CLASS_NAME" value="inject_withoutAnno.InjectTest" />
+      <option name="METHOD_NAME" value="testInject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reflectTest.invokeMethodTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springbootAxiom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="反射.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="反射" />
+      <option name="MAIN_CLASS_NAME" value="反射.reflectTest" />
+      <option name="METHOD_NAME" value="invokeMethodTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-mybatisPlus" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.abc.mybatis.MybatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootAxiom" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springbootAxiom" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.abc.SpringBootAxiom" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BeanTest.testClassLoader" />
+        <item itemvalue="JUnit.InjectTest.testInject" />
+        <item itemvalue="JUnit.AnnoInjectTest.testAnnoInject" />
+        <item itemvalue="JUnit.reflectTest.invokeMethodTest" />
+        <item itemvalue="JUnit.FairyTest.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\kakao\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="337d4d66-181d-4743-ab59-61f7a49dd032" name="Default Changelist" comment="" />
+      <created>1561701539971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561701539971</updated>
+      <workItem from="1561701548288" duration="282000" />
+      <workItem from="1561701858909" duration="7216000" />
+      <workItem from="1561709787619" duration="2366000" />
+      <workItem from="1561712181178" duration="1121000" />
+      <workItem from="1561714842847" duration="878000" />
+      <workItem from="1561768861480" duration="598000" />
+      <workItem from="1561951087296" duration="223000" />
+      <workItem from="1561951349861" duration="3022000" />
+      <workItem from="1562031418481" duration="1841000" />
+      <workItem from="1562051533277" duration="10000" />
+      <workItem from="1562116715120" duration="19872000" />
+      <workItem from="1562201052962" duration="392000" />
+      <workItem from="1562209320824" duration="30290000" />
+      <workItem from="1562652476983" duration="137000" />
+      <workItem from="1562653893800" duration="5921000" />
+      <workItem from="1562664902467" duration="1105000" />
+      <workItem from="1562666281174" duration="443000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="InjectTest_testInject - 2019.07.09 at 15h 40m 39s.xml">
+      <configuration name="InjectTest.testInject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InjectTest_testInject - 2019.07.09 at 15h 40m 43s.xml">
+      <configuration name="InjectTest.testInject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InjectTest_testInject - 2019.07.09 at 15h 41m 35s.xml">
+      <configuration name="InjectTest.testInject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeanTest_testClassLoader - 2019.07.09 at 15h 46m 33s.xml">
+      <configuration name="BeanTest.testClassLoader" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeanTest_testClassLoader - 2019.07.09 at 15h 47m 11s.xml">
+      <configuration name="BeanTest.testClassLoader" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeanTest_testClassLoader - 2019.07.09 at 15h 48m 20s.xml">
+      <configuration name="BeanTest.testClassLoader" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeanTest_testClassLoader - 2019.07.09 at 15h 51m 50s.xml">
+      <configuration name="BeanTest.testClassLoader" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeanTest_testClassLoader - 2019.07.09 at 15h 52m 10s.xml">
+      <configuration name="BeanTest.testClassLoader" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeanTest_testClassLoader - 2019.07.09 at 15h 52m 27s.xml">
+      <configuration name="BeanTest.testClassLoader" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeanTest_testClassLoader - 2019.07.09 at 15h 52m 45s.xml">
+      <configuration name="BeanTest.testClassLoader" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="75717000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23592493" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="JRebel" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
+      <window_info anchor="bottom" id="Run Dashboard" order="2" weight="0.29985857" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3946252" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39886847" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32956153" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32956153" />
+      <window_info anchor="bottom" id="JRebel Executor" order="16" weight="0.32956153" />
+      <window_info anchor="bottom" id="JRebel Console" order="17" side_tool="true" weight="0.32956153" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32908848" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/context/ApplicationContext.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/Desktop/fairy-master/src/main/java/com/jackie/fairy/context/FairyApplicationContext.java</url>
+          <line>145</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/FileURLUtil.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>beanInfo</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/parser/impl/XmlParserImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/parser/Parser.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/util/JsonReaderUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/parser/impl/JsonParserImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/util/XmlReaderUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/service/DemoService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/FileURLUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/parser/factory/ParserFactory.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/fairy-master/src/main/java/com/jackie/fairy/context/FairyApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="56" column="51" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/fairy-master/src/main/java/com/jackie/fairy/annotation/JackieAutowired.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="38">
+            <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/service/DemoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/constant/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/constant/ParseType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/dao/impl/DemoDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/dao/DemoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/model/BeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/model/PropertyDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/constant/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/constant/ParseType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/dao/impl/DemoDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/dao/DemoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/model/BeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/model/PropertyDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/parser/factory/ParserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/parser/impl/JsonParserImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/context/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-795">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/injectAnno/annotation/CDZAutowired.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/service/DemoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/service/DemoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/util/XmlReaderUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/model/BeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="294" selection-start-line="294" selection-end-line="294" />
+          <folding>
+            <element signature="e#2922#2923#0" expanded="true" />
+            <element signature="e#2966#2967#0" expanded="true" />
+            <element signature="e#11040#11204#0" expanded="true" />
+            <element signature="e#11203#11204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/test/java/反射/reflectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/resources/application-context-inject.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/context/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1113">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/test/java/inject_anno/AnnoInjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/resources/application-context-getbean.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/util/XmlReaderUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/FileURLUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/test/java/loadAndInstanceBean/BeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/loadAndInstanceBean/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="323">
+            <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/SpringBootAxiom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/test/java/inject_withoutAnno/InjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/parser/impl/XmlParserImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#438#439#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/java/com/abc/inject/parser/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/src/main/resources/ddl/pub.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springbootAxiom/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>fairy</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
