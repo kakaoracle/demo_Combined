@@ -50,6 +50,7 @@ public class ApplicationContext {
 
     private void annotationInject() {
         for (String beanName : instanceBeans.keySet()) {
+            //根据配置文件用反射创建了实例
             Object bean = instanceBeans.get(beanName);
             if (bean != null) {
                 try {
@@ -61,11 +62,11 @@ public class ApplicationContext {
                         Method setter = propertyDescriptor.getWriteMethod();
 
                         if (setter != null && setter.isAnnotationPresent(CDZAutowired.class)) {
-                            CDZAutowired jackieAutowired = setter.getAnnotation(CDZAutowired.class);
+                            CDZAutowired cdzAutowired = setter.getAnnotation(CDZAutowired.class);
                             Object value = null;
 
-                            if (jackieAutowired != null && StringUtils.isNotEmpty(jackieAutowired.name())) {
-                                value = instanceBeans.get(jackieAutowired.name());
+                            if (cdzAutowired != null && StringUtils.isNotEmpty(cdzAutowired.name())) {
+                                value = instanceBeans.get(cdzAutowired.name());
                             } else {
                                 value = instanceBeans.get(propertyDescriptor.getName());
                                 if (value == null) {

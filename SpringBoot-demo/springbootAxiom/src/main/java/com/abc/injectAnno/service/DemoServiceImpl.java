@@ -1,6 +1,7 @@
 package com.abc.injectAnno.service;
 
 
+import com.abc.injectAnno.annotation.CDZAutowired;
 import com.abc.injectAnno.dao.DemoDao;
 
 /**
@@ -20,6 +21,7 @@ public class DemoServiceImpl implements DemoService {
         return demoDao;
     }
 
+    @CDZAutowired
     public void setDemoDao(DemoDao demoDao) {
         System.out.println("+++++ setDemoDao: " + demoDao.toString());
         this.demoDao = demoDao;
