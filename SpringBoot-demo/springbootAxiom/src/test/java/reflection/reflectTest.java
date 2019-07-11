@@ -1,4 +1,4 @@
-package 反射;
+package reflection;
 
 import org.junit.Test;
 
@@ -16,7 +16,7 @@ public class reflectTest {
     //测试invoke,方法.invoke(实例,"参数值");
     public void invokeMethodTest() throws Exception {
         //创建类
-        Class<?> aClass = Class.forName("com.abc.反射.PersonImpl");
+        Class<?> aClass = Class.forName("com.abc.reflection.PersonImpl");
         //创建实例
         Object person = aClass.newInstance();
         Method setName = aClass.getDeclaredMethod("setName", String.class);

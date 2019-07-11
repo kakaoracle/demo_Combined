@@ -1,7 +1,7 @@
-package 切面编程;
+package sliceProgram;
 
-import com.abc.切面编程.config.Appconfig;
-import com.abc.切面编程.dao.IndexDaoImpl;
+import com.abc.sliceProgram.config.Appconfig;
+import com.abc.sliceProgram.dao.IndexDaoImpl;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

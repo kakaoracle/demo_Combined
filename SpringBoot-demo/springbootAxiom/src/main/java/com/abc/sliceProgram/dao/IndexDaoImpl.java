@@ -1,4 +1,4 @@
-package com.abc.切面编程.dao;
+package com.abc.sliceProgram.dao;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
