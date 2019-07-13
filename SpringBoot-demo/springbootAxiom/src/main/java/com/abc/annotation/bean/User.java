@@ -1,7 +1,6 @@
 package com.abc.annotation.bean;
 
-import com.abc.annotation.GetMethod;
-import com.abc.annotation.SetMethod;
+import com.abc.annotation.CdzGet;
 
 import java.util.List;
 
@@ -17,42 +16,38 @@ public class User {
     private  boolean married;
 
 
-    @GetMethod("married")
+    @CdzGet(uuidTest = "cdz")
     public boolean isMarried(){
         return married;
     }
 
-    @SetMethod("married")
     public void setMarried(boolean married) {
         this.married = married;
     }
 
-    @GetMethod("name")
+    @CdzGet()
     public String getName() {
         return name;
     }
 
-    @SetMethod("name")
     public void setName(String name) {
         this.name = name;
     }
 
-    @GetMethod("age")
+    @CdzGet()
     public int getAge() {
         return age;
     }
 
-    @SetMethod("age")
     public void setAge(int age) {
         this.age = age;
     }
 
-    @GetMethod("friends")
+    @CdzGet()
     public List<User> getFriends() {
         return friends;
     }
 
-    @SetMethod("friends")
     public void setFriends(List<User> friends) {
         this.friends = friends;
     }

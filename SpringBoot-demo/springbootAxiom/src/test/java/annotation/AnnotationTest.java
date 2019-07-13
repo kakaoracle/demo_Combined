@@ -1,10 +1,9 @@
 package annotation;
 
-import com.abc.annotation.MapBeanUtil;
+import com.abc.annotation.BeanMapUtil;
 import com.abc.annotation.bean.User;
 import org.junit.Test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -21,10 +20,7 @@ public class AnnotationTest {
         user.setMarried(true);
         user.setName("jackMa");
         user.setFriends(new ArrayList<User>());
-
-        Map<String, Object> map = MapBeanUtil.BeanToMap(user, null);
+        Map<String, Object> map = BeanMapUtil.BeanToMap(user, null);
         System.out.println(map.get("name"));
-        /*User u = (User) MapBeanUtil.MapToBean(map, new User());
-        System.out.println(u.getName());*/
     }
 }
