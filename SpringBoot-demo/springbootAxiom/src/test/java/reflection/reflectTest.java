@@ -22,7 +22,7 @@ public class reflectTest {
         Method setName = aClass.getDeclaredMethod("setName", String.class);
         //打破私有属性检查
         setName.setAccessible(true);
-        setName.invoke(person,"jack");
+        setName.invoke(person, "jack");
         //获取name字段
         Field nameField = aClass.getDeclaredField("name");
         nameField.setAccessible(true);

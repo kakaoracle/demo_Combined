@@ -1,5 +1,6 @@
 package com.abc.annotation;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -12,21 +13,31 @@ import java.util.UUID;
  * @create: 2019-07-11 09:50
  **/
 public class BeanMapUtil {
-    public static Map<String,Object> BeanToMap(Object bean,Map<String,Object> map) throws InvocationTargetException, IllegalAccessException {
-        if (map == null){
-            map = new HashMap<String,Object>();
+    public static Map<String,Object> BeanToMap(Object bean) throws InvocationTargetException, IllegalAccessException {
+        Map map = new HashMap<String,Object>();
+        //获取字段名
+        Field[] declaredFields = bean.getClass().getDeclaredFields();
+        for (Field field : declaredFields){
+            if (field.isAnnotationPresent(CdzGet.class)){
+                CdzGet gf = field.getAnnotation(CdzGet.class);
+                String fieldName = field.getName();
+                String fieldVal = gf.uuidTest();
+                fieldVal = String.valueOf(UUID.randomUUID());
+                map.put(fieldName,fieldVal);
+            }
         }
-        Method[] methods = bean.getClass().getMethods();
+
+        //获取方法名
+        /*Method[] methods = bean.getClass().getMethods();
         for (Method method:methods){
             if (method.isAnnotationPresent(CdzGet.class)){
                 CdzGet gm = method.getAnnotation(CdzGet.class);
-                String fieldName = gm.uuidTest();
-                String uuidTest = gm.uuidTest();
-                uuidTest = String.valueOf(UUID.randomUUID());
-                Object fieldValue = method.invoke(bean);
-                map.put(fieldName,fieldValue);
+                String fieldName = method.getName();
+                String fieldVal = gm.uuidTest();
+                fieldVal = String.valueOf(UUID.randomUUID());
+                map.put(fieldName,fieldVal);
             }
-        }
+        }*/
         return map;
     }
 

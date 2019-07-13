@@ -87,7 +87,7 @@ public class ApplicationContext {
                             }
                         }
                     }
-                    //
+                    // 设置属性
                     Field[] fields = bean.getClass().getDeclaredFields();
                     for (Field field : fields) {
                         if (field.isAnnotationPresent(CDZAutowired.class)) {
