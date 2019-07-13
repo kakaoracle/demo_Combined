@@ -13,7 +13,7 @@ import sun.util.calendar.LocalGregorianCalendar;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CountDownLatchUtilTest {
+public class   CountDownLatchUtilTest {
     private static final Logger log = LoggerFactory.getLogger(CountDownLatchUtilTest.class);
     @Autowired
     private HelloService helloService;

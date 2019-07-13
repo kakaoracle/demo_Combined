@@ -22,4 +22,6 @@
     图形验证码
 
 ## 其他的模块:
+masterDataSourceConfig:用来设置同一个工程中的多个数据库源
+参考网址:https://www.jianshu.com/p/735852145580
 

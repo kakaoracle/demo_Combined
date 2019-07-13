@@ -1,8 +1,8 @@
 package inject_anno;
 
-import com.abc.injectAnno.constant.ParseType;
-import com.abc.injectAnno.context.ApplicationContext;
-import com.abc.injectAnno.service.DemoService;
+import com.abc.injectWithAnno.constant.ParseType;
+import com.abc.injectWithAnno.context.ApplicationContext;
+import com.abc.injectWithAnno.service.DemoService;
 import org.junit.Test;
 
 /**
