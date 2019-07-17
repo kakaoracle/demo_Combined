@@ -9,7 +9,8 @@ package com.ali.多线程.第二章_互斥;
  *              但是在赋值前又有其他线程把flag[i]变为1
  * 关键点2:    布尔数组默认都是false
  * 关键点3:    结论中死锁与否针对的是最开始没有被污染的线程,污染者线程不作讨论
- * 死锁:       上完锁后,其他线程无法再获取锁,甚至,根本上不完锁(上时死循环了)
+ * 成功获取到锁:执行上锁语句后,能够执行完毕并执行下面的业务代码,锁住的意思就是其他线程执行上锁语句,会卡在上锁语句
+ *              的死循环中导致无法执行后续的业务代码
  * 结论:      两个线程交叉执行可能会死锁,但是如果是先执行线程0,再执行线程1,就不会死锁
  * @author: DeZhao Chen
  * @create: 2019-07-15 11:15
@@ -25,7 +26,7 @@ public class LockOne implements Lock {
         this.flag = flag;
     }
 
-    //读取前前i=0,j=1,[false,false];读取前篡改i=1,j=0;读取后本应该[true,false],读取后实际为[false,true],线程0不死锁
+    //读取前前i=0,j=1,[false,false];读取前篡改i=1,j=0;读取后本应该[true,false],读取后实际为[false,true],线程0
     //读取前前i=1,j=0,[false,false];读取前篡改i=0,j=1;读取后本应该[true,false],读取后实际为[true,true],死锁(死循环)
     @Override
     public void lock() {
