@@ -10,8 +10,12 @@ package com.ali.多线程.第二章_互斥;
 public class LockThree {
     private volatile boolean[] flag = new boolean[2];
     private volatile int victim;
-    //判断前前:i=0,j=1,[true,false],victim=0;判断前:i=1,j=0,[true,true],victim=1;判断后线程0,线程1
-    //判断前前:
+    //线程0先:
+    //      无干扰:i=0,j=1,[true,false],victim=0;线程0正常获取锁
+    //      临界区前干扰:干扰前,i=0,j=1,[true,false],victim=0;干扰后,i,j不变(方法栈),[true,true],victim=1,线程0正常获取锁
+    //线程1先:
+    //      无干扰:i=1,j=0,[false,true],victim=1;线程1正常获取锁
+    //      临界区前干扰:干扰前,i=1,j=0,[false,true],victim=1;干扰后,i,j不变,[true,false],victim=0,线程1正常获取锁
     public void lock(){
         int i = (int) Thread.currentThread().getId();
         int j = 1-i;

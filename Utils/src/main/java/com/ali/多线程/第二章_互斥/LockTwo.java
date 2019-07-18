@@ -10,9 +10,10 @@ package com.ali.多线程.第二章_互斥;
 public class LockTwo implements Lock {
 
     private volatile int victim;
-
-    //判断前前线程0:i=0,victim=0;判断前线程1:i=1,victim=1,判断后线程0上锁
-    //判断前前线程1:i=1,victim=1;判断前线程0:i=0,victim=0,判断后线程1上锁
+    //线程0先:
+    //      临界区前未篡改:i=0,victim=0,线程0正常上锁
+    //      临界区前篡改:  i不变,victim=1----线程0也正常上锁
+    //线程1先:.....
     @Override
     public void lock() {
         int i  = (int) Thread.currentThread().getId();
