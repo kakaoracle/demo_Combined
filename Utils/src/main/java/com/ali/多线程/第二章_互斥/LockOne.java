@@ -47,3 +47,11 @@ public class LockOne implements Lock {
         flag[i] = false;
     }
 }
+
+
+
+
+
+
+
+

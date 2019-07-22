@@ -8,5 +8,52 @@ package com.ali.多线程.第四章_共享存储器基础;
 public class StmapedValue<T> {
     public Long stamp;
     public T value;
-    public S
+    public void test1(){
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
