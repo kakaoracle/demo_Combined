@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf797079-354e-4f0b-a010-8c552b25476f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SimpleSnapShot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SimpleSnapShot.java" afterDir="false" />
-    </list>
+    <list default="true" id="cf797079-354e-4f0b-a010-8c552b25476f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../../Utils/target/" />
@@ -24,14 +19,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+            <state relative-caret-position="602">
+              <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,11 +77,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="40" />
-    <option name="y" value="323" />
+    <option name="y" value="322" />
     <option name="width" value="1845" />
-    <option name="height" value="712" />
+    <option name="height" value="713" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -340,9 +331,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.Chapter2Test.测试private私有变量是否是线程共享" />
+      <item itemvalue="JUnit.Chapter2Test.测试各成员变量是否是线程共享" />
+      <item itemvalue="JUnit.SpinLockTest.testThreadLocal" />
       <item itemvalue="Spring Boot.SpringBootAxiom" />
       <item itemvalue="Spring Boot.UtilsApplication" />
-      <item itemvalue="JUnit.SpinLockTest.testThreadLocal" />
     </list>
     <recent_temporary>
       <list>
@@ -374,6 +367,7 @@
       <workItem from="1563527940042" duration="7157000" />
       <workItem from="1563759217381" duration="6750000" />
       <workItem from="1563955206116" duration="3129000" />
+      <workItem from="1564065861684" duration="254000" />
     </task>
     <servers />
   </component>
@@ -410,10 +404,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38966000" />
+    <option name="totallyTimeSpent" value="39220000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="259" width="1476" height="569" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23662885" />
@@ -546,14 +540,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+        <state relative-caret-position="602">
+          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
           </folding>
         </state>
       </provider>
