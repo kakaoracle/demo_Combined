@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf797079-354e-4f0b-a010-8c552b25476f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/StmapedValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/StmapedValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SimpleSnapShot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SimpleSnapShot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,109 +21,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockThree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockOne.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockTwo.java">
+        <entry file="file://$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="76">
-                <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SimpleSnapShot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/StmapedValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/StampedSnap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SnapShot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SeqSnapshot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第二章_互斥/Chapter2Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+            <state relative-caret-position="295">
+              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/utils/ThreadUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -154,11 +63,12 @@
         <option value="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SnapShot.java" />
         <option value="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SeqSnapshot.java" />
         <option value="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/StampedSnap.java" />
-        <option value="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SimpleSnapShot.java" />
         <option value="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/StmapedValue.java" />
         <option value="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockOne.java" />
         <option value="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockTwo.java" />
         <option value="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md" />
+        <option value="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SimpleSnapShot.java" />
+        <option value="$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java" />
       </list>
     </option>
   </component>
@@ -177,10 +87,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="542" />
-    <option name="y" value="660" />
-    <option name="width" value="1615" />
-    <option name="height" value="995" />
+    <option name="x" value="40" />
+    <option name="y" value="323" />
+    <option name="width" value="1845" />
+    <option name="height" value="712" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -190,7 +100,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,16 +146,57 @@
               <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
               <item name="Utils" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ali" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ali" type="462c0819:PsiDirectoryNode" />
               <item name="多线程" type="462c0819:PsiDirectoryNode" />
-              <item name="第四章_共享存储器基础" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ali" type="462c0819:PsiDirectoryNode" />
+              <item name="多线程" type="462c0819:PsiDirectoryNode" />
+              <item name="第七章_自旋锁与争用" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ali" type="462c0819:PsiDirectoryNode" />
+              <item name="多线程" type="462c0819:PsiDirectoryNode" />
+              <item name="第二章_互斥" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -279,23 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Chapter2Test.测试private私有变量是否是线程共享的">
-    <configuration name="Chapter2Test.测试布尔数组的默认值" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Utils" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ali.多线程.第二章_互斥.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ali.多线程.第二章_互斥" />
-      <option name="MAIN_CLASS_NAME" value="com.ali.多线程.第二章_互斥.Chapter2Test" />
-      <option name="METHOD_NAME" value="测试布尔数组的默认值" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SpinLockTest.testThreadLocal">
     <configuration name="Chapter2Test.测试各成员变量是否是线程共享" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Utils" />
       <extension name="coverage">
@@ -312,22 +246,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Chapter2Test.测试private私有变量是否是线程共享的" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Utils" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ali.多线程.第二章_互斥.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ali.多线程.第二章_互斥" />
-      <option name="MAIN_CLASS_NAME" value="com.ali.多线程.第二章_互斥.Chapter2Test" />
-      <option name="METHOD_NAME" value="测试private私有变量是否是线程共享的" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Chapter2Test.测试private私有变量是否是线程共享" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Utils" />
       <extension name="coverage">
@@ -339,6 +257,22 @@
       <option name="PACKAGE_NAME" value="com.ali.多线程.第二章_互斥" />
       <option name="MAIN_CLASS_NAME" value="com.ali.多线程.第二章_互斥.Chapter2Test" />
       <option name="METHOD_NAME" value="测试private私有变量是否是线程共享" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpinLockTest.testThreadLocal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ali.多线程.第七章_自旋锁与争用.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ali.多线程.第七章_自旋锁与争用" />
+      <option name="MAIN_CLASS_NAME" value="com.ali.多线程.第七章_自旋锁与争用.SpinLockTest" />
+      <option name="METHOD_NAME" value="testThreadLocal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -405,10 +339,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SpringBootAxiom" />
+      <item itemvalue="Spring Boot.UtilsApplication" />
+      <item itemvalue="JUnit.SpinLockTest.testThreadLocal" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Chapter2Test.测试private私有变量是否是线程共享的" />
-        <item itemvalue="JUnit.Chapter2Test.测试布尔数组的默认值" />
+        <item itemvalue="JUnit.SpinLockTest.testThreadLocal" />
       </list>
     </recent_temporary>
   </component>
@@ -434,23 +372,12 @@
       <workItem from="1563501182155" duration="3000" />
       <workItem from="1563501219033" duration="7443000" />
       <workItem from="1563527940042" duration="7157000" />
-      <workItem from="1563759217381" duration="4170000" />
+      <workItem from="1563759217381" duration="6750000" />
+      <workItem from="1563955206116" duration="3129000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Chapter2Test_测试布尔数组的默认值 - 2019.07.17 at 15h 38m 13s.xml">
-      <configuration name="Chapter2Test.测试布尔数组的默认值" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Chapter2Test_测试private私有变量是否是线程共享的 - 2019.07.17 at 15h 41m 34s.xml">
-      <configuration name="Chapter2Test.测试private私有变量是否是线程共享的" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Chapter2Test_测试private私有变量是否是线程共享 - 2019.07.17 at 15h 44m 20s.xml">
-      <configuration name="Chapter2Test.测试private私有变量是否是线程共享" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Chapter2Test_测试各成员变量是否是线程共享 - 2019.07.18 at 12h 46m 29s.xml">
-      <configuration name="Chapter2Test.测试各成员变量是否是线程共享" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Chapter2Test_测试各成员变量是否是线程共享 - 2019.07.18 at 12h 56m 11s.xml">
       <configuration name="Chapter2Test.测试各成员变量是否是线程共享" configurationId="JUnit" />
     </history-entry>
@@ -469,15 +396,27 @@
     <history-entry file="Chapter2Test_测试各成员变量是否是线程共享 - 2019.07.18 at 13h 12m 51s.xml">
       <configuration name="Chapter2Test.测试各成员变量是否是线程共享" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 08h 46m 37s.xml">
+      <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 08h 50m 29s.xml">
+      <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 08h 50m 41s.xml">
+      <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 08h 58m 05s.xml">
+      <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33257000" />
+    <option name="totallyTimeSpent" value="38966000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="281" width="1292" height="796" extended-state="1" />
+    <frame x="32" y="259" width="1476" height="569" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23257698" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23662885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -487,8 +426,8 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43847242" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992948" weight="0.3290735" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992948" weight="0.43607306" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -500,9 +439,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.50070524" side_tool="true" weight="0.43813682" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49858958" weight="0.32896653" />
       <window_info anchor="bottom" id="Run Dashboard" order="17" weight="0.30975956" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -520,10 +459,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SimpleSnapShot.java">
+    <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        <state relative-caret-position="513">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -548,49 +487,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第二章_互斥/Chapter2Test.java">
+    <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/utils/ThreadUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="79">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockThree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/StmapedValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="76">
-            <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <first_editor relative-caret-position="-5">
+            <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -598,10 +527,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第二章_互斥/LockTwo.java">
+    <entry file="file://$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第二章_互斥/Chapter2Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="206">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="40" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/第四章_共享存储器基础/SimpleSnapShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
