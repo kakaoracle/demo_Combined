@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf797079-354e-4f0b-a010-8c552b25476f" name="Default Changelist" comment="" />
+    <list default="true" id="cf797079-354e-4f0b-a010-8c552b25476f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../../Utils/target/" />
@@ -19,11 +21,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+            <state relative-caret-position="360">
+              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#testLong#0;class#SpinLockTest#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="190">
+                <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -187,8 +204,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,6 +265,22 @@
       <option name="PACKAGE_NAME" value="com.ali.多线程.第二章_互斥" />
       <option name="MAIN_CLASS_NAME" value="com.ali.多线程.第二章_互斥.Chapter2Test" />
       <option name="METHOD_NAME" value="测试private私有变量是否是线程共享" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpinLockTest.testLong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ali.多线程.第七章_自旋锁与争用.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ali.多线程.第七章_自旋锁与争用" />
+      <option name="MAIN_CLASS_NAME" value="com.ali.多线程.第七章_自旋锁与争用.SpinLockTest" />
+      <option name="METHOD_NAME" value="testLong" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -336,10 +369,12 @@
       <item itemvalue="JUnit.SpinLockTest.testThreadLocal" />
       <item itemvalue="Spring Boot.SpringBootAxiom" />
       <item itemvalue="Spring Boot.UtilsApplication" />
+      <item itemvalue="JUnit.SpinLockTest.testLong" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SpinLockTest.testThreadLocal" />
+        <item itemvalue="JUnit.SpinLockTest.testLong" />
       </list>
     </recent_temporary>
   </component>
@@ -367,29 +402,11 @@
       <workItem from="1563527940042" duration="7157000" />
       <workItem from="1563759217381" duration="6750000" />
       <workItem from="1563955206116" duration="3129000" />
-      <workItem from="1564065861684" duration="254000" />
+      <workItem from="1564065861684" duration="1712000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Chapter2Test_测试各成员变量是否是线程共享 - 2019.07.18 at 12h 56m 11s.xml">
-      <configuration name="Chapter2Test.测试各成员变量是否是线程共享" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Chapter2Test_测试各成员变量是否是线程共享 - 2019.07.18 at 12h 56m 27s.xml">
-      <configuration name="Chapter2Test.测试各成员变量是否是线程共享" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Chapter2Test_测试各成员变量是否是线程共享 - 2019.07.18 at 13h 10m 36s.xml">
-      <configuration name="Chapter2Test.测试各成员变量是否是线程共享" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Chapter2Test_测试各成员变量是否是线程共享 - 2019.07.18 at 13h 10m 55s.xml">
-      <configuration name="Chapter2Test.测试各成员变量是否是线程共享" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Chapter2Test_测试各成员变量是否是线程共享 - 2019.07.18 at 13h 11m 55s.xml">
-      <configuration name="Chapter2Test.测试各成员变量是否是线程共享" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Chapter2Test_测试各成员变量是否是线程共享 - 2019.07.18 at 13h 12m 51s.xml">
-      <configuration name="Chapter2Test.测试各成员变量是否是线程共享" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 08h 46m 37s.xml">
       <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
     </history-entry>
@@ -402,15 +419,32 @@
     <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 08h 58m 05s.xml">
       <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpinLockTest_testLong - 2019.07.25 at 22h 55m 43s.xml">
+      <configuration name="SpinLockTest.testLong" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 22h 57m 51s.xml">
+      <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 23h 01m 21s.xml">
+      <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 23h 01m 45s.xml">
+      <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 23h 02m 09s.xml">
+      <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpinLockTest_testThreadLocal - 2019.07.25 at 23h 02m 36s.xml">
+      <configuration name="SpinLockTest.testThreadLocal" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39220000" />
+    <option name="totallyTimeSpent" value="40678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23662885" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23659517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -421,7 +455,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992948" weight="0.3290735" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992948" weight="0.43607306" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992948" weight="0.25742576" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -509,18 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-5">
-            <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第二章_互斥/Chapter2Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -538,12 +560,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="190">
+            <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../Utils/src/test/java/com/ali/多线程/第七章_自旋锁与争用/SpinLockTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        <state relative-caret-position="360">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#testLong#0;class#SpinLockTest#0" />
           </folding>
         </state>
       </provider>
