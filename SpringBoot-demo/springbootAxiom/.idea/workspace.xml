@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf797079-354e-4f0b-a010-8c552b25476f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,8 +35,8 @@
         <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="216">
-                <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+              <first_editor relative-caret-position="141">
+                <caret line="120" column="16" lean-forward="true" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -113,11 +112,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="250" />
-    <option name="y" value="327" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-92" />
+    <option name="y" value="373" />
     <option name="width" value="1845" />
-    <option name="height" value="715" />
+    <option name="height" value="713" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -434,7 +433,7 @@
       <workItem from="1564065861684" duration="1712000" />
       <workItem from="1564221279724" duration="1345000" />
       <workItem from="1564576251462" duration="6057000" />
-      <workItem from="1564818199340" duration="1997000" />
+      <workItem from="1564818199340" duration="11883000" />
     </task>
     <servers />
   </component>
@@ -471,10 +470,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50077000" />
+    <option name="totallyTimeSpent" value="59963000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="200" y="262" width="1476" height="572" extended-state="0" />
+    <frame x="-73" y="299" width="1476" height="570" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25952044" />
@@ -607,8 +606,8 @@
     <entry file="file://$PROJECT_DIR$/../../Utils/src/main/java/com/ali/多线程/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="216">
-            <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+          <first_editor relative-caret-position="141">
+            <caret line="120" column="16" lean-forward="true" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

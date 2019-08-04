@@ -58,7 +58,7 @@
     解决问题:缩短线程释放锁与另一个线程获得锁之间的时间间隔
     特点,队列锁提供了先来先服务的公平性
 -  引入复合锁(composite lock)
-    pdf页码是120
+    没有哪一种算法能够适用于所有的应用,因此没有完美的锁
 
 
 
@@ -68,10 +68,65 @@
     
     
 ## 管程与阻塞同步
-
+1. 概念:
+    管程是将同步和数据结合,类似于类将数据和方法封装为一个整体
+    线程无法获得锁时:或者自旋,或者阻塞(不再反复判断锁能否被获取,冻结在队列中)
+    当一个锁被持有,那么正在等待的线程应该自旋
+    
+    await()作用就是释放锁,进入阻塞区
+    
+    可重入锁(ReentrantLock):持有锁的线程在获取锁失败后不被算法分配到阻塞区而重新获取锁,其实也就是自旋.
+    
+    
+2. Lock接口
+```java
+    import java.util.concurrent.locks.Condition;public interface Lock{
+        void lock();
+        void lockInterruptibly() throws InterruptedException;
+        boolean tryLock();
+        boolean tryLock(long time,TimeUnit unit);
+        Condition newCondition();
+        void unlock();
+    }
+```
+3.  
+    
 ## 链表:锁的作用
 
+
 ## 并行队列和ABA问题
+1. 无锁的无界队列
+LockFreeQueue<T>类是一个由结点组成的链表,每一个结点:
+```java
+    public class Node{
+        public T value;
+        public AtomicReference<Node> next;
+        public Node(T value){
+            this.value = value;
+            this.next = new AtomicReference<Node>(null);
+        }
+    }
+
+```
+
+
+2. ABA问题
+在利用CAS过程中,中心就是判断与上次值相等,则进行修改,但是对于同一个值A,可能修改为B,
+然后第二次被修改为A,这样与上次值依旧相等,这样会漏掉中间的过程,案例:
+小明原有200元,提款100元
+存取款机1:余额200,将要更新为100
+存取款机2:余额200,将要更新为100
+提款款机1成功执行,提款机2异常block,这时小红给小明存款100
+存取款机1:余额100,将要更新为200
+存取机1成功执行,余额变为200
+存取款机2恢复,cas后发现是200,那么减100
+最终小明余额应为200,实为100
+
+解决方案:对每个原子引用附上一个唯一的时间戳
+
+
+
+
 
 ## 并发栈和消除
 
@@ -102,7 +157,11 @@
         END_ATOMIC();
         return old_reg_val;
     }
-
+3. 减少线程的上下文切换的方法
+    A, 无锁并发编程:多每种竞争锁时,会引起上下文切换,所以在使用多线程处理数据时,比如可以用哈希值进行切分,不同线程处理不同段的数据
+    B, 锁分离技术: ConcurrentHashMap
+    C, CAS算法,Atomic包使用cas算法来更新数据,而不需要加锁
+        
 
 
 
