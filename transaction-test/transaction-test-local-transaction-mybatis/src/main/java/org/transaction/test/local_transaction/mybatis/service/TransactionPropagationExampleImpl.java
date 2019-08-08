@@ -10,9 +10,9 @@ import org.transaction.test.local_transaction.mybatis.bean.User2;
 @Service
 public class TransactionPropagationExampleImpl {
 	@Autowired
-	private User1Service user1Service;
+	private User1ServiceImpl user1Service;
 	@Autowired
-	private User2Service user2Service;
+	private User2ServiceImpl user2Service;
 	
 	
 	public void truncated() {
