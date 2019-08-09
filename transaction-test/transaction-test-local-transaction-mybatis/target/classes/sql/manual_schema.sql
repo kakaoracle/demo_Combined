@@ -1,2 +1,0 @@
-DROP SCHEMA IF EXISTS transactionTest;
-CREATE SCHEMA IF NOT EXISTS transactionTest;

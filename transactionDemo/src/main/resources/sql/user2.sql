@@ -1,4 +1,4 @@
-CREATE TABLE `test`.`user2` (
+CREATE TABLE `transactiontest`.`user2` (
   `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL DEFAULT '',
   PRIMARY KEY(`id`)

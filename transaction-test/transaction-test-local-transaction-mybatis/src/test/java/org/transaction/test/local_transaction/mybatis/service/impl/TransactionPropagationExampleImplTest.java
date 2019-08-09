@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.transaction.test.local_transaction.mybatis.service.TransactionPropagationExampleImpl;
+import org.transaction.test.local_transaction.mybatis.service.TransactionPropagationExample;
 
 /**
  * 测试各种spring事务传播属性。
@@ -17,35 +17,12 @@ import org.transaction.test.local_transaction.mybatis.service.TransactionPropaga
 @ContextConfiguration({ "classpath:spring/applicationContext.xml" })
 public class TransactionPropagationExampleImplTest {
 	@Autowired
-	private TransactionPropagationExampleImpl transactionPropagationExample;
+	private TransactionPropagationExample transactionPropagationExample;
 
 	@Before
 	public void setUpBeforeClass() throws Exception {
 		transactionPropagationExample.truncated();
 	}
-///////////////////验证propagation_required/////////////////////////////////////////////////////////////////
-	/**
-	 * 结果：张三（插入），李四（插入）。</br>
-	 * 外围方法没有事务，插入“张三”、“李四”方法在自己的事务中独立运行，外围方法异常不影响内部插入“张三”、“李四”方法独立的事务。
-	 */
-	@Test
-	public void testNotransaction_exception_required_required() {
-		transactionPropagationExample.notransaction_exception_required_required();
-	}
-
-	/**
-	 * 结果：张三（插入），李四（未插入）</br>
-	 * 外围方法没有事务，插入“张三”、“李四”方法都在自己的事务中独立运行,所以插入“李四”方法抛出异常只会回滚插入“李四”方法，插入“张三”
-	 * 方法不受影响。
-	 *
-	 */
-	@Test
-	public void testNotransaction_required_required_exception() {
-		transactionPropagationExample.notransaction_required_required_exception();
-	}
-
-
-
 
 	/**
 	 * 结果：张三（插入），李四（插入）</br>
@@ -104,7 +81,25 @@ public class TransactionPropagationExampleImplTest {
 	
 
 
+	/**
+	 * 结果：张三（插入），李四（插入）。</br>
+	 * 外围方法没有事务，插入“张三”、“李四”方法在自己的事务中独立运行，外围方法异常不影响内部插入“张三”、“李四”方法独立的事务。
+	 */
+	@Test
+	public void testNotransaction_exception_required_required() {
+		transactionPropagationExample.notransaction_exception_required_required();
+	}
 
+	/**
+	 * 结果：张三（插入），李四（未插入）</br>
+	 * 外围方法没有事务，插入“张三”、“李四”方法都在自己的事务中独立运行,所以插入“李四”方法抛出异常只会回滚插入“李四”方法，插入“张三”
+	 * 方法不受影响。
+	 * 
+	 */
+	@Test
+	public void testNotransaction_required_required_exception() {
+		transactionPropagationExample.notransaction_required_required_exception();
+	}
 
 	/**
 	 * 结果：张三（未插入），李四（未插入）</br>
