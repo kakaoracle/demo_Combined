@@ -96,7 +96,7 @@ public class TransactionPropagationExampleImpl {
 			System.out.println("get可见");
 		}
 	}
-	
+
 	/**
 	 * 方法本身抛出异常
 	 */
@@ -104,23 +104,23 @@ public class TransactionPropagationExampleImpl {
 		User1 user1=new User1();
 		user1.setName("张三");
 		user1Service.addRequired(user1);
-		
+
 		User2 user2=new User2();
 		user2.setName("李四");
 		user2Service.addRequired(user2);
-		
+
 		throw new RuntimeException();
 	}
-	
-	
+
+
 	/**
 	 * 调用方法抛出异常
 	 */
 	public void notransaction_required_required_exception(){
 		User1 user1=new User1();
-		user1.setName("张三");
+		user1.setName("transaction_exception_required_required张三");
 		user1Service.addRequired(user1);
-		
+
 		User2 user2=new User2();
 		user2.setName("李四");
 		user2Service.addRequiredException(user2);
