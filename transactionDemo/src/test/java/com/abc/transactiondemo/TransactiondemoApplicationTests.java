@@ -149,7 +149,7 @@ public class TransactiondemoApplicationTests {
      * 方法2行为: requies_new
      * 方法3行为: requies_new
      * 测试条件: 方法3内部抛出异常
-     * 结果：张三（未插入），李四（插入），王五（未插入）
+     * 结果：张三（未插入），李四(插入) ，王五（未插入）
      * 外围方法开启事务，插入“张三”方法和外围方法一个事务，插入“李四”方法、插入“王五”方法分别在独立的新建事务中。插入“王五”方法抛出异常，首先插入
      * “王五”方法的事务被回滚，异常继续抛出被外围方法感知，外围方法事务亦被回滚，故插入“张三”方法也被回滚。
      */
@@ -159,9 +159,108 @@ public class TransactiondemoApplicationTests {
     }
 
 
+    /**
+     * 父方法行为: required
+     * 方法1行为: required
+     * 方法2行为: requies_new
+     * 方法3行为: requies_new
+     * 测试条件: 父方法接收方法3抛出的异常(用try...catch)
+     * 结果：张三（插入），李四（插入），王五（未插入）
+     * 外围方法开启事务，插入“张三”方法和外围方法一个事务，插入“李四”方法、插入“王五”方法分别在独立的新建事务中。插入“王五”方法抛出异常，首先插入
+     * “王五”方法的事务被回滚，异常被catch不会被外围方法感知，外围方法事务不回滚，故插入“张三”方法插入成功。
+     */
+    @Test
+    public void testTransaction_required_requiresNew_requiresNew_exception_try() {
+        transactionPropagationExample.transaction_required_requiresNew_requiresNew_exception_try();
+    }
 
-///////////////////////
+
+
+
+
+////////////////////////PROPAGATION_REQURES_NESTED///////////////////////////////////////
 //////////////////////
+
+    /**
+     * 父方法行为: 无
+     * 方法1行为: requires_nested
+     * 方法2行为: requies_nested
+     * 测试条件: 父方法内部抛出异常
+     * 结果：张三（插入），李四（插入）</br>
+     * 外围方法为开启事务，插入“张三”方法和插入“李四”方法分别开启自己的事务，外围方法事务回滚，所有方法均不回滚。
+     *
+     */
+    @Test
+    public void testNotransaction_exception_nested_nested() {
+        transactionPropagationExample.notransaction_exception_nested_nested();
+    }
+
+
+    /**
+     * 父方法行为: 无
+     * 方法1行为: requires_nested
+     * 方法2行为: requies_nested
+     * 测试条件: 方法2内部抛出异常
+     * 结果：张三（插入），李四（未插入）</br>
+     * 外围方法未开启事务，插入“张三”方法和插入“李四”方法分别开启自己的事务，插入“李四”方法抛出异常，相应的子事务回滚，异常被外围方法感知，外围方法无事务所以无需回滚，故插入“张三”方法没有回滚。
+     *
+     */
+    @Test
+    public void testnotransaction_nested_nested_exception() {
+        transactionPropagationExample.notransaction_nested_nested_exception();
+    }
+
+
+    /**
+     * 父方法行为: transactional
+     * 方法1行为: requires_nested
+     * 方法2行为: requies_nested
+     * 测试条件: 父方法内部抛出异常
+     * 结果：张三（未插入），李四（未插入）</br>
+     * 外围方法开启事务，插入“张三”方法和插入“李四”方法为外围方法的子事务，外围方法事务回滚，相应的子事务也会回滚。
+     *
+     */
+    @Test
+    public void testTransaction_exception_nested_nested() {
+        transactionPropagationExample.transaction_exception_nested_nested();
+    }
+
+
+
+    /**
+     * 父方法行为: transactional
+     * 方法1行为: requires_nested
+     * 方法2行为: requies_nested
+     * 测试条件: 方法2内部抛出异常
+     * 结果：张三（未插入），李四（未插入）</br>
+     * 外围方法开启事务，插入“张三”方法和插入“李四”方法为外围方法的子事务，插入“李四”方法抛出异常，相应的子事务回滚，异常被外围方法感知，外围方法事务回滚，其他子事务即插入“张三”方法事务也回滚了。
+     *
+     */
+    @Test
+    public void testTransaction_nested_nested_exception() {
+        transactionPropagationExample.transaction_nested_nested_exception();
+    }
+
+
+
+    /**
+     * 父方法行为: transactional
+     * 方法1行为: requires_nested
+     * 方法2行为: requies_nested
+     * 测试条件: 父方法trycat方法2抛出异常
+     * 结果：张三（插入），李四（未插入）</br>
+     * 外围方法开启事务，插入“张三”方法和插入“李四”方法为外围方法的子事务，插入“李四”方法抛出异常，相应的子事务回滚，异常被捕获外围方法不可知，故外围方法事务无需回滚。
+     *
+     */
+    @Test
+    public void testTransaction_nested_nested_exception_try() {
+        transactionPropagationExample.transaction_nested_nested_exception_try();
+    }
+
+
+//////////////////////以下是其他事务行为暂没有整理/////////////////////////////////////////
+//////////////////////
+
 
 
     /**
@@ -286,15 +385,7 @@ public class TransactiondemoApplicationTests {
 
 
 
-    /**
-     * 结果：张三（插入），李四（插入），王五（未插入）</br>
-     * 外围方法开启事务，插入“张三”方法和外围方法一个事务，插入“李四”方法、插入“王五”方法分别在独立的新建事务中。插入“王五”方法抛出异常，首先插入
-     * “王五”方法的事务被回滚，异常被catch不会被外围方法感知，外围方法事务不回滚，故插入“张三”方法插入成功。
-     */
-    @Test
-    public void testTransaction_required_requiresNew_requiresNew_exception_try() {
-        transactionPropagationExample.transaction_required_requiresNew_requiresNew_exception_try();
-    }
+
 
 
 
@@ -416,62 +507,22 @@ public class TransactiondemoApplicationTests {
     }
 
 
-    /**
-     * 结果：张三（未插入），李四（未插入）</br>
-     * 外围方法开启事务，插入“张三”方法和插入“李四”方法为外围方法的子事务，外围方法事务回滚，相应的子事务也会回滚。
-     *
-     */
-    @Test
-    public void testTransaction_exception_nested_nested() {
-        transactionPropagationExample.transaction_exception_nested_nested();
-    }
 
 
-    /**
-     * 结果：张三（未插入），李四（未插入）</br>
-     * 外围方法开启事务，插入“张三”方法和插入“李四”方法为外围方法的子事务，插入“李四”方法抛出异常，相应的子事务回滚，异常被外围方法感知，外围方法事务回滚，其他子事务即插入“张三”方法事务也回滚了。
-     *
-     */
-    @Test
-    public void testTransaction_nested_nested_exception() {
-        transactionPropagationExample.transaction_nested_nested_exception();
-    }
-
-    /**
-     * 结果：张三（插入），李四（插入）</br>
-     * 外围方法为开启事务，插入“张三”方法和插入“李四”方法分别开启自己的事务，外围方法事务回滚，所有方法均不回滚。
-     *
-     */
-    @Test
-    public void testNotransaction_exception_nested_nested() {
-        transactionPropagationExample.notransaction_exception_nested_nested();
-    }
 
 
-    /**
-     * 结果：张三（插入），李四（未插入）</br>
-     * 外围方法开启事务，插入“张三”方法和插入“李四”方法分别开启自己的事务，插入“李四”方法抛出异常，相应的子事务回滚，异常被外围方法感知，外围方法无事务所以无需回滚，故插入“张三”方法没有回滚。
-     *
-     */
-    @Test
-    public void testnotransaction_nested_nested_exception() {
-        transactionPropagationExample.notransaction_nested_nested_exception();
-    }
+
+
+
+
+
 
     //------------------------------------------
     //在外围方法不开启事务的时候，NESTED和REQUIRED行为类似，均开新开事务。
     //------------------------------------------
 
 
-    /**
-     * 结果：张三（插入），李四（未插入）</br>
-     * 外围方法开启事务，插入“张三”方法和插入“李四”方法为外围方法的子事务，插入“李四”方法抛出异常，相应的子事务回滚，异常被捕获外围方法不可知，故外围方法事务无需回滚。
-     *
-     */
-    @Test
-    public void testTransaction_nested_nested_exception_try() {
-        transactionPropagationExample.transaction_nested_nested_exception_try();
-    }
+
 
     //------------------------------------------------------------------------------
     //NESTED和REQUIRED修饰的内部方法都属于外围方法事务，如果外围方法抛出异常，这两种方法的事务都会被回滚。
