@@ -30,9 +30,6 @@ public class User1ServiceImpl {
 		throw new RuntimeException();
 	}
 	
-	/* (non-Javadoc)
-	 * @see org.transaction.test.local_transaction.mybatis.service.impl.User1Service#add(org.transaction.test.local_transaction.mybatis.bean.User1)
-	 */
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void addRequired(User1 user){
 		user1Mapper.insert(user);

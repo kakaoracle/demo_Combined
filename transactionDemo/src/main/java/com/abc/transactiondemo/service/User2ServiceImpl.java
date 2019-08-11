@@ -30,9 +30,6 @@ public class User2ServiceImpl {
 	}
 	
 	
-	/* (non-Javadoc)
-	 * @see org.transaction.test.local_transaction.mybatis.service.impl.User2Service#add(org.transaction.test.local_transaction.mybatis.bean.User2)
-	 */
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void addRequired(User2 user){
 		user2Mapper.insert(user);

@@ -25,7 +25,7 @@ public class TransactiondemoApplicationTests {
     public void setUpBeforeClass() throws Exception {
         transactionPropagationExample.truncated();
     }
-/////////第一种,propagation_required,当前方法如果一个具有事务的上下文(外围方法)中运行,则当前事务与外围事务性质相同
+///////////////////////第一种,propagation_required,当前方法如果一个具有事务的上下文(外围方法)中运行,则当前事务与外围事务性质相同
 ///////////////无论是外围方法出现异常还是内部方法出现异常都会回滚
     /**
      * 结果：张三（插入），李四（插入）。</br>
@@ -173,9 +173,6 @@ public class TransactiondemoApplicationTests {
     public void testTransaction_required_requiresNew_requiresNew_exception_try() {
         transactionPropagationExample.transaction_required_requiresNew_requiresNew_exception_try();
     }
-
-
-
 
 
 ////////////////////////PROPAGATION_REQURES_NESTED///////////////////////////////////////
