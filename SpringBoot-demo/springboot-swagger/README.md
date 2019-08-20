@@ -14,11 +14,11 @@
 2. 在主程序启动的类StartMain中添加注释:
     @EnableSwagger2
 3. 各种注释的最简明列表:
-    类:@Api(tags = "类的说明")
-    方法:@ApiOperation("方法的说明")
-    参数:@ApiParam(value = "参数的说明",required = true)
-    pojo:@ApiModel("pojo的说明")
-    pojo中的字段:@ApiModelProperty(value = "字段的说明",required = false)
+    类:@Api(tags = "类的说明")  
+    方法:@ApiOperation("方法的说明")  
+    参数:@ApiParam(value = "参数的说明",required = true)  
+    pojo:@ApiModel("pojo的说明")  
+    pojo中的字段:@ApiModelProperty(value = "字段的说明",required = false)  
 4. 报错:
 No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
 5. 报错:
