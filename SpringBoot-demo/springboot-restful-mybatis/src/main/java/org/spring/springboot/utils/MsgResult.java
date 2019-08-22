@@ -2,7 +2,7 @@ package org.spring.springboot.utils;
 
 /**
  * @description: 响应
- * @author: cWX597167
+ * @author: cdz
  * @create: 2019-02-23 22:57
  **/
 public class MsgResult {
