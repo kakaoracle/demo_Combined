@@ -6,7 +6,7 @@ import lombok.Data;
 
 /**
  * @description: 详情VO
- * @author: cWX597167
+ * @author: cdz
  * @create: 2019-03-01 22:40
  **/
 @Data
