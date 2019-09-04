@@ -1,5 +1,6 @@
 package com.abc.iodemo;
 
+import java.io.File;
 import java.io.InputStream;
 
 /*
@@ -12,10 +13,10 @@ FileInputStream的构造函数有两个,FileInputStream(File)与FIleInputStream(
 public class FileInputStream {
     public static void main(String[] args) throws  Exception{
         //也可以用File file = new File("C:\\Users\\cwx597167\\Desktop\\NIO_demo\\src\\main\\sources\\NIO_IO_Read_Test.txt");
-        InputStream inputStream = new FileInputStream("C:\\Users\\Arthur\\Desktop\\IO_demo\\src\\main\\java\\NIO_IO_Read_Test.txt");
+        /*InputStream inputStream = new FileInputStream(new File("C:\\Users\\kakao\\Desktop\\1.jpg"));
         while (inputStream.read() != -1){
             System.out.println((char) inputStream.read());//由于read方法的返回值为int,需要转换为char进行输出
         }
-        inputStream.close();
+        inputStream.close();*/
     }
 }

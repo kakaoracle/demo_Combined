@@ -2,18 +2,18 @@ package com.abc.iodemo.controller;
 
 import lombok.extern.java.Log;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.*;
 
-/**
- * 接收前台ultipartFile类型的文件,放到自身服务器中,用最简单的input和output
- */
+
 @RestController
 @Log
 public class FileController1 {
+
+    //接收前台ultipartFile类型的文件
     @GetMapping("fileRev")
     public void fileRev(@RequestParam("file") MultipartFile file){
         int len;
@@ -32,13 +32,19 @@ public class FileController1 {
                 os.write(bytes, 0, len);
             }
             //log.info("已经写入完毕");
-            out.close(); // 关闭流
-            in.close();
+            os.close(); // 关闭流
+            is.close();
         } catch (IOException e) {
             e.printStackTrace();
             //log.info("******写入文件失败"+e.toString());
 
-        }}
+        }
+    }
+
+    @PostMapping("/base64Rev")
+    public void base64Rev(@RequestParam("fileStr") String fileStr){
+
+    };
 
     public boolean createDir(String path){
         File file = null;
