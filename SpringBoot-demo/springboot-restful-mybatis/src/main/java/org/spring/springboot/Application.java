@@ -2,12 +2,13 @@ package org.spring.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Spring Boot 应用启动类
  */
-@SpringBootApplication
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableSwagger2
 public class Application {
 
