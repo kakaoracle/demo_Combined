@@ -26,12 +26,11 @@ public class WebLogAspect {
 
     /**
      * 定义一个切入点.
-     * ~ 第一个 * 代表任意修饰符及任意返回值.
-     * ~ 第二个 * 任意包名
-     * ~ 第三个 * 代表任意方法.
-     * ~ 第四个 * 定义在web包或者子包
-     * ~ 第五个 * 任意方法
-     * ~ .. 匹配任意数量的参数.
+     * 第一个*符号表示返回值的类型任意；
+       com.abc.demo	AOP所切的服务的包名，即，我们的业务部分
+       包名后面的..	表示当前包及子包
+      第二个*	表示类名，*即所有类。此处可以自定义，
+       .*(..)	表示任何方法名，括号表示参数，两个点表示任何参数类型
      */
     @Pointcut("execution(public * com.abc.demo..*.*(..))")
     public void webLog(){}
@@ -42,6 +41,9 @@ public class WebLogAspect {
         // 接收到请求，记录请求内容
         logger.info("WebLogAspect.doBefore()");
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        if (attributes == null) {
+            return;
+        }
         HttpServletRequest request = attributes.getRequest();
 
 
