@@ -1,16 +1,13 @@
 package com.abc.mybatisplus.mapper;
 
 import com.abc.mybatisplus.entity.User;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
-/**
- * <p>
- *  Mapper 接口
- * </p>
- *
- * @author 陈德照123
- * @since 2019-09-12
- */
+@Mapper
+@Repository
 public interface UserMapper extends BaseMapper<User> {
 
+    User select1();
 }
