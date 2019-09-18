@@ -2,6 +2,7 @@ package com.abc.mybatisplus;
 
 import com.abc.mybatisplus.entity.User;
 import com.abc.mybatisplus.mapper.UserMapper;
+import com.abc.mybatisplus.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,15 @@ public class MybatisplusApplicationTests {
     public void testInsert1(){
         User user = userMapper.select1();
         System.out.println(user);
+    }
+
+
+    @Autowired
+    UserService userService;
+    @Test
+    public void testService(){
+        List<User> list = userService.list(null);
+        System.out.println(list);
     }
 
 

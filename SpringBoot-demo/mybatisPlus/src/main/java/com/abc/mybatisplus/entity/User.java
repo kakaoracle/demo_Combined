@@ -5,6 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 
@@ -19,6 +20,7 @@ import java.io.Serializable;
  * @since 2019-09-12
  */
 @Data
+@TableName("USER")
 public class User extends Model<User> {
 
     private static final long serialVersionUID = 1L;
