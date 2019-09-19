@@ -24,4 +24,7 @@
 ## 其他的模块:
 masterDataSourceConfig:用来设置同一个工程中的多个数据库源
 参考网址:https://www.jianshu.com/p/735852145580
-
+## 工具类详解
+1. ListUtil:对象的相同属性复制值通常用beanUtil,但是如果是两个list,就没有现成
+的方法进行复制
+使用示例见测试
