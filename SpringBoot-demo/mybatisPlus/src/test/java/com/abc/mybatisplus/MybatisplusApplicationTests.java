@@ -3,6 +3,9 @@ package com.abc.mybatisplus;
 import com.abc.mybatisplus.entity.User;
 import com.abc.mybatisplus.mapper.UserMapper;
 import com.abc.mybatisplus.service.UserService;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,12 +44,25 @@ public class MybatisplusApplicationTests {
     }
 
 
+    //测试从service层进行调用,并用wrapper构造器进行排序
     @Autowired
     UserService userService;
     @Test
     public void testService(){
-        List<User> list = userService.list(null);
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
+        wrapper.orderByDesc("create_time");
+        List<User> list = userService.list(wrapper);
         System.out.println(list);
+    }
+
+
+    //测试分页查询
+    @Test
+    public void testPageService(){
+        Page<User> page = new Page<>(1,1);
+        IPage<User> userIPage = userMapper.selectPage(page, null);
+        System.out.println(userIPage);
+
     }
 
 
