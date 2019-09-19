@@ -4,7 +4,9 @@ import java.io.Serializable;
 
 import java.util.Date;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
@@ -28,6 +30,7 @@ public class User extends Model<User> {
     /**
      * 主键
      */
+    @TableId(value = "id",type = IdType.AUTO)//auto就是表自动生成主键,mybatisPlus不会自己生成
     private Long id;
     /**
      * 姓名

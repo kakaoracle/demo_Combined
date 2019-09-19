@@ -10,20 +10,21 @@ import java.util.Objects;
  * @author: DeZhao Chen
  * @create: 2019-09-19 12:01
  **/
-public class ListUtil<T> {
-    public void copyList(Object obj, List<T> list2, Class<T> classObj) {
-        if ((!Objects.isNull(obj)) && (!Objects.isNull(list2))) {
-            List list1 = (List) obj;
-            list1.forEach(item -> {
-                try {
-                    T data = classObj.newInstance();
+public class ListUtil {
+
+    public static void copyList(List srcList, List targetList,Class targetClass) {
+        try {
+            Object data = tarClass.newInstance();
+            if ((!Objects.isNull(srcList)) && (!Objects.isNull(targetList))) {
+                srcList.forEach(item -> {
                     BeanUtils.copyProperties(item, data);
-                    list2.add(data);
-                } catch (InstantiationException e) {
-                } catch (IllegalAccessException e) {
-                }
-            });
+                    targetList.add(data);
+                });
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
     }
 
 }
