@@ -1,4 +1,4 @@
-package String和集合测试;
+package String测试;
 
 import org.junit.Test;
 

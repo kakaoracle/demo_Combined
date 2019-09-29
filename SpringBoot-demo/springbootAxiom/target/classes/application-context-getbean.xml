@@ -1,0 +1,4 @@
+<beans>
+    <bean id="demoDao" class="com.abc.loadAndInstanceBean.dao.impl.DemoDaoImpl">
+    </bean>
+</beans>
