@@ -1,4 +1,4 @@
-package com.abc.AWSLambdaDemo;
+package com.abc.sessiondemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AwsLambdaDemoApplicationTests {
+public class SessiondemoApplicationTests {
 
 	@Test
 	public void contextLoads() {

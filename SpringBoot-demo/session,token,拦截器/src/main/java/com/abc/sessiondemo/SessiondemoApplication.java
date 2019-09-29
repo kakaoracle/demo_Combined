@@ -1,13 +1,13 @@
-package com.abc.AWSLambdaDemo;
+package com.abc.sessiondemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AwsLambdaDemoApplication {
+public class SessiondemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AwsLambdaDemoApplication.class, args);
+		SpringApplication.run(SessiondemoApplication.class, args);
 	}
 
 }
