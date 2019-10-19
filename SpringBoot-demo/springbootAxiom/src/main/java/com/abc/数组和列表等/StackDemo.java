@@ -4,6 +4,8 @@ package com.abc.数组和列表等;
  * @description: 实现数组结构
  * @author: DeZhao Chen
  * @create: 2019-10-14 20:22
+ * 注意点:栈用数组或者链表实现,用数组的话,pop一个只是将游标往前移一位,后一位数据还存在,但是用pop访问不到了已经,随着push
+ * 会再次被覆盖
  **/
 public class StackDemo {
     private int maxSize;
@@ -24,7 +26,7 @@ public class StackDemo {
         return stackArray[top--];
     }
 
-    //peek
+    //peek,查看头部数据
     public long peek(){
         return stackArray[top];
     }
@@ -46,6 +48,7 @@ public class StackDemo {
         stackDemo.push(40);
         stackDemo.push(60);
         stackDemo.push(80);
+        stackDemo.pop();
         while ( !stackDemo.isEmpty()){
             long pop = stackDemo.pop();
             System.out.println(pop);
