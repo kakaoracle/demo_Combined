@@ -28,4 +28,6 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
 ##pageHelper分页插件配置
 
-
+wx:
+  appID: wx0c212040877ca888
+  appsecret: 141bd26789de3a5e2760cef7422b57fc
