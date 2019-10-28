@@ -1,12 +1,15 @@
 package com.wechat.localtest.service;
 
+import com.alibaba.fastjson.JSONObject;
 import com.wechat.localtest.constant.MsgType;
 import com.wechat.localtest.constant.XmlItem;
 import com.wechat.localtest.entity.ArticleEntity;
 import com.wechat.localtest.msg.BaseMsg;
 import com.wechat.localtest.msg.NewsMsg;
 import com.wechat.localtest.msg.TextMsg;
+import com.wechat.localtest.util.HttpUtils;
 import com.wechat.localtest.util.MsgUtil;
+import lombok.extern.java.Log;
 import org.springframework.stereotype.Service;
 
 import java.security.MessageDigest;
@@ -22,8 +25,13 @@ import java.util.Map;
  * @create: 2019-10-18 13:52
  **/
 @Service
+@Log
 public class TestService {
     private static final String TOKEN = "dog";//token值和开发者账号中配置的相同
+
+    String appID =  "wx0c212040877ca888";
+    String appsecret =  "141bd26789de3a5e2760cef7422b57fc";
+
     /**
      * 验证签名
      * @param timestamp
@@ -102,6 +110,15 @@ public class TestService {
         }
 
     }
+
+
+    public String getToken(){
+        String url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid="+appID+"&secret="+appsecret;
+        JSONObject jsonObject = HttpUtils.doGet(url);
+        log.info("-----"+jsonObject);
+        return jsonObject.getString("access_token");
+    }
+
 
 
 }

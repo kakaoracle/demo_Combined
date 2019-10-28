@@ -101,10 +101,11 @@ public class HttpUtils {
      * @param param
      * @return
      */
-    public static MsgResult doPost(String url, Map<String, String> param) {
+    public static JSONObject doPost(String url, Map<String, String> param) {
         // 创建Httpclient对象
         CloseableHttpClient httpClient = HttpClients.createDefault();
         CloseableHttpResponse response = null;
+        JSONObject returnObject = null;
         try {
             // 创建Http Post请求
             HttpPost httpPost = new HttpPost(url);
@@ -121,7 +122,8 @@ public class HttpUtils {
             // 执行http请求
             response = httpClient.execute(httpPost);
             if (response.getStatusLine().getStatusCode() == CommonConstant.HTTP_CODE_OK){
-                return MsgResult.ok();
+                returnObject = (JSONObject) JSON.parse(EntityUtils.toString(response.getEntity(), "utf-8"));
+                log.info("***http请求响应:"+returnObject);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -132,12 +134,11 @@ public class HttpUtils {
                 e.printStackTrace();
             }
         }
-        return MsgResult.build(CommonConstant.HTTP_Code_NO_CONTENT,CommonConstant.HTTP_STATUS_NO_CONTENT);
-
+        return returnObject;
     }
 
 
-    public static MsgResult doPost(String url) {
+    public static JSONObject doPost(String url) {
         return doPost(url, null);
     }
 
@@ -147,11 +148,11 @@ public class HttpUtils {
      * @param json
      * @return
      */
-    public static MsgResult doPostJson(String url, String json) {
+    public static JSONObject doPostJson(String url, String json) {
         // 创建Httpclient对象
         CloseableHttpClient httpClient = HttpClients.createDefault();
         CloseableHttpResponse response = null;
-        String resultString = "";
+        JSONObject returnObject = null;
         try {
             // 创建Http Post请求
             HttpPost httpPost = new HttpPost(url);
@@ -161,7 +162,8 @@ public class HttpUtils {
             // 执行http请求
             response = httpClient.execute(httpPost);
             if (response.getStatusLine().getStatusCode() == CommonConstant.HTTP_CODE_OK){
-                return MsgResult.ok();
+                returnObject = (JSONObject) JSON.parse(EntityUtils.toString(response.getEntity(), "utf-8"));
+                log.info("***http请求响应:"+returnObject);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -172,6 +174,6 @@ public class HttpUtils {
                 e.printStackTrace();
             }
         }
-        return MsgResult.build(CommonConstant.HTTP_Code_NO_CONTENT,CommonConstant.HTTP_STATUS_NO_CONTENT);
+        return returnObject;
     }
 }

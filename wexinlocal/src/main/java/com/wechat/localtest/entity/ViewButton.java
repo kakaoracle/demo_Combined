@@ -8,11 +8,12 @@ import lombok.Data;
  * @create: 2019-10-19 21:03
  **/
 @Data
-public class ViewButton {
+public class ViewButton extends AbstractButton {
     private String type = "view";
     private  String url;
 
-    public ViewButton(String type, String url) {
+    public ViewButton(String name, String url) {
+        super(name);
         this.type = type;
         this.url = url;
     }
