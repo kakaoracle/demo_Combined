@@ -3,7 +3,7 @@ package com.wechat.localtest.util;
 import com.thoughtworks.xstream.XStream;
 import com.wechat.localtest.entity.ArticleEntity;
 import com.wechat.localtest.msg.*;
-import com.wechat.localtest.service.TestService;
+import com.wechat.localtest.service.WXService;
 import lombok.extern.java.Log;
 import org.dom4j.Document;
 import org.dom4j.Element;
@@ -28,7 +28,7 @@ public class MsgUtil {
 
 
     @Autowired
-    TestService testService;
+    WXService WXService;
 
     public static Map<String, String> xml2Map(HttpServletRequest request)
             throws Exception {

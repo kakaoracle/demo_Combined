@@ -1,5 +1,6 @@
 package com.wechat.localtest.entity;
 
+import com.wechat.localtest.constant.CommonConstant;
 import lombok.Data;
 
 /**
@@ -9,7 +10,7 @@ import lombok.Data;
  **/
 @Data
 public class ViewButton extends AbstractButton {
-    private String type = "view";
+    private String type = CommonConstant.VIEW;
     private  String url;
 
     public ViewButton(String name, String url) {

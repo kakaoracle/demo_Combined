@@ -1,5 +1,6 @@
 package com.wechat.localtest.entity;
 
+import com.wechat.localtest.constant.CommonConstant;
 import lombok.Data;
 
 /**
@@ -10,7 +11,7 @@ import lombok.Data;
 @Data
 public class ClickButton extends AbstractButton {
     private String key;
-    private String type = "click";
+    private String type = CommonConstant.CLICK;
 
     public ClickButton(String name,String key) {
         super(name);

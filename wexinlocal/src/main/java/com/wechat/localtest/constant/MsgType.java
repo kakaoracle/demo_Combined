@@ -1,7 +1,7 @@
 package com.wechat.localtest.constant;
 
 /**
- * @description: 官方定义的回复消息的类型
+ * @description: 官方定义的回复消息的类型,只用MsgType区分
  * @author: DeZhao Chen
  * @create: 2019-10-19 15:03
  **/
@@ -19,6 +19,7 @@ public class MsgType {
     public static final String MUSIC = "music";
     //图文类型
     public static final String NEWS = "news";
-
+    //按钮类型
+    public static final String EVENT = "event";
 
 }

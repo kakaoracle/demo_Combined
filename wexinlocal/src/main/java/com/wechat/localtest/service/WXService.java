@@ -1,6 +1,7 @@
 package com.wechat.localtest.service;
 
 import com.alibaba.fastjson.JSONObject;
+import com.wechat.localtest.constant.EventType;
 import com.wechat.localtest.constant.MsgType;
 import com.wechat.localtest.constant.XmlItem;
 import com.wechat.localtest.entity.ArticleEntity;
@@ -26,7 +27,7 @@ import java.util.Map;
  **/
 @Service
 @Log
-public class TestService {
+public class WXService {
     private static final String TOKEN = "dog";//token值和开发者账号中配置的相同
 
     String appID =  "wx0c212040877ca888";
@@ -99,6 +100,9 @@ public class TestService {
                 break;
             case MsgType.IMAGE:
                 break;
+            case MsgType.EVENT:
+                baseMsg = this.dealEventMsg(requestMap);
+
             default:
                 break;
         }
@@ -111,7 +115,48 @@ public class TestService {
 
     }
 
+    //处理各种事件
+    private BaseMsg dealEventMsg(Map<String, String> requestMap) {
+        BaseMsg baseMsg = new BaseMsg(requestMap);
+        //具体的哪一种事件
+        String eventType = requestMap.get(XmlItem.EVENTCONTENT);
+        switch (eventType){
+            case EventType.CLICK:
+                baseMsg = dealClickEvent(requestMap);
+                break;
+            case EventType.LOCATION:
+                break;
+            case EventType.SUBSCRIBE:
+                break;
+            case EventType.TICKET:
+                break;
+            case EventType.VIEW:
+                break;
+            default:
+                break;
+        }
+        return baseMsg;
+    }
 
+    //处理点击事件
+    private BaseMsg dealClickEvent(Map<String, String> requestMap) {
+        String key = requestMap.get("EventKey");
+        switch (key) {
+            //点击一菜单点
+            case "1":
+                //处理点击了第一个一级菜单
+                return new TextMsg(requestMap, "你点了一点第一个一级菜单");
+            case "32":
+                //处理点击了第三个一级菜单的第二个子菜单
+                break;
+            default:
+                break;
+        }
+        return null;
+    }
+
+
+    //获取token
     public String getToken(){
         String url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid="+appID+"&secret="+appsecret;
         JSONObject jsonObject = HttpUtils.doGet(url);
@@ -121,4 +166,38 @@ public class TestService {
 
 
 
+    public static void dealEvent(Map<String,String> requestMap){
+        String event = requestMap.get("Event");
+        switch (event){
+            case "CLICK":
+                break;
+            default:
+                break;
+        }
+    };
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

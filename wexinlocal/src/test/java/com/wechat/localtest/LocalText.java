@@ -17,8 +17,7 @@ import java.util.HashMap;
  **/
 @Log
 public class LocalText {
-    String appID =  "wx0c212040877ca888";
-    String appsecret =  "141bd26789de3a5e2760cef7422b57fc";
+
 
     @Test
     public void testXstream(){
@@ -34,12 +33,7 @@ public class LocalText {
         //log.info(xmlStr);
     }
 
-    @Test
-    public void testGetToken(){
-        String url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid="+appID+"&secret="+appsecret;
-        JSONObject jsonObject = HttpUtils.doGet(url);
-        log.info("-----"+jsonObject);
-    }
+
 
 
 

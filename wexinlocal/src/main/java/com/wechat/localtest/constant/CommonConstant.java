@@ -11,4 +11,9 @@ public class CommonConstant {
     public final static String HTTP_STATUS_OK = "success";
     public final static String HTTP_STATUS_NO_CONTENT = "error";
 
+    //按钮类别
+    public final static String PICPHOTOORALBUM= "pic_photo_or_album";
+    public final static String VIEW= "view";
+    public final static String CLICK= "click";
+
 }

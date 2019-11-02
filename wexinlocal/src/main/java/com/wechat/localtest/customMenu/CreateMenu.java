@@ -1,9 +1,9 @@
-package com.wechat.localtest.util;
+package com.wechat.localtest.customMenu;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.wechat.localtest.entity.*;
-import com.wechat.localtest.service.TestService;
+import com.wechat.localtest.service.WXService;
+import com.wechat.localtest.util.HttpUtils;
 import lombok.extern.java.Log;
 
 /**
@@ -18,7 +18,7 @@ public class CreateMenu {
 
     public static void main(String[] args) {
 
-        TestService testService = new TestService();
+        WXService WXService = new WXService();
 
         //菜单对象
         Button btn = new Button();
@@ -37,7 +37,7 @@ public class CreateMenu {
         //转为json
         JSONObject jsonObject = (JSONObject) JSONObject.toJSON(btn);
         //准备url
-        String url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+testService.getToken();
+        String url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+ WXService.getToken();
         //发送请求
         JSONObject postResult = HttpUtils.doPostJson(url, jsonObject.toString());
         if (postResult.getString("errmsg").equals("ok")){

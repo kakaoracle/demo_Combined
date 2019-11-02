@@ -1,7 +1,6 @@
 package com.wechat.localtest.controller;
 
-import com.thoughtworks.xstream.XStream;
-import com.wechat.localtest.service.TestService;
+import com.wechat.localtest.service.WXService;
 import com.wechat.localtest.util.MsgUtil;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +19,9 @@ import java.util.Map;
 @Log
 @RestController
 @RequestMapping("/localwx")
-public class TestController extends HttpServlet {
+public class WXController extends HttpServlet {
     @Autowired
-    TestService testService;
+    WXService WXService;
 
 
     @GetMapping("/test")
@@ -31,7 +30,7 @@ public class TestController extends HttpServlet {
                         @RequestParam("nonce") String nonce,
                         @RequestParam("echostr") String echostr){
         //校验证签名
-        if(testService.check(timestamp,nonce,signature)) {
+        if(WXService.check(timestamp,nonce,signature)) {
             System.out.println("接入成功");
             return echostr;
         }else {
@@ -44,7 +43,7 @@ public class TestController extends HttpServlet {
     public String post(HttpServletRequest request, HttpServletResponse response) throws Exception {
         Map<String, String> msgMap = MsgUtil.xml2Map(request);
         log.info("-----接收到的消息: "+msgMap);
-        String xmlStr = testService.createXmlStr(msgMap);
+        String xmlStr = WXService.createXmlStr(msgMap);
         log.info("-----返回的消息: "+xmlStr);
         return xmlStr;
     }
