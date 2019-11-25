@@ -1,0 +1,21 @@
+## 官方文档
+https://developers.weixin.qq.com/miniprogram/dev/framework/
+## pages目录下自动生成4个文件需要在vscode中触发时间为在开发者工具中修改并保存,如果在vscode中编辑,那么也需要在开发者工具中稍微再编辑一下
+## iconfont 
+官方图标推荐: https://github.com/weui/weui-design
+阿里图标网站是"www.iconfont.cn"
+使用方法是:styles新建图标文件,然后由app.wxss引入,之后就可以使用样式.
+## tabbar结构
+1. 最少是两个菜单
+2. 
+## app.json文件:
+1. 程序包含的所有页面的路径
+2. 下方的菜单栏配置
+
+## app.wxss文件:
+1. 程序中的所有样式初始化入口
+1. 小程序中不支持通配符
+2. 
+
+## 各个page下的json文件
+1. 用来引用需要的组件

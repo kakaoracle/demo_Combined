@@ -1,0 +1,15 @@
+@import "./styles/iconfont.wxss";
+/*为每一个标签进行初始化,用到哪个标签就加上哪个标签*/
+page,view,text,swipper,swiper-item,image,navigator{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*主题颜色*/
+page{
+    /*颜色*/
+    --themeColor:#eb4450;
+    /*字体大小,1px=2rpx*/
+    font-size: 28rpx;
+}

@@ -42,9 +42,9 @@ public class WXController extends HttpServlet {
     @PostMapping("/test")
     public String post(HttpServletRequest request, HttpServletResponse response) throws Exception {
         Map<String, String> msgMap = MsgUtil.xml2Map(request);
-        log.info("-----接收到的消息: "+msgMap);
+        log.info("-----request内容: "+msgMap);
         String xmlStr = WXService.createXmlStr(msgMap);
-        log.info("-----返回的消息: "+xmlStr);
+        log.info("-----response内容: "+xmlStr);
         return xmlStr;
     }
 

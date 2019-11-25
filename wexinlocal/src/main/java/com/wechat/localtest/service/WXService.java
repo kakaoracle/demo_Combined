@@ -96,9 +96,10 @@ public class WXService {
         String msgType = requestMap.get(XmlItem.MSGTYPE);
         switch (msgType){
             case MsgType.TEXT:
-                baseMsg = this.dealTextMsg(requestMap);
+                baseMsg = this.dealTextMsg(requestMap);//处理普通的文本消息
                 break;
             case MsgType.IMAGE:
+                baseMsg = this.dealImgMsg(requestMap);//处理发送过来的图片
                 break;
             case MsgType.EVENT:
                 baseMsg = this.dealEventMsg(requestMap);
@@ -113,6 +114,17 @@ public class WXService {
             return "success";
         }
 
+    }
+
+    //处理图片
+    private BaseMsg dealImgMsg(Map<String, String> requestMap) {
+        BaseMsg baseMsg = new BaseMsg(requestMap);
+        ///
+
+        //识别图片的功能暂先不做了
+
+        ///
+        return baseMsg;
     }
 
     //处理各种事件
