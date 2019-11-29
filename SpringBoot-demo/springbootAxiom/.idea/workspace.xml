@@ -2,272 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9638e28-9032-4fb3-91d8-37ed95591757" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/springbootAxiom.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/src/main/java/CacheTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/src/main/java/ehcache/demo/DemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/src/main/java/ehcache/demo/EhcacheServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/src/main/java/ehcache/demo/service/EhcacheService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/src/main/java/ehcache/demo/serviceimpl/EhcacheServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/src/main/resources/ehcache.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ehcache/src/test/java/ehcache/demo/DemoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/VUE2.5开发高仿饿了么App.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/eleme.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/common/fonts/sell-icon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/common/fonts/sell-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/common/fonts/sell-icon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/common/fonts/sell-icon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/common/stylus/base.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/common/stylus/icon.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/common/stylus/index.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/common/stylus/mixin.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/components/goods/goods.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/components/header/header.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/components/ratings/ratings.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/components/seller/seller.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/__MACOSX/resource/._.DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/__MACOSX/resource/img/._.DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/__MACOSX/resource/标注/._外卖05_评价页_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖01_商品页.mkm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖01_商品页.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖01_商品页_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖02_商品页_公告及优惠信息.mkm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖02_商品页_公告及优惠信息.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖02_商品页_公告及优惠信息_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖03_商品页_购物车详情.mkm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖03_商品页_购物车详情.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖03_商品页_购物车详情_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖04_商品页面_商品详情.mkm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖04_商品页面_商品详情.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖04_商品页面_商品详情_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖05_评价页.mkm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖05_评价页.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖05_评价页_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖06_商家页.mkm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖06_商家页.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/PSD/外卖06_商家页_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/SVG/add_circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/SVG/arrow_lift.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/SVG/check_circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/SVG/close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/SVG/favorite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/SVG/keyboard_arrow_right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/SVG/remove_circle_outline.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/SVG/shopping_cart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/SVG/thumb_down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/SVG/thumb_up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/PSD/icon_@2x.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/PSD/icon_@3x.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/PSD/star_24px_@2x.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/PSD/star_24px_@3x.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/PSD/star_36px_@2x.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/PSD/star_36px_@3x.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/PSD/star_48px_@2x.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/PSD/star_48px_@3x.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/brand@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/brand@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/bulletin@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/bulletin@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/decrease_1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/decrease_1@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/decrease_2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/decrease_2@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/decrease_3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/decrease_3@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/decrease_4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/decrease_4@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/discount_1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/discount_1@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/discount_2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/discount_2@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/discount_3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/discount_3@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/discount_4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/discount_4@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/guarantee_1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/guarantee_1@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/guarantee_2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/guarantee_2@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/guarantee_3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/guarantee_3@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/guarantee_4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/guarantee_4@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/invoice_1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/invoice_1@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/invoice_2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/invoice_2@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/invoice_3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/invoice_3@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/invoice_4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/invoice_4@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/special_1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/special_1@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/special_2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/special_2@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/special_3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/special_3@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/special_4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/special_4@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star24_half@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star24_half@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star24_off@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star24_off@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star24_on@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star24_on@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star36_half@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star36_half@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star36_off@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star36_off@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star36_on@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star36_on@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star48_half@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star48_half@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star48_off@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star48_off@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star48_on@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/img/star48_on@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/外卖01_商品页.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/外卖02_商品页_公告及优惠信息.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/外卖03_商品页_购物车详情.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/外卖04_商品页面_商品详情.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/外卖05_评价页.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/外卖06_商家页.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/标注/外卖01_商品页_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/标注/外卖02_商品页_公告及优惠信息_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/标注/外卖03_商品页_购物车详情_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/标注/外卖04_商品页面_商品详情_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/标注/外卖05_评价页_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/resource/resource/标注/外卖06_商家页_spec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/static/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../eleme/static/css/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190613183741.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190614105915.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190614110046.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190614115529.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190614115558.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190614115606.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190614115651.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621155644.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621155853.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621155941.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621155951.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621160016.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621160208.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621161227.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621163305.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621163354.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621165455.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621170342.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.history/jsDemo_20190621170531.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.idea/h5Demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/jsDemo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../h5Demo/jsDemo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../miniprogram/README.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/../../miniprogram/README.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../miniprogram/components/searchInput/searchInput.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../miniprogram/components/searchInput/searchInput.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../miniprogram/components/searchInput/searchInput.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../miniprogram/components/searchInput/searchInput.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../miniprogram/pages/index/main.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../miniprogram/pages/index/main.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../miniprogram/pages/index/main.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../miniprogram/pages/index/main.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/artifacts/untitled_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/dictionaries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/untitled.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/artifacts/untitled1_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/dictionaries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/untitled1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled1/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/.idea/artifacts/untitled2_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/.idea/dictionaries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/untitled2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../untitled2/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/.idea/.idea.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/.idea/dictionaries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/artifacts/firstweb_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/artifacts/secondWeb_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/dictionaries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/libraries/Spring_4_3_18_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/libraries/Spring_MVC_4_3_18_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/firstweb/firstweb.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/firstweb/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/firstweb/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/secondWeb/secondWeb.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/secondWeb/src/com/spring/mvc/HelloMVCController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/secondWeb/web/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/secondWeb/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/secondWeb/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wendemo/secondWeb/web/index.jsp" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/abc/静态代码块与构造方法与private等/JuniorClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/abc/静态代码块与构造方法与private等/SeniorClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/abc/静态代码块与构造方法与private等/TestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -328,6 +66,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\githubrepository\demo_Combined\SpringBoot-demo\springbootAxiom" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -340,7 +83,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootAxiom">
+  <component name="RunManager" selected="Application.TestTest">
+    <configuration name="TestTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.静态代码块与构造方法与private等.TestTest" />
+      <module name="springbootAxiom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.静态代码块与构造方法与private等.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -528,6 +284,11 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -546,7 +307,7 @@
       <workItem from="1566946725970" duration="609000" />
       <workItem from="1566954228027" duration="141000" />
       <workItem from="1566981708442" duration="1954000" />
-      <workItem from="1575038151659" duration="56000" />
+      <workItem from="1575038151659" duration="1110000" />
     </task>
     <servers />
   </component>
