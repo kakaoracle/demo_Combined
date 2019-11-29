@@ -27,16 +27,13 @@ navigator标签:是微信自定义用于导航的标签
 1. 之前都用#id,需要全改为.class,典型示例:
 ```html
 <view class="search_input">
-    <navigator url="/pages/search/index" open-type="navigate">搜索</navigator>
+    <div>123</div>
+    <navigator url="/pages/search/index" open-type="navigate">
+        搜索
+    </navigator>
 </view>
 ```
 对应的样式:
-```css
-.search_input {
-  height: 90rpx;
-}
-.search_input navigator {
-  height: 100%;
-}
 ```
-也就是用.class,或者.clsss 标签名来写样式
+
+```

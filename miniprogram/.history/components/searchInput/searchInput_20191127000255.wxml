@@ -1,4 +1,5 @@
 <view class="search_input">
+    <div>123</div>
     <navigator url="/pages/search/index" open-type="navigate">
         搜索
     </navigator>
