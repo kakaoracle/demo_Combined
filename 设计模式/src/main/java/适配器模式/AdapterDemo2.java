@@ -14,12 +14,14 @@ import 适配器模式.适配器.Adapter;
 public class AdapterDemo2 {
     //用途:充电
     public static void main(String[] args) {
+        DB dBimpl = new DBimpl();
+        dBimpl.dbpower();//德标充电
+
         GB gbimpl = new GBimpl();
         Adapter adapter = new Adapter(gbimpl);
         adapter.dbpower();//国标充电
 
-        DB dBimpl = new DBimpl();
-        dBimpl.dbpower();//德标充电
+
     }
 }
 

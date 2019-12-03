@@ -13,11 +13,11 @@ import 适配器模式.德标和国标接口.GBimpl;
 public class AdapterDemo1 {
     //用途:充电
     public static void main(String[] args) {
-        GB gb = new GBimpl();//国标充电
-        gb.gbpower();
-
         DB db = new DBimpl();//德标充电
         db.dbpower();
+
+        GB gb = new GBimpl();//国标充电
+        gb.gbpower();
     }
 
 }

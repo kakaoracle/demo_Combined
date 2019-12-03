@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9638e28-9032-4fb3-91d8-37ed95591757" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/观察者模式/ClinetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/观察者模式/Object.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/观察者模式/ObjectOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/观察者模式/Watcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/观察者模式/WatcherOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../设计模式/src/test/java/适配器模式/AdapterDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/AdapterDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../设计模式/src/test/java/适配器模式/AdapterDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/AdapterDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../设计模式/src/test/java/适配器模式/德标和国标接口/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/德标和国标接口/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../设计模式/src/test/java/适配器模式/德标和国标接口/DBimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/德标和国标接口/DBimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../设计模式/src/test/java/适配器模式/德标和国标接口/GB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/德标和国标接口/GB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../设计模式/src/test/java/适配器模式/德标和国标接口/GBimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/德标和国标接口/GBimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../设计模式/src/test/java/适配器模式/适配器/Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/适配器/Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/AdapterDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/AdapterDemo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/AdapterDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/src/main/java/适配器模式/AdapterDemo2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,6 +282,7 @@
       <workItem from="1575039451069" duration="96000" />
       <workItem from="1575039561767" duration="102000" />
       <workItem from="1575198649784" duration="2476000" />
+      <workItem from="1575375995207" duration="687000" />
     </task>
     <servers />
   </component>
