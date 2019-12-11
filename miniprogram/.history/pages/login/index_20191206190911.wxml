@@ -1,0 +1,17 @@
+<view class="pyg_index">
+
+    <SearchInput></SearchInput>
+
+    <view class="index_swiper">
+        <swiper>
+            <swiper-item 
+            wx:for="{{swiperList}}"
+            wx:key="goods_id">
+            <navigator >
+                <image src="{{item.image_src}}" />
+            </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+
+</view>

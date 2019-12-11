@@ -1,0 +1,14 @@
+<view class="pyg_index">
+
+    <SearchInput></SearchInput>
+
+    <view class="index_swiper">
+        <swiper>
+            <swiper-item 
+            wx:for="{{swiperList}}"
+            wx:></swiper-item>
+            <navigator ></navigator>
+        </swiper>
+    </view>
+
+</view>

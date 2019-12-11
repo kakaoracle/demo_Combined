@@ -1,4 +1,25 @@
 <view class="pyg_index">
-    <searchInput></searchInput>
+
+    <SearchInput></SearchInput>
+
+    <view class="index_swiper" indicator-dots circular>
+        <!-- 
+            1. 原图宽高为750*340
+            设置宽自适应:mode=widthFix
+            设置swiper标签高度与图片等比例变化
+
+         -->
+
+        <swiper autoplay >
+            <swiper-item 
+            wx:for="{{swiperList}}"
+            wx:key="goods_id">
+                <navigator >
+                    <image mode="widthFix" src="{{item.image_src}}" />
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+
 </view>
 

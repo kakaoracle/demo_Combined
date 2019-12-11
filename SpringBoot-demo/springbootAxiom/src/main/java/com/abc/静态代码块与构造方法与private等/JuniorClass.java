@@ -11,8 +11,15 @@ public class JuniorClass extends SeniorClass {
     }
 
     public JuniorClass() {
-        System.out.println("子类构造方法");
+        System.out.println("子类无参构造方法");
     }
+
+    //子类有参构造方法
+    public JuniorClass(String str){
+        System.out.println("子类有参构造方法");
+    }
+
+
 
     private int privateJunior = 11;
     protected int protectedJunior = 22;

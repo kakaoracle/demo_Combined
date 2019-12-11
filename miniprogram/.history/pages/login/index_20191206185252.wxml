@@ -1,0 +1,11 @@
+<view class="pyg_index">
+
+    <SearchInput></SearchInput>
+
+    <view class="index_swiper">
+        <swiper>
+
+        </swiper>
+    </view>
+
+</view>

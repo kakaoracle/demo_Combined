@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gojvm.iml" filepath="$PROJECT_DIR$/gojvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../miniprogram/miniprogram.iml" filepath="$PROJECT_DIR$/../miniprogram/miniprogram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SpringBoot-demo/springbootAxiom/springbootAxiom.iml" filepath="$PROJECT_DIR$/../SpringBoot-demo/springbootAxiom/springbootAxiom.iml" />
     </modules>
   </component>
 </project>

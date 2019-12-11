@@ -8,7 +8,7 @@ package com.abc.静态代码块与构造方法与private等;
 public class TestTest {
     public static void main(String[] args) {
         /*
-        * 测试静态代码块和构造方法的执行顺序
+        * 测试静态代码块和无参构造方法的执行顺序
         * */
         JuniorClass juniorClass = new JuniorClass();
 
@@ -20,6 +20,6 @@ public class TestTest {
         System.out.println(juniorClass.protectedSenior);
         System.out.println(juniorClass.protectedJunior);//子类继承了父类的public和protected级别的变量
         System.out.println(juniorClass.publicSenior);
-
     }
+
 }
