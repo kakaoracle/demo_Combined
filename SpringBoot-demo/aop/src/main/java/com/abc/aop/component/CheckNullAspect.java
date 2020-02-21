@@ -87,7 +87,7 @@ public class CheckNullAspect {
         for (Field field : fields) {
             NotNull fieldAnnotation = field.getAnnotation(NotNull.class);
             // 3.1、没有注解或者注解不包含指定分组
-            if (Objects.isNull(fieldAnnotation) || !Arrays.asList(fieldAnnotation.groups()).contains(groupName)) {
+            if (Objects.isNull(fieldAnnotation) || !Ar rays.asList(fieldAnnotation.groups()).contains(groupName)) {
                 // 不需要校验
                 continue;
             }
