@@ -5,9 +5,7 @@ import com.abc.aop.annotation.NotNull;
 import com.abc.aop.vo.Info;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
@@ -32,10 +30,16 @@ public class CheckNullAspect {
     private void annotationPointCut() {
     }
 
-    // 环绕切面
+    // 前置通知
+    @Before("annotationPointCut()")
+    public void processBefore() {
+        System.out.println("====before advice");
+    }
+
+    // 环绕通知
     @Around("annotationPointCut()")
     public Object process(ProceedingJoinPoint pjp) throws Throwable {
-
+        System.out.println("=====around");
         // 1、获取目标方法
         Signature signature = pjp.getSignature();
         MethodSignature methodSignature = (MethodSignature)signature;
@@ -69,6 +73,23 @@ public class CheckNullAspect {
         return pjp.proceed();
     }
 
+
+    //
+    @AfterReturning("annotationPointCut()")
+    public void processAR(){
+        System.out.println("=====AfterReturning");
+    }
+
+    @AfterThrowing("annotationPointCut()")
+    public void processAT(){
+        System.out.println("=====AfterThrowing");
+    }
+
+    @After("annotationPointCut()")
+    public void processA(){
+        System.out.println("=====After");
+    }
+
     private boolean verifyParameter(String groupName, String paramName, Object paramValue) throws Exception {
         // 1、设置info的参数名
         Info info = LOCAL_INFO.get();
@@ -87,7 +108,7 @@ public class CheckNullAspect {
         for (Field field : fields) {
             NotNull fieldAnnotation = field.getAnnotation(NotNull.class);
             // 3.1、没有注解或者注解不包含指定分组
-            if (Objects.isNull(fieldAnnotation) || !Ar rays.asList(fieldAnnotation.groups()).contains(groupName)) {
+            if (Objects.isNull(fieldAnnotation) || !Arrays.asList(fieldAnnotation.groups()).contains(groupName)) {
                 // 不需要校验
                 continue;
             }
