@@ -16,7 +16,7 @@ public class Param {
     private String property2;
 
     @NotNull(groups = { "test" })
-    private Date property3;
+    private String property3;
 
     @Override
     public String toString() {
@@ -39,11 +39,11 @@ public class Param {
         this.property2 = property2;
     }
 
-    public Date getProperty3() {
+    public String getProperty3() {
         return property3;
     }
 
-    public void setProperty3(Date property3) {
+    public void setProperty3(String property3) {
         this.property3 = property3;
     }
 }
