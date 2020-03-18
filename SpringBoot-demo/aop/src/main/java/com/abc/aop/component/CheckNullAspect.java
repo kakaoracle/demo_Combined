@@ -37,6 +37,41 @@ public class CheckNullAspect {
     }
 
     // 环绕通知
+    /*@Around("annotationPointCut()")
+    public Object process(ProceedingJoinPoint pjp) throws Throwable {
+        System.out.println("=====around");
+        // 1、获取目标方法
+        Signature signature = pjp.getSignature();
+        MethodSignature methodSignature = (MethodSignature)signature;
+        Method targetMethod = methodSignature.getMethod();
+        // 1.1、设置info的类名和方法名
+        Info info = LOCAL_INFO.get();
+        info.setClassName(targetMethod.getDeclaringClass().getName());
+        info.setMethodName(targetMethod.getName());
+
+        // 2、获取方法参数和参数值
+        Parameter[] parameters = targetMethod.getParameters();
+        Object[] args = pjp.getArgs();
+
+        // 3、校验每个参数
+        for (int i = 0; i < parameters.length; i++) {
+            Parameter parameter = parameters[i];
+            // 3.1、获取参数注解
+            CheckNull annotation = parameter.getAnnotation(CheckNull.class);
+            // 3.1、不存在@NotNull，忽略
+            if (Objects.isNull(annotation)) {
+                continue;
+            }
+            // 3.2、校验参数
+            boolean verify = verifyParameter(annotation.group(), parameter.getName(), args[i]);
+            if (!verify) {
+                throw new NullPointerException(LOCAL_INFO.get().toString() + "为空！");
+            }
+        }
+
+        // finish、执行目标方法
+        return pjp.proceed();
+    }*/
     @Around("annotationPointCut()")
     public Object process(ProceedingJoinPoint pjp) throws Throwable {
         System.out.println("=====around");
@@ -72,6 +107,7 @@ public class CheckNullAspect {
         // finish、执行目标方法
         return pjp.proceed();
     }
+
 
 
     //

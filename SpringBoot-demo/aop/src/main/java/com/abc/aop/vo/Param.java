@@ -16,7 +16,7 @@ public class Param {
     private String property2;
 
     @NotNull(groups = { "test" })
-    private String property3;
+    public String property3;
 
     @Override
     public String toString() {
