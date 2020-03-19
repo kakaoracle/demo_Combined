@@ -1,5 +1,6 @@
-package com.tuling.netty.http_demo;
+package com.netty.http_demo;
 
+import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.Selector;
@@ -12,15 +13,20 @@ import java.util.List;
 * 鲁班学院
 * */
 public class NettyServer {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         List<SocketChannel> list = new ArrayList<>();
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
+
+        // 比较于ServerSocket serverSocket = new ServerSocket();
+        // ssc地位相当于serversocket,连接套接字,但是具有非阻塞功能
         ServerSocketChannel ssc = ServerSocketChannel.open();
         ssc.bind(new InetSocketAddress(9091));
         //设置为非阻塞
         ssc.configureBlocking(false);
         while (true){
             Selector selector = Selector.open();
+            // 比较于Socket acceptSocket = serverSocket.accept();
+            // 地位相当于通信套接字,是具有非阻塞功能的acceptSocket
             SocketChannel socketChannel = ssc.accept();
             if (socketChannel == null){
                 Thread.sleep(1000);

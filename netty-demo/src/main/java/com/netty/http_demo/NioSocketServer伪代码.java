@@ -1,4 +1,4 @@
-package com.tuling.netty.http_demo;
+package com.netty.http_demo;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -34,6 +34,7 @@ public class NioSocketServer伪代码 {
                 }
             }else { // 有人连接
                 // 设置acceptSocket对象为不阻塞,使下方read方法可以不阻塞,代码可以往下执行,解决第二处阻塞
+                // list中的acceptSocket对象都是不阻塞了,因此下一轮null时上方的read也是不阻塞的
                 acceptSocket.setNoBlocking(false);
                 list.add(acceptSocket);
                 for (Socket item:list){

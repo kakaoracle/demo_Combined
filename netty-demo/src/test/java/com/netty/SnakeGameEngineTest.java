@@ -1,12 +1,12 @@
-package com.tuling.netty;
+package com.netty;
 
 import com.alibaba.fastjson.JSON;
+import com.netty.snake_game.*;
 import com.tuling.netty.snake_game.*;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Tommy on 2018/1/9.

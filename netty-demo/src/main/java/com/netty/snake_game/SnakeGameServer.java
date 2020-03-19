@@ -1,4 +1,4 @@
-package com.tuling.netty.snake_game;
+package com.netty.snake_game;
 
 import com.alibaba.fastjson.JSON;
 import io.netty.bootstrap.ServerBootstrap;

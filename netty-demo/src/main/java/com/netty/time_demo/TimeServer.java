@@ -1,4 +1,4 @@
-package com.tuling.netty.time_demo;
+package com.netty.time_demo;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;

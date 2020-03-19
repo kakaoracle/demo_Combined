@@ -1,4 +1,4 @@
-package com.tuling.netty;
+package com.netty;
 
 public class Hello {
     public void test() {

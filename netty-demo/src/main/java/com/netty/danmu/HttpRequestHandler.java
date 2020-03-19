@@ -1,4 +1,4 @@
-package com.tuling.netty.snake_game;
+package com.netty.danmu;
 
 import io.netty.channel.*;
 import io.netty.handler.codec.http.*;
@@ -20,11 +20,11 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
     static {
         URL location = HttpRequestHandler.class.getProtectionDomain().getCodeSource().getLocation();
         try {
-            String path = location.toURI() + "SnakeGamePage.html";
+            String path = location.toURI() + "WebsocketDanMu.html";
             path = !path.contains("file:") ? path : path.substring(5);
             INDEX = new File(path);
         } catch (URISyntaxException e) {
-            throw new IllegalStateException("Unable to locate SnakeGamePage.html", e);
+            throw new IllegalStateException("Unable to locate WebsocketChatClient.html", e);
         }
     }
 
@@ -44,13 +44,13 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
             RandomAccessFile file = new RandomAccessFile(INDEX, "r");//4
 
             HttpResponse response = new DefaultHttpResponse(request.getProtocolVersion(), HttpResponseStatus.OK);
-            response.headers().set(HttpHeaderNames.CONTENT_TYPE, "text/html; charset=UTF-8");
+            response.headers().set(HttpHeaders.Names.CONTENT_TYPE, "text/html; charset=UTF-8");
 
             boolean keepAlive = HttpHeaders.isKeepAlive(request);
 
             if (keepAlive) {                                        //5
-                response.headers().set(HttpHeaderNames.CONTENT_LENGTH, file.length());
-                response.headers().set(HttpHeaderNames.CONNECTION, HttpHeaders.Values.KEEP_ALIVE);
+                response.headers().set(HttpHeaders.Names.CONTENT_LENGTH, file.length());
+                response.headers().set(HttpHeaders.Names.CONNECTION, HttpHeaders.Values.KEEP_ALIVE);
             }
             ctx.write(response);                    //6
 
@@ -63,7 +63,7 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
             if (!keepAlive) {
                 future.addListener(ChannelFutureListener.CLOSE);        //9
             }
-
+            
             file.close();
         }
     }
@@ -73,13 +73,13 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
         ctx.writeAndFlush(response);
     }
 
-    @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
-            throws Exception {
-        Channel incoming = ctx.channel();
-        System.out.println("Client:" + incoming.remoteAddress() + "异常");
+	@Override
+	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
+			throws Exception {
+    	Channel incoming = ctx.channel();
+		System.out.println("Client:"+incoming.remoteAddress()+"异常");
         // 当出现异常就关闭连接
         cause.printStackTrace();
         ctx.close();
-    }
+	}
 }

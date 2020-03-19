@@ -1,4 +1,4 @@
-package com.tuling.netty.snake_game;
+package com.netty.snake_game;
 
 /**
  * 单条指令

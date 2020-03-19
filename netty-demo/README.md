@@ -11,9 +11,9 @@ netty 的一些demo
 1. git clone https://gitee.com/h455952294_admin/netty-demo.git
 2. 
 * 里面包含4个demo: 弹幕,贪吃蛇,系统时间,还有一个demo
-* 弹幕启动类:com.tuling.netty.danmu.WebsocketDanmuServer ,浏览器访问: http://localhost:8080/
-* 贪吃蛇启动类:com.tuling.netty.snake_game.SnakeGameServer ,浏览器访问: http://localhost:8080/
-* 时间服务启动类:com.tuling.netty.time_demo.TimeServer ,需要使用socket链接工具
+* 弹幕启动类:WebsocketDanmuServer ,浏览器访问: http://localhost:8080/
+* 贪吃蛇启动类:SnakeGameServer ,浏览器访问: http://localhost:8080/
+* 时间服务启动类:TimeServer ,需要使用socket链接工具
 
 #### 运行截图
 1. 弹幕启动

@@ -1,4 +1,4 @@
-package com.tuling.netty.http_demo;
+package com.netty.http_demo;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

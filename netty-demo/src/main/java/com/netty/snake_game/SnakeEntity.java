@@ -1,4 +1,4 @@
-package com.tuling.netty.snake_game;
+package com.netty.snake_game;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

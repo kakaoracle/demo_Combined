@@ -1,4 +1,4 @@
-package com.tuling.netty.snake_game;
+package com.netty.snake_game;
 
 /**
  * 积分信息

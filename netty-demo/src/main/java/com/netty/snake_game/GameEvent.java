@@ -1,4 +1,4 @@
-package com.tuling.netty.snake_game;
+package com.netty.snake_game;
 
 /**
  * Created by Tommy on 2018/1/25.

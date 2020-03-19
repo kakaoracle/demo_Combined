@@ -1,4 +1,4 @@
-package com.tuling.netty.danmu;
+package com.netty.danmu;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
