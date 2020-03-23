@@ -1,0 +1,30 @@
+HELP.md
+/target/
+/Debug/
+
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### visual studio ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.sln
+*.vcxproj
+*.filters
+*.user
+
+
+### NetBeans ###
+/x64/
+/.vs/
+
