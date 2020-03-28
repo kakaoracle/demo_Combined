@@ -1,7 +1,11 @@
 package multiThread;
-
+/*
+* volatile的可见性
+*
+* */
 public class VolatileVisibilitySample {
-    private static boolean initFlag = false;
+    // 这里不加volatile,ThreadB永远不会打印,加上才会打印
+    private static volatile boolean initFlag = false;
 
     public void refresh(){
         this.initFlag = true;
