@@ -1,13 +1,12 @@
 package com.abc.aop;
 
-import com.abc.aop.service.CheckNullService;
-import com.abc.aop.vo.Param;
+import axiom.service.CheckNullService;
+import axiom.vo.Param;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.lang.reflect.Field;
-import java.util.Date;
 
 @SpringBootTest
 class AopApplicationTests {

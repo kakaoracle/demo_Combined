@@ -1,8 +1,6 @@
-package com.abc.aop.vo;
+package axiom.vo;
 
-import com.abc.aop.annotation.NotNull;
-
-import java.util.Date;
+import axiom.annotation.NotNull;
 
 /**
  * 自定义参数类

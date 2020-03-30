@@ -1,8 +1,8 @@
-package com.abc.aop.component;
+package axiom.component;
 
-import com.abc.aop.annotation.CheckNull;
-import com.abc.aop.annotation.NotNull;
-import com.abc.aop.vo.Info;
+import axiom.annotation.CheckNull;
+import axiom.annotation.NotNull;
+import axiom.vo.Info;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.*;
@@ -26,7 +26,7 @@ public class CheckNullAspect {
     };
 
     // 拦截带@CheckNull的方法
-    @Pointcut("@annotation(com.abc.aop.annotation.CheckNull)")
+    @Pointcut("@annotation(axiom.annotation.CheckNull)")
     private void annotationPointCut() {
     }
 

@@ -1,4 +1,4 @@
-package com.abc.aop.annotation;
+package axiom.annotation;
 
 import java.lang.annotation.*;
 

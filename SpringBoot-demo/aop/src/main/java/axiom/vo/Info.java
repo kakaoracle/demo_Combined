@@ -1,4 +1,4 @@
-package com.abc.aop.vo;
+package axiom.vo;
 
 import java.util.Objects;
 
