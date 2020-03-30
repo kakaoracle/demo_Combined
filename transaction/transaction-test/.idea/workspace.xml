@@ -2,45 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="817185d5-4aee-4ab8-854d-715249e1edc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/java/org/transaction/test/local_transaction/mybatis/service/TransactionPropagationExampleImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/java/org/transaction/test/local_transaction/mybatis/service/User1ServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/java/org/transaction/test/local_transaction/mybatis/service/User2ServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources/mybatis/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources/properties/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources/spring/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources/spring/spring-mybatis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources/sql/manual_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources/sql/manual_schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources/sql/user1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources/sql/user1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources/sql/user2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources/sql/user2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/test/java/org/transaction/test/local_transaction/mybatis/service/impl/TransactionPropagationExampleImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/test/java/org/transaction/test/local_transaction/mybatis/service/impl/TransactionPropagationExampleImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/target/classes/mybatis/mapper/User1Mapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/target/classes/mybatis/mapper/User2Mapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/target/classes/mybatis/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/target/classes/properties/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/target/classes/spring/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/target/classes/spring/spring-mybatis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/target/classes/sql/manual_schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/target/classes/sql/user1.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/target/classes/sql/user2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringBoot-demo/mybatisPlus/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringBoot-demo/mybatisPlus/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringBoot-demo/session,token,拦截器/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringBoot-demo/session,token,拦截器/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SpringBoot-demo/springbootAxiom/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringBoot-demo/springbootAxiom/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Utils/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wexinlocal/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../wexinlocal/.gitignore" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/transaction-test-global-transaction-mybatis/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/transaction-test-local-transaction-mybatis/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -50,124 +25,24 @@
         <option name="userSettingsFile" value="C:\Software\maven\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="disabledProfiles">
-      <list>
-        <option value="jdk18" />
-      </list>
-    </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-70" />
-    <option name="y" value="580" />
-    <option name="width" value="1845" />
-    <option name="height" value="830" />
-  </component>
+  <component name="ProjectId" id="1ZqSGwpg1dLfaTDaklC9IaDDWCx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="transaction-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transaction-test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transaction-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transaction-test" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction-test-local-transaction-mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transaction-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transaction-test" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction-test-local-transaction-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transaction-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transaction-test" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction-test-local-transaction-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transaction-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transaction-test" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction-test-local-transaction-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transaction-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transaction-test" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction-test-local-transaction-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transaction-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transaction-test" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction-test-local-transaction-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transaction-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transaction-test" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction-test-local-transaction-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transaction-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transaction-test" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction-test-local-transaction-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../transactionDemo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -181,76 +56,25 @@
       <updated>1565318804166</updated>
       <workItem from="1565318807292" duration="37000" />
       <workItem from="1565318880315" duration="11000" />
+      <workItem from="1585565040167" duration="58000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="JRebel" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Designer" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="549" y="102" key="FileChooserDialogImpl" timestamp="1585565050223">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="102" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585565050223" />
+    <state x="408" y="110" key="NewModule_or_Project.wizard" timestamp="1585565054288">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="408" y="110" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1585565054288" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1585565061073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585565061073" />
   </component>
 </project>

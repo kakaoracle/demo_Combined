@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="transaction-test-local-transaction-mybatis" />
+        <module name="transactiondemo" />
         <module name="transaction-test-global-transaction-mybatis" />
+        <module name="transaction-test-local-transaction-mybatis" />
       </profile>
     </annotationProcessing>
   </component>

@@ -3,6 +3,12 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/transaction-test-global-transaction-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transaction-test-global-transaction-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transaction-test-global-transaction-mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/transaction-test-local-transaction-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transaction-test-local-transaction-mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../transactionDemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../transactionDemo/src/main/resources" charset="UTF-8" />
   </component>
 </project>
