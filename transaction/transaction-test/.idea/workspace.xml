@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="817185d5-4aee-4ab8-854d-715249e1edc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SpringBoot-demo/mybatisPlus/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringBoot-demo/mybatisPlus/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SpringBoot-demo/session,token,拦截器/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringBoot-demo/session,token,拦截器/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SpringBoot-demo/springbootAxiom/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringBoot-demo/springbootAxiom/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Utils/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Utils/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../wexinlocal/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../wexinlocal/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="817185d5-4aee-4ab8-854d-715249e1edc2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,11 +50,12 @@
       <workItem from="1565318807292" duration="37000" />
       <workItem from="1565318880315" duration="11000" />
       <workItem from="1585565040167" duration="58000" />
+      <workItem from="1585565128326" duration="860000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="102" key="FileChooserDialogImpl" timestamp="1585565050223">
