@@ -2,39 +2,114 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9638e28-9032-4fb3-91d8-37ed95591757" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/abc/annotation/CheckNullAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/abc/annotation/NotNull.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/abc/annotation/bean/Info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/annotation/SpringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/.idea/dictionaries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/.idea/libraries/Spring_4_3_18_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/out/production/spring/spring-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/spring.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/src/HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/src/annotation/CDPlayerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/src/annotation/CDPlayerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/src/annotation/CompactDisc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/src/annotation/SgtPeppers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/src/spring-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/src/springAOP/TestAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/READ.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootdemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/SpringBootAxiom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/annotation/BeanMapUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/annotation/CdzGet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/annotation/CheckNullAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/annotation/NotNull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/annotation/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/annotation/bean/Info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/annotation/bean/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/FileURLUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/annotation/CDZAutowired.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/constant/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/constant/ParseType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/context/ApplicationContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/dao/DemoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/dao/impl/DemoDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/model/BeanDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/model/PropertyDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/parser/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/parser/factory/ParserFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/parser/impl/JsonParserImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/parser/impl/XmlParserImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/service/DemoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/service/DemoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/util/JsonReaderUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithAnno/util/XmlReaderUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/FileURLUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/constant/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/constant/ParseType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/context/ApplicationContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/dao/DemoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/dao/impl/DemoDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/model/BeanDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/model/PropertyDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/parser/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/parser/factory/ParserFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/parser/impl/JsonParserImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/parser/impl/XmlParserImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/service/DemoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/service/DemoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/util/JsonReaderUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/injectWithoutAnno/util/XmlReaderUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/jdk8/Dish.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/jdk8/GreetingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/FileURLUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/constant/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/constant/ParseType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/context/ApplicationContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/dao/DemoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/dao/impl/DemoDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/model/BeanDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/model/PropertyDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/parser/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/parser/factory/ParserFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/parser/impl/JsonParserImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/parser/impl/XmlParserImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/util/JsonReaderUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/loadAndInstanceBean/util/XmlReaderUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/reflection/PersonImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/reflection/PersonInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/reflection/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/sliceProgram/READ.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/sliceProgram/config/Appconfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/sliceProgram/config/AspectDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/sliceProgram/dao/IndexDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/sliceProgram/dao/IndexDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/trycatch和return和i后双加/TestReturnFinally.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/trycatch和return和i后双加/Test双目i.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/数组和列表等/LinkDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/数组和列表等/QueueDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/数组和列表等/StackDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/静态代码块与构造方法与private等/JuniorClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/静态代码块与构造方法与private等/SeniorClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/静态代码块与构造方法与private等/TestTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abc/静态代码块与构造方法与private等/TestTestTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-context-anno-inject.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-context-getbean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-context-inject.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ListArrayDiff/ListAndArrayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/List和Set测试/ListSetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/String测试/StringTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/annotation/AnnotationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/annotation/SpringTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/inject_anno/AnnoInjectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/inject_withoutAnno/InjectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/jdk8/SAMtest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/loadAndInstanceBean/BeanTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/reflection/reflectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sliceProgram/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-context-anno-inject.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-context-getbean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-context-inject.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/../../设计模式/target/" />
-    <ignored path="$PROJECT_DIR$/../aop/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,123 +117,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/BeanMapUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/annotation/AnnotationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/annotation/SpringTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../aop/src/test/java/com/abc/aop/AopApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../aop/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../aop/src/main/java/com/abc/aop/AopApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/NotNull.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/CheckNullAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/bean/Info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-              <folding>
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#629#630#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#789#790#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#881#882#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/bean/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -178,17 +136,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/test/java/annotation/AnnotationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/abc/annotation/NotNull.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/abc/annotation/bean/Info.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/abc/annotation/CheckNullAspect.java" />
-        <option value="$PROJECT_DIR$/src/test/java/annotation/SpringTest.java" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -197,103 +144,22 @@
         <option name="userSettingsFile" value="C:\software\maven3.5\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="aop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="aop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="103" />
-    <option name="y" value="503" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
   </component>
   <component name="ProjectId" id="1UIJOcbdCFdNeaOPqCgzytpO4DT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootAxiom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -301,32 +167,20 @@
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../axiom/springbootAxiom" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\githubrepository\demo_Combined\SpringBoot-demo\springbootAxiom" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.SpringTest.test1">
+  <component name="RunManager" selected="Application.StackTest">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -451,6 +305,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.StackTest" />
+      <module name="springbootAxiom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.abc.静态代码块与构造方法与private等.TestTest" />
       <module name="springbootAxiom" />
@@ -496,6 +363,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AopApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="aop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="demo.AopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.abc.aop.AopApplication" />
@@ -519,24 +393,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StackTest" />
         <item itemvalue="JUnit.SpringTest.test1" />
         <item itemvalue="JUnit.AnnotationTest.test1" />
         <item itemvalue="Application.ClinetTest" />
         <item itemvalue="Application.TestTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -564,85 +427,20 @@
       <workItem from="1575383871216" duration="382000" />
       <workItem from="1575384297681" duration="453000" />
       <workItem from="1582037504260" duration="7827000" />
+      <workItem from="1586438600981" duration="1195000" />
+      <workItem from="1586660435831" duration="1938000" />
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="AnnotationTest_test1 - 2020.02.18 at 23h 24m 36s.xml">
-      <configuration name="AnnotationTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AnnotationTest_test1 - 2020.02.18 at 23h 26m 37s.xml">
-      <configuration name="AnnotationTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringTest_test1 - 2020.02.18 at 23h 52m 18s.xml">
-      <configuration name="SpringTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringTest_test1 - 2020.02.18 at 23h 54m 03s.xml">
-      <configuration name="SpringTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringTest_test1 - 2020.02.18 at 23h 54m 50s.xml">
-      <configuration name="SpringTest.test1" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7827000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32956153" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.3297587" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -661,255 +459,56 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="330" y="16" key="#Custom_Plugin_Repositories" timestamp="1575383718324">
+    <state x="614" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586438609078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="330" y="16" key="#Custom_Plugin_Repositories/0.0.1536.824@0.0.1536.824" timestamp="1575383718324" />
-    <state x="330" y="16" key="#HTTP_Proxy" timestamp="1575383837608">
+    <state x="614" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1586438609078" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1586663642985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="330" y="16" key="#HTTP_Proxy/0.0.1536.824@0.0.1536.824" timestamp="1575383837608" />
-    <state x="361" y="71" key="#Updates" timestamp="1575039620817">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586663642985" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586663644413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Updates/0.0.1536.824@0.0.1536.824" timestamp="1575039620817" />
-    <state x="543" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1575211118444">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586663644413" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586663644413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="543" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1575211118444" />
-    <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1575198804130">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586663644413" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586663644413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1575198804130" />
-    <state x="402" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1575198815649">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586663644413" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586663644413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="402" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1575198815649" />
-    <state x="481" y="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1575198805338">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586663644413" />
+    <state width="1342" height="195" key="GridCell.Tab.1.bottom" timestamp="1586438796544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="481" y="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1575198805338" />
-    <state x="808" y="177" key="FileChooserDialogImpl" timestamp="1575384733023">
+    <state width="1342" height="195" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586438796544" />
+    <state width="1342" height="195" key="GridCell.Tab.1.center" timestamp="1586438796544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="808" y="177" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575384733023" />
-    <state width="1478" height="208" key="GridCell.Tab.0.bottom" timestamp="1575211363186">
+    <state width="1342" height="195" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586438796544" />
+    <state width="1342" height="195" key="GridCell.Tab.1.left" timestamp="1586438796544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575211363186" />
-    <state width="1478" height="208" key="GridCell.Tab.0.center" timestamp="1575211363185">
+    <state width="1342" height="195" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586438796544" />
+    <state width="1342" height="195" key="GridCell.Tab.1.right" timestamp="1586438796544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575211363185" />
-    <state width="1478" height="208" key="GridCell.Tab.0.left" timestamp="1575211363185">
+    <state width="1342" height="195" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586438796544" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1586660769068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575211363185" />
-    <state width="1478" height="208" key="GridCell.Tab.0.right" timestamp="1575211363185">
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586660769068" />
+    <state width="552" height="822" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1586661012287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575211363185" />
-    <state x="398" y="110" key="NewModule_or_Project.wizard" timestamp="1575384528589">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="398" y="110" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1575384528589" />
-    <state x="239" y="0" key="SettingsEditor" timestamp="1575384666450">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="239" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575384666450" />
-    <state x="178" y="22" key="new project wizard" timestamp="1575384748058">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="178" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1575384748058" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/CdzGet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/BeanMapUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/annotation/AnnotationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/NotNull.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/bean/Info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding>
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/annotation/CheckNullAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../aop/src/test/java/com/abc/aop/AopApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../aop/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../aop/src/main/java/com/abc/aop/AopApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/annotation/SpringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>aop</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state width="552" height="822" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1536.824@0.0.1536.824" timestamp="1586661012287" />
   </component>
 </project>
