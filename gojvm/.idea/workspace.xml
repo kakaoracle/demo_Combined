@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b6a166f-796a-4b5e-851d-acc34e1afc4d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go Application" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:/software/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$/../../../gopath" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\repository" />
+        <option name="mavenHome" value="C:/Software/maven" />
+        <option name="userSettingsFile" value="C:\Software\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UTdvO0tSjNJenMpVAo4Lc0pCCg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build Test1.go">
+    <configuration name="TestReturnFinally" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.trycatch和return和i后双加.TestReturnFinally" />
+      <module name="springbootAxiom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.trycatch和return和i后双加.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTestTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.静态代码块与构造方法与private等.TestTestTest" />
+      <module name="springbootAxiom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.静态代码块与构造方法与private等.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test双目i" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abc.trycatch和return和i后双加.Test双目i" />
+      <module name="springbootAxiom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abc.trycatch和return和i后双加.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="go build Test1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gojvm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Test1.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringBootAxiom" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springbootAxiom" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.abc.SpringBootAxiom" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build Test1.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b6a166f-796a-4b5e-851d-acc34e1afc4d" name="Default Changelist" comment="" />
+      <created>1575384748955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575384748955</updated>
+      <workItem from="1575384752303" duration="152000" />
+      <workItem from="1575866887518" duration="7664000" />
+      <workItem from="1575976591241" duration="2216000" />
+      <workItem from="1576379322247" duration="324000" />
+      <workItem from="1578752948396" duration="1398000" />
+      <workItem from="1580982009777" duration="70000" />
+      <workItem from="1581941326703" duration="73000" />
+      <workItem from="1582037454607" duration="48000" />
+      <workItem from="1586677031255" duration="954000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="523" y="81" key="#GOPATH" timestamp="1586678606292">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="523" y="81" key="#GOPATH/0.0.1536.824@0.0.1536.824" timestamp="1586678606292" />
+    <state x="523" y="353" key="#GOROOT" timestamp="1586678313655">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="523" y="353" key="#GOROOT/0.0.1536.824@0.0.1536.824" timestamp="1586678313655" />
+    <state x="510" y="178" key="FileChooserDialogImpl" timestamp="1586678602668">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="510" y="178" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586678602668" />
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1586750881520">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586750881520" />
+    <state width="1342" height="195" key="GridCell.Tab.0.center" timestamp="1586750881520">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586750881520" />
+    <state width="1342" height="195" key="GridCell.Tab.0.left" timestamp="1586750881520">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586750881520" />
+    <state width="1342" height="195" key="GridCell.Tab.0.right" timestamp="1586750881520">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586750881520" />
+    <state x="280" y="0" key="SettingsEditor" timestamp="1586677384944">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="280" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586677384944" />
+  </component>
+</project>

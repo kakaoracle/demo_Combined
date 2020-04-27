@@ -1,7 +1,7 @@
 package JNI;
 /*
 * 写一个native方法,通过jni调用c/c++方法
-*
+* no modify
 * */
 public class HelloWorld {
     public native void sayHelloWorld();
