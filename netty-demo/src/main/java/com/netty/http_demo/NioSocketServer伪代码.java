@@ -15,7 +15,7 @@ import java.util.List;
 netty简单来说就是要实现两处不阻塞的方法
 * */
 public class NioSocketServer伪代码 {
-    public static void main(String[] args) throws IOException {
+    /*public static void main(String[] args) throws IOException {
         //用于存储连接socket(不是监听socket)
         List list = new ArrayList<>();
         byte[] bs = new byte[1024];
@@ -43,5 +43,5 @@ public class NioSocketServer伪代码 {
             }
         }
 
-    }
+    }*/
 }
