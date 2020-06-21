@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/githubrepository/demo_Combined/cppGrammar/destructor/NewAndDelete.cpp
+iostream
+-
+NewAndDelete.h
+D:/githubrepository/demo_Combined/cppGrammar/destructor/NewAndDelete.h
+
+D:/githubrepository/demo_Combined/cppGrammar/destructor/NewAndDelete.h
+
+D:/githubrepository/demo_Combined/cppGrammar/main.cpp
+iostream
+-
+

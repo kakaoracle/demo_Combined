@@ -22,6 +22,7 @@ public class Test1 {
                 e.printStackTrace();
             }
             threadLocal.set("B");
+            threadLocal.set("C");
             System.out.println(threadLocal.get());
         }).start();
 
