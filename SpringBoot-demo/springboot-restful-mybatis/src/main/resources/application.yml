@@ -1,4 +1,0 @@
-#注意是profiles而不是profile
-spring:
-  profiles:
-    active: test
