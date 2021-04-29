@@ -1,0 +1,5 @@
+com/processor/MyGetter.java
+ com.processor.MyGetter
+com/processor/MyGetterProcessor.java
+ com.processor.MyGetterProcessor
+ com.processor.MyGetterProcessor$1
