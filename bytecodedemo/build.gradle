@@ -1,6 +1,7 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
+
+ext.aspectjVersion = '1.8.13'
+apply plugin: 'aspectj'
 
 group 'org.kaka'
 version '1.0-SNAPSHOT'
@@ -11,11 +12,30 @@ repositories {
 
 
 
+buildscript {
+    repositories {
+        maven {
+            url "https://maven.eveoh.nl/content/repositories/releases"
+        }
+    }
+
+    dependencies {
+        classpath "nl.eveoh:gradle-aspectj:2.0"
+    }
+}
+
+
+
+
 
 
 dependencies {
     compile project('myprocessor')
     annotationProcessor project(':myprocessor')
+
+    implementation 'com.google.auto.service:auto-service:1.0-rc4'
+    annotationProcessor'com.google.auto.service:auto-service:1.0-rc4'//----注意需要加上这个
+
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'

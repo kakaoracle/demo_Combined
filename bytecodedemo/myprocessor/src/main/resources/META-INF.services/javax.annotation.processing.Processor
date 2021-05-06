@@ -1,1 +1,2 @@
-com.processor.MyGetterProcessor
+club.throwable.processor.AnnotationProcessor
+club.throwable.processor.BuilderProcessor
