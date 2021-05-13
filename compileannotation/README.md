@@ -20,3 +20,6 @@ This module contains articles about Java annotations
     父工程,以后有时间可以尝试直接变为父子关系工程,不要在父工程中变成兄弟关系
 - idea中不需要开启所谓的process功能,什么都不需要动
 - 为什么示例工程的new PersonBuilder()不报红?这个类只存在在target目录下,代码目录下没有
+
+### 其他
+1. 都无法实现类似lombok的效果(仅在class中生成方法,但是调用时idea不报红),有空再研究
