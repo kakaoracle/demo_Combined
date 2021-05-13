@@ -13,6 +13,7 @@ This module contains articles about Java annotations
   注解)
   2. 因为要先编译processor,再编译所在工程,所以需要添加maven插件(具体见pom文件)
   3. builderProperty注解作用: 让使用该注解的类在编译后新增一个类,类名+Builder
+  4. MyGetter注解作用: 生成get方法
 - annotation-user: 使用注解的工程
   1. 工程中的test类中的方法,new PersonBuilder(),如果不编译的话会报类找不到,编译后就不报了
 - 由于二者同时依赖于父工程,因此编译时无法编译processing工程后直接编译user(会报错,maven依赖关系问题),看效果需要直接编译

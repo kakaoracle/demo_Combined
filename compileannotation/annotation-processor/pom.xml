@@ -33,6 +33,7 @@
                             <compilerArgument>-proc:none</compilerArgument>
                             <includes>
                                 <include>com/kaka/processor/BuilderProcessor.java</include>
+                                <include>com/kaka/processor/MyGetterProcessor.java</include>
                             </includes>
                         </configuration>
                     </execution>
