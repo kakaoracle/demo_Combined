@@ -1,0 +1,23 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!-- 前端控制器，拦截所有请求  -->
+  <servlet>
+  <!--  servlet-name相当于根路径,理应可以设置多个,然后下方的具体映射可以配置在哪个根路径下生效  -->
+    <servlet-name>mvcdispatcher</servlet-name>
+    <servlet-class>kaka.servlet.MyDispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>resources/springmvc.xml</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>mvcdispatcher</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+</web-app>
