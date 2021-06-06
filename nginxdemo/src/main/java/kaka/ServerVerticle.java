@@ -11,25 +11,7 @@ import io.vertx.ext.web.handler.BodyHandler;
 
 public class ServerVerticle extends AbstractVerticle {
     @Override
-    public void start() throws Exception {
-        /*HttpServer server = vertx.createHttpServer();
-        Router router = Router.router(vertx);
-        router.get("/hello").handler(routingContext -> {
-            HttpServerResponse response = routingContext.response();
-            HttpServerRequest requeat = routingContext.request();;
-            response.end("hello hello world");
-        });
-
-        router.post("/hello").handler(BodyHandler.create()).handler(routingContext->{
-            JsonObject json = routingContext.getBodyAsJson();
-            routingContext.response().end(json.getString("name"));
-        });
-
-        server.requestHandler(router).listen(8080,event -> {
-            if (event.succeeded()){
-                System.out.println("启动在8080端口");
-            }
-        });*/
+    public void start() {
         HttpServer server = vertx.createHttpServer();
 
         Router router = Router.router(vertx);
