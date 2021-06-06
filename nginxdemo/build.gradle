@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.kaka'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+def vertxVersion = "4.0.3"
+def nettyNativeMacVersion = "4.1.65.Final"
+
+dependencies {
+    implementation("io.vertx:vertx-core:$vertxVersion")
+    implementation("io.vertx:vertx-web:$vertxVersion")
+    implementation("io.vertx:vertx-web-client:$vertxVersion")
+    // https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-native-macos
+    implementation group: 'io.netty', name: 'netty-resolver-dns-native-macos', version: nettyNativeMacVersion
+
+}
+
+test {
+    useJUnitPlatform()
+}

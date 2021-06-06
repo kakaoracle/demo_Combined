@@ -123,7 +123,7 @@ public class MyDispatcherServlet extends HttpServlet {
         SAXReader reader = new SAXReader();
         try {
             //解析springmvc.xml
-            String path = config.getServletContext().getRealPath("")+"\\WEB-INF\\classes\\"+config.getInitParameter("contextConfigLocation");
+            String path = config.getServletContext().getRealPath("")+config.getInitParameter("contextConfigLocation");
             Document document = reader.read(path);
             Element root = document.getRootElement();
             Iterator iter = root.elementIterator();
@@ -177,10 +177,10 @@ public class MyDispatcherServlet extends HttpServlet {
         //获取业务方法
         Method method = handlerMapping.get(methodUri);
         try {
-            //反射机制调用业务方法
-            String value = (String) method.invoke(obj);
+            //反射机制调用业务方法,返回执行完成后要跳转的页面
+            String returnUrl = (String) method.invoke(obj);
             //视图解析器将逻辑视图转换为物理视图
-            String result = myViewResolver.jspMapping(value);
+            String result = myViewResolver.jspMapping(returnUrl);
             //页面跳转
             req.getRequestDispatcher(result).forward(req, resp);
         } catch (Exception e) {
