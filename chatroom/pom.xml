@@ -11,6 +11,7 @@
     <modules>
         <module>udpdemo1</module>
         <module>tcpdemo1</module>
+        <module>tcpdemo2</module>
     </modules>
 
     <properties>
