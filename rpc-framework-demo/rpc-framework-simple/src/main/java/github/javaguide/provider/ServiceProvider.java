@@ -3,10 +3,7 @@ package github.javaguide.provider;
 import github.javaguide.config.RpcServiceConfig;
 
 /**
- * store and provide service object.
  *
- * @author shuang.kou
- * @createTime 2020年05月31日 16:52:00
  */
 public interface ServiceProvider {
 

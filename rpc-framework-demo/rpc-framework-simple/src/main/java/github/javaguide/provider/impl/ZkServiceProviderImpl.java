@@ -17,8 +17,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author shuang.kou
- * @createTime 2020年05月13日 11:23:00
+ *
  */
 @Slf4j
 public class ZkServiceProviderImpl implements ServiceProvider {
@@ -57,6 +56,7 @@ public class ZkServiceProviderImpl implements ServiceProvider {
         return service;
     }
 
+    // 描述服务: 可以从版本,注解(或者方法名),然后方法实例Object
     @Override
     public void publishService(RpcServiceConfig rpcServiceConfig) {
         try {

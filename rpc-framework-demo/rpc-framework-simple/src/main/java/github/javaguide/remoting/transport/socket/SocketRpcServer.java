@@ -18,8 +18,7 @@ import java.util.concurrent.ExecutorService;
 import static github.javaguide.remoting.transport.netty.server.NettyRpcServer.PORT;
 
 /**
- * @author shuang.kou
- * @createTime 2020年05月10日 08:01:00
+ *
  */
 @Slf4j
 public class SocketRpcServer {
