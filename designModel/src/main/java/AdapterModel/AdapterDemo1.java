@@ -1,9 +1,9 @@
-package 适配器模式;
+package AdapterModel;
 
-import 适配器模式.德标和国标接口.DB;
-import 适配器模式.德标和国标接口.DBimpl;
-import 适配器模式.德标和国标接口.GB;
-import 适配器模式.德标和国标接口.GBimpl;
+import AdapterModel.德标和国标接口.DB;
+import AdapterModel.德标和国标接口.DBimpl;
+import AdapterModel.德标和国标接口.GB;
+import AdapterModel.德标和国标接口.GBimpl;
 
 /**
  * @description:原始格式,没有用到适配器Adapter类

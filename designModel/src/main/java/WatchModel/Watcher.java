@@ -1,4 +1,4 @@
-package 观察者模式;
+package WatchModel;
 
 /*
 * 观察者接口

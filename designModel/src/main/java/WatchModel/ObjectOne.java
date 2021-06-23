@@ -1,4 +1,4 @@
-package 观察者模式;
+package WatchModel;
 
 import java.util.ArrayList;
 import java.util.List;

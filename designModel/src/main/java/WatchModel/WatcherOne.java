@@ -1,4 +1,4 @@
-package 观察者模式;
+package WatchModel;
 
 /**
  * @description: 观察者的具体实现类

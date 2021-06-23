@@ -1,10 +1,10 @@
-package 适配器模式;
+package AdapterModel;
 
-import 适配器模式.德标和国标接口.DB;
-import 适配器模式.德标和国标接口.DBimpl;
-import 适配器模式.德标和国标接口.GB;
-import 适配器模式.德标和国标接口.GBimpl;
-import 适配器模式.适配器.Adapter;
+import AdapterModel.德标和国标接口.DB;
+import AdapterModel.德标和国标接口.DBimpl;
+import AdapterModel.德标和国标接口.GB;
+import AdapterModel.德标和国标接口.GBimpl;
+import AdapterModel.适配器.Adapter;
 
 /**
  * @description:用适配器来实现

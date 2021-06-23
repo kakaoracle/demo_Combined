@@ -1,7 +1,7 @@
-package 适配器模式.适配器;
+package AdapterModel.适配器;
 
-import 适配器模式.德标和国标接口.DB;
-import 适配器模式.德标和国标接口.GB;
+import AdapterModel.德标和国标接口.DB;
+import AdapterModel.德标和国标接口.GB;
 
 public class Adapter implements DB {
     private GB gb;
