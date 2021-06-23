@@ -12,4 +12,6 @@ https://github.com/Snailclimb/guide-rpc-framework
 4. nettyServerMain与SocketServerMain是两种实现方法,前者对应基础版本,后者
 更换为netty,同时前者调用的是serviceimpl,后者调用的是serviceimpl2
 # 要点
-1. 
+1. rpcClient是用的接口,rpcServer是对该接口的实现,因此不存在可以直接调用rpcServer实现类的说法,因为可以将接口完全独立成第三方工程,此时
+rpcClient工程就不再引入rpcServer工程
+2. 

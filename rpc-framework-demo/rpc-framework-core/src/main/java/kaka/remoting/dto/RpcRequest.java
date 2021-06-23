@@ -9,8 +9,7 @@ import lombok.ToString;
 import java.io.Serializable;
 
 /**
- * @author shuang.kou
- * @createTime 2020年05月10日 08:24:00
+ * 一个rpc请求,携带的内容
  */
 @AllArgsConstructor
 @NoArgsConstructor

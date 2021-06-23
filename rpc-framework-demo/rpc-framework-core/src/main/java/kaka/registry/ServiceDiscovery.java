@@ -6,10 +6,8 @@ import kaka.remoting.dto.RpcRequest;
 import java.net.InetSocketAddress;
 
 /**
- * service discovery
+ * 根据请求内容 --> 找到服务ip
  *
- * @author shuang.kou
- * @createTime 2020年06月01日 15:16:00
  */
 @SPI
 public interface ServiceDiscovery {

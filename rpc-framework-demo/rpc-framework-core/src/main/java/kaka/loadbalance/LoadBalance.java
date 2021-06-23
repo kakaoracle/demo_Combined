@@ -6,10 +6,7 @@ import kaka.remoting.dto.RpcRequest;
 import java.util.List;
 
 /**
- * Interface to the load balancing policy
  *
- * @author shuang.kou
- * @createTime 2020年06月21日 07:44:00
  */
 @SPI
 public interface LoadBalance {

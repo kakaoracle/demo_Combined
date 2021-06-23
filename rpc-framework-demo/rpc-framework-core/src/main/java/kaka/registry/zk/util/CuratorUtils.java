@@ -97,17 +97,17 @@ public final class CuratorUtils {
     }
 
     public static CuratorFramework getZkClient() {
-        // check if user has set zk address
+        // 检查用户是否设置了zk地址
         Properties properties = PropertiesFileUtil.readPropertiesFile(RpcConfigEnum.RPC_CONFIG_PATH.getPropertyValue());
         String zookeeperAddress = properties != null && properties.getProperty(RpcConfigEnum.ZK_ADDRESS.getPropertyValue()) != null ? properties.getProperty(RpcConfigEnum.ZK_ADDRESS.getPropertyValue()) : DEFAULT_ZOOKEEPER_ADDRESS;
-        // if zkClient has been started, return directly
+        // zk已经启动则直接返回
         if (zkClient != null && zkClient.getState() == CuratorFrameworkState.STARTED) {
             return zkClient;
         }
         // Retry strategy. Retry 3 times, and will increase the sleep time between retries.
         RetryPolicy retryPolicy = new ExponentialBackoffRetry(BASE_SLEEP_TIME, MAX_RETRIES);
+        // curatorframeworkfactory是zk官方提供的方法用来创建实例
         zkClient = CuratorFrameworkFactory.builder()
-                // the server to connect to (can be a server list)
                 .connectString(zookeeperAddress)
                 .retryPolicy(retryPolicy)
                 .build();
