@@ -1,8 +1,8 @@
-import github.javaguide.HelloService;
-import github.javaguide.annotation.RpcScan;
-import github.javaguide.config.RpcServiceConfig;
-import github.javaguide.remoting.transport.netty.server.NettyRpcServer;
-import github.javaguide.serviceimpl.HelloServiceImpl2;
+import kaka.HelloService;
+import kaka.annotation.RpcScan;
+import kaka.config.RpcServiceConfig;
+import kaka.remoting.transport.netty.server.NettyRpcServer;
+import kaka.serviceimpl.HelloServiceImpl2;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

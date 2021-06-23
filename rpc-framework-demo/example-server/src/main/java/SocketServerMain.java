@@ -1,7 +1,7 @@
-import github.javaguide.HelloService;
-import github.javaguide.config.RpcServiceConfig;
-import github.javaguide.remoting.transport.socket.SocketRpcServer;
-import github.javaguide.serviceimpl.HelloServiceImpl;
+import kaka.HelloService;
+import kaka.config.RpcServiceConfig;
+import kaka.remoting.transport.socket.SocketRpcServer;
+import kaka.serviceimpl.HelloServiceImpl;
 
 /**
  *

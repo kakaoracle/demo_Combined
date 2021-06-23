@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>org.kaka</groupId>
-            <artifactId>rpc-framework-simple</artifactId>
+            <artifactId>rpc-framework-core</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>

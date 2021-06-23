@@ -11,4 +11,5 @@ https://github.com/Snailclimb/guide-rpc-framework
 3. 启动client端程序发现能够执行方法
 4. nettyServerMain与SocketServerMain是两种实现方法,前者对应基础版本,后者
 更换为netty,同时前者调用的是serviceimpl,后者调用的是serviceimpl2
-   
+# 要点
+1. 
