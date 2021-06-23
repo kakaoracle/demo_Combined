@@ -100,13 +100,13 @@ class Server extends ServerSocket {
 
         @Override
         public void run() {
+            // out是服务端往客户端发的消息
             out.println("成功连上聊天室,请输入你的名字：");
             System.out.println(getName());
             try {
                 int flag = 0;
                 String line = in.readLine();
-                while (!"byeClient".equals(line)) {
-
+                while (!"bye".equals(line)) {
                     // 查看在线用户列表
                     if ("showuser".equals(line)) {
                         out.println(this.listOnlineUsers());
@@ -132,7 +132,7 @@ class Server extends ServerSocket {
                     line = in.readLine();
                     System.out.println(name + ":" + line);
                 }
-                out.println("byeClient");
+                out.println("bye");
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {// 用户退出聊天室
@@ -196,7 +196,6 @@ class Message {
 
     public Message() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     public Message(String client, String message) {

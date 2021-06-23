@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -48,7 +49,8 @@ public class SocketClient extends Socket {
             try {
                 while(true){
                     String result = buff.readLine();
-                    if("byeClient".equals(result)){//客户端申请退出，服务端返回确认退出
+                    //客户端申请退出，服务端返回确认退出
+                    if("bye".equals(result)){
                         break;
                     }else{//输出服务端发送消息
                         System.out.println(result);
