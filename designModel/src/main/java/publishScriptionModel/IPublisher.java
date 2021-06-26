@@ -32,9 +32,6 @@ public interface IPublisher {
      * @param message 消息实体
      */
     default void publishMessageByAsyn(Object message){
-        if (getMessageType() == null){
-            throw new IllegalArgumentException("消息发送失败!消息类型为null.");
-        }
         SubscribePublish.getSubscribePublish().publicMessageByAsyn(getMessageType(), message);
     }
 }

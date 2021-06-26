@@ -10,9 +10,7 @@ import java.util.concurrent.*;
  * 消息订阅器
  */
 public class SubscribePublish {
-    /**
-     * 订阅者map，key为消息类型
-     */
+
     private Map<String, List<ISubscriber>> subcriberMap = new HashMap<>();
 
     /**
@@ -52,14 +50,8 @@ public class SubscribePublish {
      * @param subscriber 订阅对象
      */
     public void subcribe(ISubscriber subscriber) {
-        if (subscriber == null) {
-            throw new IllegalArgumentException("订阅失败!订阅对象不能为null.");
-        }
         //获取消息类型
         String messageType = subscriber.getMessageType();
-        if (messageType == null) {
-            throw new IllegalArgumentException("订阅失败!订阅对象的消息类型不能为null.");
-        }
         //绑定订阅对象
         if (subcriberMap.get(messageType) == null) {
             List<ISubscriber> subcribers = new ArrayList<>();
@@ -94,12 +86,7 @@ public class SubscribePublish {
         sendMessage(messageType, message);
     }
 
-    /**
-     * 生产异步消息
-     *
-     * @param messageType 消息类型
-     * @param message     消息
-     */
+    //生产异步消息
     public void publicMessageByAsyn(String messageType, Object message) {
         /**
          * 此处把for循环写在threadPool.submit方法外面代表每个订阅者对消息的处理都是由一个线程执行
