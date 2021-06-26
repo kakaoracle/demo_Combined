@@ -3,6 +3,8 @@
 ## 观察者模式： watchmodel
 ## 发布订阅模式:publishscriptionmodel
 > Runtime类可以获取当前机器的核心数: Runtime.getRuntime().availableProcessors()
+> 中心就是订阅者注册,指的是将订阅者类实例存到发布者的list中,然后产生消息后,发布者会依次取出实例执行方法,解耦的比较厉害
+> 异步处理指的就是用多线程而已
 ## 策略模式: strategymodel
 > 中心就是遍历枚举类,val相同时执行对应的实例
 > 场景就是,多种异常处理逻辑,需要一种一种进行处理,且每种之间独立没有依赖关系,属于平级关系
