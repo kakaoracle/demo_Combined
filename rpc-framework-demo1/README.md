@@ -13,5 +13,7 @@
 3. 一般情况下,执行的类的接口是单独一个工程,然后client可以引用,且server对其进行实现,本例中直接在client与server中存在一个同名接口
 ## 关键点
 1. Proxy.newProxyInstance(类加载器,目标类,invocationhandler)
-这里面handler是接口,因此需要重写其invoke方法,在这里面socket通信
-动态代理中类加载器参数的作用  
+这里面handler是接口,因此需要重写其invoke方法,在这里面socket通信,哪怕是jdk动态代理,如果要实现原方法内容,也要methond.invoke,因此这里
+不执行该句,也就自然和原方法内容完全无关,直接会到rpc框架中进行执行,即因此服务端所在机器其实也不会执行实例,只有rpc框架机器才需要大一点来执行服务端
+的实例逻辑
+动态代理中类加载器参数的作用
