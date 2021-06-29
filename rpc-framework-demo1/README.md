@@ -13,7 +13,8 @@
 3. 一般情况下,执行的类的接口是单独一个工程,然后client可以引用,且server对其进行实现,本例中直接在client与server中存在一个同名接口
 ## 关键点
 1. Proxy.newProxyInstance(类加载器,目标类,invocationhandler)
-这里面handler是接口,因此需要重写其invoke方法,在这里面socket通信,哪怕是jdk动态代理,如果要实现原方法内容,也要methond.invoke,因此这里
-不执行该句,也就自然和原方法内容完全无关,直接会到rpc框架中进行执行,即因此服务端所在机器其实也不会执行实例,只有rpc框架机器才需要大一点来执行服务端
-的实例逻辑
+这里面handler是接口,因此需要重写其invoke方法,在这里面socket通信,哪怕是jdk动态代理,如果要实现原方法内容,也要methond.invoke,
 动态代理中类加载器参数的作用
+2. 主体流程是:
+server端将class与方法名注册到容器中 --> client端调用前先生成一个动态代理类 --> 执行的是代理后的类的方法 --> 触发socket通信
+   --> server端区分开class的方法,然后本地根据class生成实例 --> 本地执行逻辑  --> 返回值返回给client端  --> client接收到后打印返回值
