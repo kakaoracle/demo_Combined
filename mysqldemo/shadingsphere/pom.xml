@@ -17,12 +17,13 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-        <!--    hikaricp连接池    -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
             <version>2.7.6</version>
         </dependency>
+
 
         <dependency>
             <groupId>mysql</groupId>
