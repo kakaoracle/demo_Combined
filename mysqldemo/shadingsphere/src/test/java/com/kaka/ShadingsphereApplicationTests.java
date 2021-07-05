@@ -22,4 +22,39 @@ class ShadingsphereApplicationTests {
         System.out.println(courses);
     }
 
+    // 测试插入数据,插入十条,看能否均匀落在两张表中(如果分库就会均匀落在各库各表中)
+    // 结果是两张表各自插入5条,course_1中都是奇数,course_2中都是偶数,见img01.png图片
+    @Test
+    void insertCourses() {
+        for (int i=0;i<10;i++) {
+            Course c = new Course();
+            c.setCname("java");
+            c.setUser_id(1001L);
+            c.setCstatus("1");
+            courseMapper.insert(c);
+        }
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
