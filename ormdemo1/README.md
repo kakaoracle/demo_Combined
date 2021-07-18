@@ -14,7 +14,7 @@
 #### 二、Mybatis原理
 ###### 我们先复习一下Mybatis的实现原理：
 1.SqlSessionFactory是线程安全的   
-2.qlSession是单线程对象，因为它是非线程安全的
+2.SqlSession是单线程对象，因为它是非线程安全的
 
 ![avatar](https://raw.githubusercontent.com/chenxingxing6/myorm/master/img/1.jpg)
 

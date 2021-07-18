@@ -1,6 +1,5 @@
 package org.apache.ibatis.annotations;
 
-import jdk.nashorn.internal.ir.annotations.Reference;
 
 import java.lang.annotation.*;
 

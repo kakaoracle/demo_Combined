@@ -9,11 +9,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.lang.ref.WeakReference;
-import java.lang.reflect.Field;
 import java.util.Date;
 import java.util.Random;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class MapperTest{
     private RoleMapper roleMapper;
