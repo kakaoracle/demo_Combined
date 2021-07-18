@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper SYSTEM "myorm.dtd">
+<mapper namespace="com.test.mapper.RoleMapper">
+  <select id="getRoleById" parameterType="java.lang.Long" resultType ="com.test.entry.Role">
+    select * from sys_role where role_id = #{id}
+  </select>
+
+  <select id="getRoleByIdAndDeptId" resultType ="com.test.entry.Role">
+    select * from sys_role where role_id = #{id} and dept_id = #{deptId}
+  </select>
+
+  <delete id="deleteById" parameterType="java.lang.Long">
+    delete from sys_role where role_id = #{id}
+  </delete>
+
+  <insert id="insert">
+    insert into sys_role (role_id, role_name, remark, dept_id, create_time)
+    values (#{role.roleId}, #{role.roleName}, #{role.remark}, #{role.deptId}, #{role.createTime})
+  </insert>
+
+  <update id="updateRoleName">
+    update sys_role set role_name = #{roleName} where role_id = #{roleId}
+  </update>
+</mapper>
