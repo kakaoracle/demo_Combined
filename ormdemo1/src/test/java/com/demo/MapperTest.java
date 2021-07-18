@@ -21,6 +21,8 @@ public class MapperTest{
         WeakReference<SqlSessionFactoryBuilder> builder = new WeakReference<>(new SqlSessionFactoryBuilder());
         String mapxmlPath = "mapper";
         SqlSessionFactory factory = builder.get().build(mapxmlPath);
+        // rolemapper是已经被动态代理增强后的类
+        // 如果不是接口,生成的返回值是一个动态代理,就无法用rolemapper接收
         roleMapper = factory.getMapper(RoleMapper.class);
     }
 
@@ -78,30 +80,6 @@ public class MapperTest{
         System.out.println(JSON.toJSONString(role));
     }
 
-    /*public static void main(String[] args) {
-        String sql = "select * from sys_role where role_id = #{id} and dept_id = #{dept_id}";
-        String regex = "\\#\\{(.+?)\\}";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(sql);
-        while (matcher.find()){
-            String key = matcher.group(1);
-            System.out.println(key);
-        }
-
-        Role role = new Role();
-        role.setRoleId(Long.valueOf(new Random().nextInt(100)));
-        role.setDeptId(1L);
-        role.setRemark("remark");
-        role.setRoleName("roleName");
-        role.setCreateTime(new Date());
-        try {
-            Field field = role.getClass().getDeclaredField("roleId");
-            field.setAccessible(true);
-            System.out.println(field.get(role));
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }*/
 }
 
 

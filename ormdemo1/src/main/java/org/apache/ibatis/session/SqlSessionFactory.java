@@ -46,9 +46,9 @@ public class SqlSessionFactory {
         this.sqlSessions = new ArrayList<>();
         this.mapperxmls = new ArrayList<>();
 
-        // 遍历mapper
+        // 遍历mapper文件
         doScanClass(mapperPackage);
-
+        // 装填mapper文件中的属性值
         initMapper();
     }
 
@@ -74,8 +74,10 @@ public class SqlSessionFactory {
         functionMap.put(function.getFunctionName(), function);
     }
 
+    //先处理mapper文件中的标签值
     public SqlSession getSqlSession(){
         if (this.functionMap == null){
+            // 处理mapper.xml中的标签到map中
             init();
         }
         while (true){
@@ -115,6 +117,7 @@ public class SqlSessionFactory {
         }
     }
 
+    // 动态代理
     public <T>T getMapper(Class<T> clazz){
         return (T)Proxy.newProxyInstance(clazz.getClassLoader(), new Class[]{clazz}, new MapperProxy(this.getSqlSession()));
     }
@@ -130,7 +133,7 @@ public class SqlSessionFactory {
             }
         }
     }
-
+    // 解析mapper文件
     private void getMapper(String xmlPath){
         try {
             SAXReader reader = new SAXReader();
