@@ -1,4 +1,4 @@
-package Feture;
+package Future;
 
 import lombok.extern.slf4j.Slf4j;
 

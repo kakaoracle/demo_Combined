@@ -1,4 +1,4 @@
-package Feture;
+package Future;
 
 import java.util.Arrays;
 import java.util.List;
